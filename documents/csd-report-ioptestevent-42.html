@@ -73,7 +73,12 @@ time, mark, audio, video {
   font-family: "Overpass", sans-serif; }
 
 code, pre, tt, kbd, samp {
-  font-family: "Space Mono", monospace; }
+  font-family: "Space Mono", monospace;
+  font-variant-ligatures: none; }
+
+code *, pre *, tt *, kbd *, samp * {
+  font-family: "Space Mono", monospace !important;
+  font-variant-ligatures: none; }
 
 h1, h2, h3, h4, h5, h6, .h2Annex {
   font-family: "Overpass", sans-serif; }
@@ -177,7 +182,7 @@ main {
     overflow: visible; } }
 
 @media screen {
-  img {
+  div.figure > img {
     width: 100%;
     height: auto; } }
 
@@ -474,26 +479,23 @@ a:hover {
 /*
     3.3 Lists
 */
-ul {
-  margin-left: 1.2em; }
-
 ol {
   margin-left: 1.2em; }
 
-ul > li {
-  list-style: none; }
+ul {
+  position: relative;
+  margin-left: 0;
+  list-style: none;
+  padding-left: 1.2em; }
 
 ul > li:before {
   content: "\2014";
-  display: inline-block;
-  width: 1em;
-  margin-left: -1.2em; }
+  position: absolute;
+  left: 0; }
 
-li p:first-child {
-  display: inline; }
-
-li:first-child {
-  margin-top: 1em; }
+main li {
+  margin-top: 1em;
+  padding-left: 0.5em; }
 
 #toc ul {
   margin-bottom: 0.25em; }
@@ -521,15 +523,18 @@ h2 p {
     3.5 Bibliograhy
 */
 p.Biblio, p.NormRef {
-  margin-top: 1em;
-  margin-left: 2em;
-  text-indent: -2em; }
+  margin-top: 1em; }
+
+p.Biblio:before, p.NormRef:before {
+  content: "\2014";
+  padding-right: 1em; }
 
 /*
     3.6 Source Code + figures
 */
 .figure, .Sourcecode {
   font-family: "Space Mono", monospace;
+  font-variant-ligatures: none;
   background-color: #f7f7f7;
   font-size: 0.8em;
   line-height: 1.6em;
@@ -537,7 +542,7 @@ p.Biblio, p.NormRef {
   margin: 2em 0 1em 0;
   overflow: auto; }
 
-.FigureTitle {
+.FigureTitle, .SourceTitle, .AdmonitionTitle {
   font-weight: 700;
   font-size: 1em;
   text-align: center; }
@@ -545,11 +550,19 @@ p.Biblio, p.NormRef {
 /*
     3.7 Notes
 */
-.Note {
-  background-color: #fff495;
+.Note, .Admonition {
   color: #47430c;
-  padding: 1.2em;
-  margin: 2em 0 1em 0; }
+  padding: 0.25em;
+  margin: 0; }
+
+.Note p, .Admonition p {
+  margin: 1em; }
+
+.Note {
+  background-color: #fff495; }
+
+.Admonition {
+  background-color: #ffcccc; }
 
 /*
     3.8 Examples
@@ -561,11 +574,24 @@ td.example {
   padding: 0 1em 0 1em;
   margin: 2em 0 1em 0; }
 
+.example {
+  background-color: #e1eef1;
+  padding: 0.5em;
+  margin: 2em 0 1em 0;
+  text-align: left;
+  padding-left: 2em; }
+
+.example p {
+  margin: 0; }
+
 .example .example-title {
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
-  margin-top: 0; }
+  margin-top: 0;
+  margin-left: -1.5em; }
+
+.example .Sourcecode {
+  background: none; }
 
 /*
     3.9 Tables
@@ -633,8 +659,8 @@ a.footnote-number {
 */
 .contact-info {
   background-color: #f7f7f7;
-  padding: 2em;
-  margin-top: 5em;
+  padding: 1em;
+  margin-top: 2em;
   width: auto;
   margin-left: auto;
   margin-right: auto;
@@ -642,17 +668,14 @@ a.footnote-number {
 
 .contact-info p, .contact-info a {
   font-family: "Space Mono", monospace;
-  font-weight: 400; }
+  font-variant-ligatures: none;
+  font-weight: 400;
+  line-height: 1.3em;
+  font-size: 1em;
+  margin: 0; }
 
 .contact-info .name {
-  font-weight: 700;
-  font-size: 1.2em;
-  margin-bottom: 0; }
-
-.contact-info .address {
-  font-size: 1em;
-  line-height: 1.3em;
-  margin-top: 0; }
+  font-weight: 700; }
 
 /*
     Keywords
@@ -700,7 +723,7 @@ p {
   font-family: "Overpass", sans-serif;
   font-size: 1.2em;
   line-height: 1.2em;
-  font-weight: 900;
+  font-weight: 600;
   padding-left: 1em;
   padding-right: 1em; }
 
@@ -726,6 +749,25 @@ p {
   font-size: 1.2em;
   line-height: 1.2em;
   margin: 0.25em 0; }
+
+.coverpage-contributors {
+  margin-top: 1em;
+  line-height: 1.5em;
+  font-weight: 300; }
+
+.coverpage-contributors .role {
+  font-variant-caps: all-small-caps;
+  background: #f7f7f7;
+  border-radius: 5px;
+  padding: 0.1em 0.5em;
+  margin-left: 1em;
+  color: #485094;
+  font-size: 0.9em;
+  font-weight: 900; }
+
+.coverpage-contributors .person {
+  display: block;
+  font-weight: 300; }
 
 /*
     4.2 Document Identity
@@ -766,7 +808,7 @@ p {
 */
 .copyright {
   padding: 1em;
-  font-size: 0.8em;
+  font-size: 0.9em;
   text-align: left; }
 
 .copyright .name, .copyright .address {
@@ -780,6 +822,7 @@ To top button
 */
 #myBtn {
   font-family: "Space Mono", monospace;
+  font-variant-ligatures: none;
   display: none;
   position: fixed;
   bottom: 20px;
@@ -849,18 +892,16 @@ a.anchorjs-link:hover {
 </head>
   <body lang="EN-US" link="blue" vlink="#954F72" xml:lang="EN-US" class="container">
     <div class="title-section"><div class="document-stage-band" id="published-band">
-    <p class="document-stage">Published</p>
+  <p class="document-stage">Published</p>
 </div>
 
 <div class="document-type-band" id="administrative-band">
-    <p class="document-type">CalConnect Administrative</p>
+  <p class="document-type">CalConnect Administrative</p>
 </div>
 
+<div id="toggle"> <span>&#x2022;</span> </div>
 
-
-  <div id="toggle"> <span>&#x2022;</span> </div>
-
-  <header>
+<header>
 
 <!--<div class="WordSection1">-->
   <div class="coverpage">
@@ -887,8 +928,12 @@ a.anchorjs-link:hover {
     <span>TC IOPTEST</span>
   </div>
 
+
+
+
+
   
-  
+
   </div>
 
   <div class="title-section1">
@@ -897,21 +942,9 @@ a.anchorjs-link:hover {
   </div>
 
   <div class="coverpage-stage-block">
-    <span class="coverpage-maturity" id="published">Published</span>
+    <span class="coverpage-maturity" id="published"></span>
 </div>
 
-
-  <div class="coverpage-warning">
-    <span class="title">Warning for Drafts</span>
-
-    <p class="content">
-    This document is not a CalConnect Standard. It is distributed for review and
-    comment, and is subject to change without notice and may not be referred to as
-    a Standard. Recipients of this draft are invited to submit, with their
-    comments, notification of any relevant patent rights of which they are aware
-    and to provide supporting documentation.
-    </p>
-  </div>
 
 
 <div class="copyright">
@@ -946,9 +979,9 @@ a.anchorjs-link:hover {
 
 
 
-</div></header>
+</div></header></div>
       <p>&#xA0;</p>
-    </div>
+    </body>
     <br />
     <div class="prefatory-section"><nav>
   <h1 id="content">Contents</h1>
@@ -966,54 +999,54 @@ a.anchorjs-link:hover {
       <br />
       <div>
         <h1 class="ForewordTitle">Foreword</h1>
-        <p id="_373a107c-3e53-4351-bdc9-6c37f1fd5638">The Calendaring and Scheduling Consortium (&#x201C;CalConnect&#x201D;) is global non-profit
+        <p id="_31b157b1-50ac-47e4-84a1-ffe9b1823a19">The Calendaring and Scheduling Consortium (&#x201C;CalConnect&#x201D;) is global non-profit
 organization with the aim to facilitate interoperability of technologies across
 user-centric systems and applications.</p>
-        <p id="_5f70756b-d988-43ed-8610-505bd10b3e0e">CalConnect works closely with liaison partners including international
+        <p id="_008e1a6b-0fe9-4b76-b625-e485319ee2d5">CalConnect works closely with liaison partners including international
 organizations such as ISO, OASIS and M3AAWG.</p>
-        <p id="_e3044b3d-cf71-4c64-ade7-33407b7cd0cd">The procedures used to develop this document and those intended for its further
+        <p id="_15c50885-28e4-4a31-977c-48e0366b39da">The procedures used to develop this document and those intended for its further
 maintenance are described in the CalConnect Directives.</p>
-        <p id="_4f52d661-69ce-4d19-b43a-63fb2f7ec1b5">In particular the different approval criteria needed for the different types of
+        <p id="_827b9d33-76b6-4d8f-8fc1-97523a9b4b36">In particular the different approval criteria needed for the different types of
 ISO documents should be noted. This document was drafted in accordance with the
 editorial rules of the CalConnect Directives.</p>
-        <p id="_eeb76c76-098c-4779-ba41-e3ff485c22e0">Attention is drawn to the possibility that some of the elements of this
+        <p id="_276e819d-e482-4973-87b9-0a6a165c78bf">Attention is drawn to the possibility that some of the elements of this
 document may be the subject of patent rights. CalConnect shall not be held responsible
 for identifying any or all such patent rights. Details of any patent rights
 identified during the development of the document will be in the Introduction
 and/or on the CalConnect list of patent declarations received (see
 www.calconnect.com/patents).</p>
-        <p id="_a0994641-4720-40cc-b75e-0b404d5124cc">Any trade name used in this document is information given for the convenience
+        <p id="_60c966f8-9a71-48ce-b7a7-475b1eeb9b41">Any trade name used in this document is information given for the convenience
 of users and does not constitute an endorsement.</p>
-        <p id="_5a420ce8-3dc4-4340-b487-76f0087b87d5">This document was prepared by Technical Committee <i>IOPTEST</i>.</p>
+        <p id="_22e5cd05-5a5a-4f60-93e5-463c4c0927ce">This document was prepared by Technical Committee <i>IOPTEST</i>.</p>
       </div>
       <p class="zzSTDTitle1">Report on CalConnect Test Event and Developers Forum XLII, June 4-6, 2018</p>
       <div id="_report">
         <h1>1.&#xA0; Report</h1>
-        <p id="_7cd18f83-563d-4003-816a-bc8c2c4dae4d">The event was hosted by Jorte in Tokyo, Japan, June 4-8, 2018</p>
-        <p id="_bbd73078-03c3-40c1-8cc3-0db5c94f4914">In attendance for this interoperability event and developers forum were representatives from</p>
-        <ul id="_f4f830eb-72f7-49c5-95b0-1314a0ed43b4">
+        <p id="_2ba0f507-c90e-4a21-ae6d-0b1f2e49a9c5">The event was hosted by Jorte in Tokyo, Japan, June 4-8, 2018</p>
+        <p id="_85fd374f-ecda-4019-9d06-583c4818ba42">In attendance for this interoperability event and developers forum were representatives from</p>
+        <ul id="_3cb988ee-fdc6-45a6-9666-df9e406297e9">
   <li>
-    <p id="_23765251-1869-4d64-af20-4b3b38390c2a">Spherical Cow Group</p>
+    <p id="_cbfded5a-b7ff-4514-aafa-3fda1d3bbfe9">Spherical Cow Group</p>
   </li>
   <li>
-    <p id="_f652d9a6-67f5-4507-ad45-711ee9342be3">FastMail</p>
+    <p id="_69be28d4-1e42-46e6-8477-99f6b19fdd69">FastMail</p>
   </li>
   <li>
-    <p id="_79e3c644-06fe-43e1-a963-a42388c6ab47">Open-Xchange</p>
+    <p id="_41a47641-055b-4583-a91b-c27b6782bd7c">Open-Xchange</p>
   </li>
   <li>
-    <p id="_110c22bb-2eae-48a5-a36d-49a0fe69f410">Ribose</p>
+    <p id="_bff09fe0-7e85-438b-ae0f-3c80ec16de25">Ribose</p>
   </li>
   <li>
-    <p id="_053b5f0c-9555-4c9d-bf6d-a19a3cfcbafe">Jorte</p>
+    <p id="_724b7913-e038-4543-817f-19a9e90a5fc0">Jorte</p>
   </li>
 </ul>
-        <p id="_610dacb8-e091-462b-9d61-c4c6eec9e965">Despite that small attendance we were all kept busy on a number of issues which required discussion and implementation.</p>
-        <p id="_d7c718a5-a77b-47f8-824c-f61779c109f6">Vpoll was being worked on by Robert Stepanek of FastMail in preparation for a presentation and demonstration in the conference.</p>
-        <p id="_beedb80f-56f4-4420-be4b-ebab7d7a182b">We had further discussions on the new JSCalendar specification Robert is working on. As the specification nears completion there are some remaining issues. The description property and localization, client-side alarm handling amd attendee-specific sequencing. As ever there were discussions about various aspects of recurrences.</p>
-        <p id="_98b080cf-32f2-43c6-b6b7-a1c708ce99eb">The new server side subscriptions specification was discussed and the Open-Xchange members carried out a preliminary implementation of the specification. This specification allows DAV clients to POST subscription requests to the server which then manages the synchronization of the data. Open-Xchange proposed some additions be added: a &#x201C;refresh now&#x201D; option for clients and persisting and signaling account errors to clients. These most likely will be added to the final specification.</p>
-        <p id="_17f3c88d-fa43-493e-bb2b-fe1ed6cab045">We talked about the progress being made with the VObject and VCard work in preparation for presentations later in the week.</p>
-        <p id="_699d78b9-e1cb-483e-a747-2781a34f7d22">Apart from the larger issues above these meetings provided the opportunity for face-to-face in depth discussion on various topics.</p>
+        <p id="_91379402-bd44-488d-8671-8a1c6bed0a11">Despite that small attendance we were all kept busy on a number of issues which required discussion and implementation.</p>
+        <p id="_5238058d-9542-47b9-b82a-0cf2fcd70f9e">Vpoll was being worked on by Robert Stepanek of FastMail in preparation for a presentation and demonstration in the conference.</p>
+        <p id="_95843fc4-6007-4a04-a954-2134f56bd47a">We had further discussions on the new JSCalendar specification Robert is working on. As the specification nears completion there are some remaining issues. The description property and localization, client-side alarm handling amd attendee-specific sequencing. As ever there were discussions about various aspects of recurrences.</p>
+        <p id="_f2063172-d7e6-4bf8-9c20-ef93089eae6c">The new server side subscriptions specification was discussed and the Open-Xchange members carried out a preliminary implementation of the specification. This specification allows DAV clients to POST subscription requests to the server which then manages the synchronization of the data. Open-Xchange proposed some additions be added: a &#x201C;refresh now&#x201D; option for clients and persisting and signaling account errors to clients. These most likely will be added to the final specification.</p>
+        <p id="_83aa7040-a078-45ba-a28d-3b5c14e540b0">We talked about the progress being made with the VObject and VCard work in preparation for presentations later in the week.</p>
+        <p id="_c50c3292-3fb0-4e04-97be-94e74b0be690">Apart from the larger issues above these meetings provided the opportunity for face-to-face in depth discussion on various topics.</p>
       </div>
     </main>
   <script type="text/x-mathjax-config">
@@ -1024,7 +1057,7 @@ of users and does not constitute an endorsement.</p>
  });
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=AM_HTMLorMML"></script>
-<script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script><script>
     //TOC generation
       $('#toc').toc({
           'selectors': 'h1,h2:not(.TermNum)', //elements to use as headings
@@ -1104,5 +1137,4 @@ $('#toggle').on('click', function(){
   placement: 'left'
 };
 anchors.add('h1, h2, h3, h4');
-</script></body>
-</html>
+</script></html>

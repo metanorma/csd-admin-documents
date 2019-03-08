@@ -1,103 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <csd-standard xmlns="https://www.calconnect.org/standards/csd">
-<bibdata type="administrative">
-  <title language="en" format="text/plain">Report on Test Event and Developers Forum XXXVIII, February 13-15, 2017</title>
-  <docidentifier type="csd">CC/A 1702:2017</docidentifier>
-  <docnumber>1702</docnumber>
-  <date type="published">
-    <on>2017-03-10T00:00:00Z</on>
-  </date>
-  <edition>1</edition>
-  <version>
-    <revision-date>2017-03-10T00:00:00Z</revision-date>
-  </version>
-  <contributor>
-    <role type="author"/>
-    <organization>
-      <name>CalConnect</name>
-    </organization>
-  </contributor>
-  <contributor>
-    <role type="publisher"/>
-    <organization>
-      <name>CalConnect</name>
-    </organization>
-  </contributor>
-  <language>en</language>
-  <script>Latn</script>
-  <status format="plain">published</status>
-  <copyright>
-    <from>2017</from>
-    <owner>
-      <organization>
-        <name>CalConnect</name>
-      </organization>
-    </owner>
-  </copyright>
-  <editorialgroup>
-    <technical-committee>IOPTEST</technical-committee>
-  </editorialgroup>
+<bibdata type="administrative"> 
+  <title language="en" format="text/plain">Report on Test Event and Developers Forum XXXVIII, February 13-15, 2017</title> 
+  <docidentifier type="csd">CC/A 1702:2017</docidentifier> 
+  <docnumber>1702</docnumber> 
+  <date type="published"> 
+    <on>2017-03-10T00:00:00Z</on> 
+  </date> 
+  <contributor> 
+    <role type="author"/> 
+    <organization> 
+      <name>CalConnect</name> 
+    </organization> 
+  </contributor> 
+  <contributor> 
+    <role type="publisher"/> 
+    <organization> 
+      <name>CalConnect</name> 
+    </organization> 
+  </contributor> 
+  <edition>1</edition> 
+  <version> 
+    <revision-date>2017-03-10T00:00:00Z</revision-date> 
+  </version> 
+  <language>en</language> 
+  <script>Latn</script> 
+  <status format="plain">published</status> 
+  <copyright> 
+    <from>2017</from> 
+    <owner> 
+      <organization> 
+        <name>CalConnect</name> 
+      </organization> 
+    </owner> 
+  </copyright> 
+  <editorialgroup> 
+    <technical-committee>IOPTEST</technical-committee> 
+  </editorialgroup> 
 </bibdata>
-<preface><foreword obligation="informative"><title>Foreword</title><p id="_1c6b47b1-e321-401b-82ed-8cd4083afe9f">The Calendaring and Scheduling Consortium (“CalConnect”) is global non-profit
-organization with the aim to facilitate interoperability of technologies across
-user-centric systems and applications.</p>
-<p id="_3d1912e0-bde3-4ca3-9058-ad29db4685a5">CalConnect works closely with liaison partners including international
-organizations such as ISO, OASIS and M3AAWG.</p>
-<p id="_09907748-de16-4565-8f91-d38a2fcdc438">The procedures used to develop this document and those intended for its further
-maintenance are described in the CalConnect Directives.</p>
-<p id="_d9c9b735-7179-42fd-ae40-a80588f8e25b">In particular the different approval criteria needed for the different types of
-ISO documents should be noted. This document was drafted in accordance with the
-editorial rules of the CalConnect Directives.</p>
-<p id="_76a97717-68c3-4fa0-94c8-1f6b1a4b7c82">Attention is drawn to the possibility that some of the elements of this
-document may be the subject of patent rights. CalConnect shall not be held responsible
-for identifying any or all such patent rights. Details of any patent rights
-identified during the development of the document will be in the Introduction
-and/or on the CalConnect list of patent declarations received (see
-www.calconnect.com/patents).</p>
-<p id="_6a81c543-4c63-48e7-9420-ada7f841312a">Any trade name used in this document is information given for the convenience
-of users and does not constitute an endorsement.</p>
-<p id="_609623ab-63f5-469e-b7c4-49b34425ec77">This document was prepared by Technical Committee <em>IOPTEST</em>.</p></foreword></preface><sections>
-<clause id="_report" obligation="normative"><title>Report</title><p id="_3e292908-413a-492b-acab-647d369f0be9">The event was hosted by the University of California, Irvine, in Irvine California on February 13-15, 2017</p>
-<p id="_d187eea6-75c0-4c0a-9f4d-94fbd0dd3f69">The participants in this event were:</p>
-<ul id="_c8e44e59-888d-4847-97ae-868ac3a3d171">
-  <li>
-    <p id="_e1f96697-202f-49db-a4a3-ae4102e497d3">1and1</p>
-  </li>
-  <li>
-    <p id="_ef033f83-e4be-42b1-a397-3d0b252daf39">AOL</p>
-  </li>
-  <li>
-    <p id="_307a9f55-6f0f-451f-ac1e-6315426243bb">Apple</p>
-  </li>
-  <li>
-    <p id="_0acddf68-fbe4-4ccb-8a2a-603322807fef">FastMail</p>
-  </li>
-  <li>
-    <p id="_1902a523-c7ec-45d5-a953-7161adfbfa44">Google</p>
-  </li>
-  <li>
-    <p id="_db66e20f-45f8-4548-b52e-4ea3a9570957">SCG (Bedework)</p>
-  </li>
-  <li>
-    <p id="_837d8ee2-fee1-46cb-af96-f97710a079d9">Zimbra</p>
-  </li>
-</ul>
-<p id="_1b5952bb-f3ac-4748-89d5-6fad883b19d8">There were a number of areas some or all of us were interested in pursuing. These included:</p>
-<ul id="_4edf91a0-c540-4ffb-a7f1-ad7898144497">
-  <li>
-    <p id="_10d85b01-3154-4cca-9094-ac1a2b7f6430">For the Java people bringing ourselves up to date with the latest ical4j</p>
-  </li>
-  <li>
-    <p id="_f770f62c-dc75-4bb6-800a-1be52a542ff7">Coming up with a way of handling updates to the caldav tester suite.</p>
-  </li>
-  <li>
-    <p id="_89790f7a-dc5c-41a9-add7-0b2d7e6a0778">Discussions on developer guide directions</p>
-  </li>
-</ul>
-<p id="_3776f1f7-df04-49ce-ab9d-cdf02148c850">There were the usual crop of issues that attendees wanted to address. iMIP has been a major topic lately and the forum provided an opportunity for some members to deal with problems they had been experiencing.</p>
-<p id="_949481f6-f895-4009-9162-047c250b2653">Ical4j has been the topic of much discussion for some months. We used this session as an opportunity to work on bringing ourselves up to date with the latest version - or at least investigating how much work it would be. 1&amp;1, Bedework, Zimbra and AOL were present and are users of iCal4j. In the coming months we will discuss what changes we would like to see made to that library.</p>
-<p id="_2471640a-552b-45af-9989-71df83cfc6c8">At the Dresden meeting we decided to create a CalConnect fork of the Darwin CalDAV tester and work on some of the tests to make them more usable for non-Apple servers. In the intervening period some changes were proposed and we spent some time this meeting discussing how we might get these changes merged back into the CalConnect fork. The intent is to come up with a subset of tests that any server developer should be able to run and expect to get a 100% success rate. A number of us have localized versions of the tester and we would like to merge many of these changes into the CalConnect version so that they can benefit everybody.</p>
-<p id="_1db88aed-de5d-4f5d-95a6-2e4ef36d87ea">The meeting was a chance to carry out some of the internal changes to the developer guide that had been contemplated. These should make it easier to organize the content in the future.</p>
-<p id="_241c00b2-57a8-436e-a49e-c95b8fb448c5">There was further discussion on the new data model being worked on by TC API and its JSON representation.</p>
-<p id="_d45c2a14-20ec-4975-87db-1808dd7f8dcd">We also spent some time talking over the issue of calendar spam and how this differs, if at all, from email spam. This allowed us to collect our thoughts ready for a wider discussion in the conference that followed. While calendar spam has not been a major ongoing issue it has already caused some problems and we need to be ready to deal with the inevitable.</p></clause></sections>
+<preface><foreword obligation="informative"><title>Foreword</title><p id="_103d62b1-875b-4475-8349-86d2b57ccd9f">The Calendaring and Scheduling Consortium (“CalConnect”) is global non-profit   
+organization with the aim to facilitate interoperability of technologies across   
+user-centric systems and applications.</p>  
+<p id="_79f4d34f-3fc6-4a08-80e8-4a840d65348f">CalConnect works closely with liaison partners including international   
+organizations such as ISO, OASIS and M3AAWG.</p>  
+<p id="_728dea83-64f5-447d-80b5-6ba0a2b10185">The procedures used to develop this document and those intended for its further   
+maintenance are described in the CalConnect Directives.</p>  
+<p id="_a77c47ea-1b0c-4909-a202-b3c4e4b5de32">In particular the different approval criteria needed for the different types of   
+ISO documents should be noted. This document was drafted in accordance with the   
+editorial rules of the CalConnect Directives.</p>  
+<p id="_e148bab6-389e-4a39-9193-4a38bfaaa1fc">Attention is drawn to the possibility that some of the elements of this   
+document may be the subject of patent rights. CalConnect shall not be held responsible   
+for identifying any or all such patent rights. Details of any patent rights   
+identified during the development of the document will be in the Introduction   
+and/or on the CalConnect list of patent declarations received (see   
+www.calconnect.com/patents).</p>  
+<p id="_55839bb7-6261-4d46-8d2a-093aa8eb90d6">Any trade name used in this document is information given for the convenience   
+of users and does not constitute an endorsement.</p>  
+<p id="_3adc8ee3-ffc1-4c3c-b932-1518dc9cb409">This document was prepared by Technical Committee <em>IOPTEST</em>.</p></foreword></preface><sections> 
+<clause id="_report" obligation="normative"><title>Report</title><p id="_8fcd82a0-195f-424e-b59f-38fc642a9e4a">The event was hosted by the University of California, Irvine, in Irvine California on February 13-15, 2017</p>  
+<p id="_77f69a67-2a44-42e7-a33f-4760f65c5c99">The participants in this event were:</p>  
+<ul id="_1af81102-9ad2-41c5-ad98-cadc52de6214">   
+  <li>   
+    <p id="_cfa00f3f-f17e-46cf-a1c3-329ce9d5123e">1and1</p>   
+  </li>   
+  <li>   
+    <p id="_f436770c-18cc-40a7-b532-f05ca7ad1941">AOL</p>   
+  </li>   
+  <li>   
+    <p id="_b6f7cf0c-b49c-467b-add0-0ce0d6b15f7f">Apple</p>   
+  </li>   
+  <li>   
+    <p id="_2dcce1f2-2fed-41a3-aa05-bab75b16aa3b">FastMail</p>   
+  </li>   
+  <li>   
+    <p id="_5c44bff6-6674-4fb9-a2c0-89e13f6d1afc">Google</p>   
+  </li>   
+  <li>   
+    <p id="_32e4bde4-f9c1-4974-a410-22f985473f50">SCG (Bedework)</p>   
+  </li>   
+  <li>   
+    <p id="_0bd85ee6-1695-49e6-b943-0932613f5b55">Zimbra</p>   
+  </li>   
+</ul>  
+<p id="_82ac8f27-e9a5-4176-9d6a-564c5a65a094">There were a number of areas some or all of us were interested in pursuing. These included:</p>  
+<ul id="_aef0bd83-6b99-4415-ae43-cfafb2b62a0c">   
+  <li>   
+    <p id="_6e859bbc-119c-4661-b4f3-8769ac753f93">For the Java people bringing ourselves up to date with the latest ical4j</p>   
+  </li>   
+  <li>   
+    <p id="_70c95b7c-75a3-417e-acb9-043f8d30f02f">Coming up with a way of handling updates to the caldav tester suite.</p>   
+  </li>   
+  <li>   
+    <p id="_6328ef79-608b-416c-8b9b-821ebcc3bdb2">Discussions on developer guide directions</p>   
+  </li>   
+</ul>  
+<p id="_c228caf0-1e05-455a-b241-589353ee3389">There were the usual crop of issues that attendees wanted to address. iMIP has been a major topic lately and the forum provided an opportunity for some members to deal with problems they had been experiencing.</p>  
+<p id="_096962e5-0aa3-46e2-9b35-5cc8295a0f5f">Ical4j has been the topic of much discussion for some months. We used this session as an opportunity to work on bringing ourselves up to date with the latest version - or at least investigating how much work it would be. 1&amp;1, Bedework, Zimbra and AOL were present and are users of iCal4j. In the coming months we will discuss what changes we would like to see made to that library.</p>  
+<p id="_a8149e9b-626a-4d41-9333-d375590e8d5f">At the Dresden meeting we decided to create a CalConnect fork of the Darwin CalDAV tester and work on some of the tests to make them more usable for non-Apple servers. In the intervening period some changes were proposed and we spent some time this meeting discussing how we might get these changes merged back into the CalConnect fork. The intent is to come up with a subset of tests that any server developer should be able to run and expect to get a 100% success rate. A number of us have localized versions of the tester and we would like to merge many of these changes into the CalConnect version so that they can benefit everybody.</p>  
+<p id="_8ae1e0af-72e5-485f-96e6-f664e54a2c34">The meeting was a chance to carry out some of the internal changes to the developer guide that had been contemplated. These should make it easier to organize the content in the future.</p>  
+<p id="_4d8c45bc-5cb5-440c-8f26-aa2719f09fc0">There was further discussion on the new data model being worked on by TC API and its JSON representation.</p>  
+<p id="_b25aedba-a2a2-430b-882a-046d90b53bfd">We also spent some time talking over the issue of calendar spam and how this differs, if at all, from email spam. This allowed us to collect our thoughts ready for a wider discussion in the conference that followed. While calendar spam has not been a major ongoing issue it has already caused some problems and we need to be ready to deal with the inevitable.</p></clause></sections>
 </csd-standard>

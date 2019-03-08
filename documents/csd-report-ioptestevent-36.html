@@ -73,7 +73,12 @@ time, mark, audio, video {
   font-family: "Overpass", sans-serif; }
 
 code, pre, tt, kbd, samp {
-  font-family: "Space Mono", monospace; }
+  font-family: "Space Mono", monospace;
+  font-variant-ligatures: none; }
+
+code *, pre *, tt *, kbd *, samp * {
+  font-family: "Space Mono", monospace !important;
+  font-variant-ligatures: none; }
 
 h1, h2, h3, h4, h5, h6, .h2Annex {
   font-family: "Overpass", sans-serif; }
@@ -177,7 +182,7 @@ main {
     overflow: visible; } }
 
 @media screen {
-  img {
+  div.figure > img {
     width: 100%;
     height: auto; } }
 
@@ -474,26 +479,23 @@ a:hover {
 /*
     3.3 Lists
 */
-ul {
-  margin-left: 1.2em; }
-
 ol {
   margin-left: 1.2em; }
 
-ul > li {
-  list-style: none; }
+ul {
+  position: relative;
+  margin-left: 0;
+  list-style: none;
+  padding-left: 1.2em; }
 
 ul > li:before {
   content: "\2014";
-  display: inline-block;
-  width: 1em;
-  margin-left: -1.2em; }
+  position: absolute;
+  left: 0; }
 
-li p:first-child {
-  display: inline; }
-
-li:first-child {
-  margin-top: 1em; }
+main li {
+  margin-top: 1em;
+  padding-left: 0.5em; }
 
 #toc ul {
   margin-bottom: 0.25em; }
@@ -521,15 +523,18 @@ h2 p {
     3.5 Bibliograhy
 */
 p.Biblio, p.NormRef {
-  margin-top: 1em;
-  margin-left: 2em;
-  text-indent: -2em; }
+  margin-top: 1em; }
+
+p.Biblio:before, p.NormRef:before {
+  content: "\2014";
+  padding-right: 1em; }
 
 /*
     3.6 Source Code + figures
 */
 .figure, .Sourcecode {
   font-family: "Space Mono", monospace;
+  font-variant-ligatures: none;
   background-color: #f7f7f7;
   font-size: 0.8em;
   line-height: 1.6em;
@@ -537,7 +542,7 @@ p.Biblio, p.NormRef {
   margin: 2em 0 1em 0;
   overflow: auto; }
 
-.FigureTitle {
+.FigureTitle, .SourceTitle, .AdmonitionTitle {
   font-weight: 700;
   font-size: 1em;
   text-align: center; }
@@ -545,11 +550,19 @@ p.Biblio, p.NormRef {
 /*
     3.7 Notes
 */
-.Note {
-  background-color: #fff495;
+.Note, .Admonition {
   color: #47430c;
-  padding: 1.2em;
-  margin: 2em 0 1em 0; }
+  padding: 0.25em;
+  margin: 0; }
+
+.Note p, .Admonition p {
+  margin: 1em; }
+
+.Note {
+  background-color: #fff495; }
+
+.Admonition {
+  background-color: #ffcccc; }
 
 /*
     3.8 Examples
@@ -561,11 +574,24 @@ td.example {
   padding: 0 1em 0 1em;
   margin: 2em 0 1em 0; }
 
+.example {
+  background-color: #e1eef1;
+  padding: 0.5em;
+  margin: 2em 0 1em 0;
+  text-align: left;
+  padding-left: 2em; }
+
+.example p {
+  margin: 0; }
+
 .example .example-title {
   font-weight: 700;
   text-transform: uppercase;
-  text-align: center;
-  margin-top: 0; }
+  margin-top: 0;
+  margin-left: -1.5em; }
+
+.example .Sourcecode {
+  background: none; }
 
 /*
     3.9 Tables
@@ -633,8 +659,8 @@ a.footnote-number {
 */
 .contact-info {
   background-color: #f7f7f7;
-  padding: 2em;
-  margin-top: 5em;
+  padding: 1em;
+  margin-top: 2em;
   width: auto;
   margin-left: auto;
   margin-right: auto;
@@ -642,17 +668,14 @@ a.footnote-number {
 
 .contact-info p, .contact-info a {
   font-family: "Space Mono", monospace;
-  font-weight: 400; }
+  font-variant-ligatures: none;
+  font-weight: 400;
+  line-height: 1.3em;
+  font-size: 1em;
+  margin: 0; }
 
 .contact-info .name {
-  font-weight: 700;
-  font-size: 1.2em;
-  margin-bottom: 0; }
-
-.contact-info .address {
-  font-size: 1em;
-  line-height: 1.3em;
-  margin-top: 0; }
+  font-weight: 700; }
 
 /*
     Keywords
@@ -700,7 +723,7 @@ p {
   font-family: "Overpass", sans-serif;
   font-size: 1.2em;
   line-height: 1.2em;
-  font-weight: 900;
+  font-weight: 600;
   padding-left: 1em;
   padding-right: 1em; }
 
@@ -726,6 +749,25 @@ p {
   font-size: 1.2em;
   line-height: 1.2em;
   margin: 0.25em 0; }
+
+.coverpage-contributors {
+  margin-top: 1em;
+  line-height: 1.5em;
+  font-weight: 300; }
+
+.coverpage-contributors .role {
+  font-variant-caps: all-small-caps;
+  background: #f7f7f7;
+  border-radius: 5px;
+  padding: 0.1em 0.5em;
+  margin-left: 1em;
+  color: #485094;
+  font-size: 0.9em;
+  font-weight: 900; }
+
+.coverpage-contributors .person {
+  display: block;
+  font-weight: 300; }
 
 /*
     4.2 Document Identity
@@ -766,7 +808,7 @@ p {
 */
 .copyright {
   padding: 1em;
-  font-size: 0.8em;
+  font-size: 0.9em;
   text-align: left; }
 
 .copyright .name, .copyright .address {
@@ -780,6 +822,7 @@ To top button
 */
 #myBtn {
   font-family: "Space Mono", monospace;
+  font-variant-ligatures: none;
   display: none;
   position: fixed;
   bottom: 20px;
@@ -849,18 +892,16 @@ a.anchorjs-link:hover {
 </head>
   <body lang="EN-US" link="blue" vlink="#954F72" xml:lang="EN-US" class="container">
     <div class="title-section"><div class="document-stage-band" id="published-band">
-    <p class="document-stage">Published</p>
+  <p class="document-stage">Published</p>
 </div>
 
 <div class="document-type-band" id="administrative-band">
-    <p class="document-type">CalConnect Administrative</p>
+  <p class="document-type">CalConnect Administrative</p>
 </div>
 
+<div id="toggle"> <span>&#x2022;</span> </div>
 
-
-  <div id="toggle"> <span>&#x2022;</span> </div>
-
-  <header>
+<header>
 
 <!--<div class="WordSection1">-->
   <div class="coverpage">
@@ -887,8 +928,12 @@ a.anchorjs-link:hover {
     <span>TC IOPTEST</span>
   </div>
 
+
+
+
+
   
-  
+
   </div>
 
   <div class="title-section1">
@@ -897,21 +942,9 @@ a.anchorjs-link:hover {
   </div>
 
   <div class="coverpage-stage-block">
-    <span class="coverpage-maturity" id="published">Published</span>
+    <span class="coverpage-maturity" id="published"></span>
 </div>
 
-
-  <div class="coverpage-warning">
-    <span class="title">Warning for Drafts</span>
-
-    <p class="content">
-    This document is not a CalConnect Standard. It is distributed for review and
-    comment, and is subject to change without notice and may not be referred to as
-    a Standard. Recipients of this draft are invited to submit, with their
-    comments, notification of any relevant patent rights of which they are aware
-    and to provide supporting documentation.
-    </p>
-  </div>
 
 
 <div class="copyright">
@@ -946,9 +979,9 @@ a.anchorjs-link:hover {
 
 
 
-</div></header>
+</div></header></div>
       <p>&#xA0;</p>
-    </div>
+    </body>
     <br />
     <div class="prefatory-section"><nav>
   <h1 id="content">Contents</h1>
@@ -966,87 +999,87 @@ a.anchorjs-link:hover {
       <br />
       <div>
         <h1 class="ForewordTitle">Foreword</h1>
-        <p id="_a8a33291-4293-4c21-9abb-04f9763e37c8">The Calendaring and Scheduling Consortium (&#x201C;CalConnect&#x201D;) is global non-profit
+        <p id="_add7e64e-7e3c-433a-b39f-71c1be73526c">The Calendaring and Scheduling Consortium (&#x201C;CalConnect&#x201D;) is global non-profit
 organization with the aim to facilitate interoperability of technologies across
 user-centric systems and applications.</p>
-        <p id="_100c9767-491c-421d-ade1-ac55dbede310">CalConnect works closely with liaison partners including international
+        <p id="_2ccddea5-1726-4e52-b08b-6358dd867bb8">CalConnect works closely with liaison partners including international
 organizations such as ISO, OASIS and M3AAWG.</p>
-        <p id="_9db68203-a462-488d-b343-27ca8a6cee87">The procedures used to develop this document and those intended for its further
+        <p id="_c4c0f61a-2bc8-4ca7-b794-f0eff646f740">The procedures used to develop this document and those intended for its further
 maintenance are described in the CalConnect Directives.</p>
-        <p id="_ef728a81-828e-458f-8e9d-5a98c2b81311">In particular the different approval criteria needed for the different types of
+        <p id="_752c842b-cf8e-421e-ba40-4612787065e5">In particular the different approval criteria needed for the different types of
 ISO documents should be noted. This document was drafted in accordance with the
 editorial rules of the CalConnect Directives.</p>
-        <p id="_477feed8-91b4-4ad5-b62a-be73c47f4df2">Attention is drawn to the possibility that some of the elements of this
+        <p id="_19ebdd04-9b08-4129-81c2-62a8c1514124">Attention is drawn to the possibility that some of the elements of this
 document may be the subject of patent rights. CalConnect shall not be held responsible
 for identifying any or all such patent rights. Details of any patent rights
 identified during the development of the document will be in the Introduction
 and/or on the CalConnect list of patent declarations received (see
 www.calconnect.com/patents).</p>
-        <p id="_64053618-f0cc-4a5b-a230-20bdae353383">Any trade name used in this document is information given for the convenience
+        <p id="_6ef04ca7-f7a6-4c6a-afa7-e371c9e3de62">Any trade name used in this document is information given for the convenience
 of users and does not constitute an endorsement.</p>
-        <p id="_a4928394-477e-4861-a8ea-987cf963613b">This document was prepared by Technical Committee <i>IOPTEST</i>.</p>
+        <p id="_e6975c01-b7d0-4790-bc4f-cd80ffcd3fbb">This document was prepared by Technical Committee <i>IOPTEST</i>.</p>
       </div>
       <p class="zzSTDTitle1">Report on CalConnect Interoperability Test Event XXXVI, April 18-19, 2016</p>
       <div id="_report">
         <h1>1.&#xA0; Report</h1>
-        <p id="_1a7c43ce-4b9e-477c-a7d3-53143c03ffc6">The Calconnect interoperability event was hosted by Ribose and OGCIO at Cyberport in Hong Kong on April 18 and 19, 2016.</p>
-        <p id="_d459b4f1-e1c7-4eca-8993-1028226609e7">The event at HongKong continued our move to a more forum like approach, combining testing of new and standard calendar features with a number of in-depth discussions.</p>
-        <p id="_b0e8574d-17ba-4622-8cf5-bb6ee43c57d8">The following organizations were attending</p>
-        <ul id="_95513ea5-d393-438a-a67b-4ab30fd040ee">
+        <p id="_a08d19ed-bbfc-4a17-825a-10eea90f57da">The Calconnect interoperability event was hosted by Ribose and OGCIO at Cyberport in Hong Kong on April 18 and 19, 2016.</p>
+        <p id="_6d22656f-9b0d-4b22-8d02-8b9bc3800b72">The event at HongKong continued our move to a more forum like approach, combining testing of new and standard calendar features with a number of in-depth discussions.</p>
+        <p id="_e68f888e-9d5a-48bf-ab4b-4f253f189733">The following organizations were attending</p>
+        <ul id="_5f369104-cdc8-4437-ad74-eafc69d5d34b">
   <li>
-    <p id="_2dac4a9a-9071-403a-bebb-b0c733cb82a7">dmfs GmbH (formerly SmoothSync)</p>
+    <p id="_a164dbf0-1a0d-4e0e-8eac-969c582581d6">dmfs GmbH (formerly SmoothSync)</p>
   </li>
   <li>
-    <p id="_1e9409c6-a90c-40d2-ac04-c497633c15a4">FastMail</p>
+    <p id="_c2a6ce6f-671e-4589-b320-4f2b538c00c4">FastMail</p>
   </li>
   <li>
-    <p id="_71ae8c3a-6eaa-4903-b3f5-53452d9b5506">Fruux</p>
+    <p id="_7520a9a7-5a81-411c-8cb5-bb4b5e60449f">Fruux</p>
   </li>
   <li>
-    <p id="_8ca4df90-1dc0-48d8-bf1a-80eb887cb792">Google</p>
+    <p id="_2a6d2f8a-32df-4a44-9b85-6f927646f8ed">Google</p>
   </li>
   <li>
-    <p id="_0cd6db6b-71b5-4d4c-83e4-932f4b1f6888">Open-change</p>
+    <p id="_7865dba1-5a1e-4095-9caf-9f37772b4e63">Open-change</p>
   </li>
   <li>
-    <p id="_9952f937-3139-46ee-a6d8-50811b5a8424">Philipp Gewischt</p>
+    <p id="_b5aeacce-8b64-44c6-9f51-a2c6b8899246">Philipp Gewischt</p>
   </li>
   <li>
-    <p id="_dde2ed9c-a328-4e67-83f6-dd02fa3233f1">Ribose</p>
+    <p id="_4c73343a-dadc-4943-b34a-8563f4384d34">Ribose</p>
   </li>
   <li>
-    <p id="_d54f8cdc-5f52-4c97-8445-aa9a381576df">Spherical Cow Group</p>
+    <p id="_03ff1c6c-6389-436a-8152-d67c51d6b2d6">Spherical Cow Group</p>
   </li>
 </ul>
-        <p id="_cbf24a97-bc6c-4471-a5b9-f52d41cbdeff">A major topic for this event - as for the last one - is trying to make iMip more reliable. In some cases it is the representation of the data which is the issue, other times it is incorrect handling of iTip.</p>
-        <p id="_f20c2644-b637-4a94-add5-bedc959ded97">Another topic which keeps coming back is dealing with differing interpretations of the iCalendar specification regarding recurrences.</p>
+        <p id="_c8f71c94-8552-45cb-b5f8-e87de6b06aab">A major topic for this event - as for the last one - is trying to make iMip more reliable. In some cases it is the representation of the data which is the issue, other times it is incorrect handling of iTip.</p>
+        <p id="_bce80ff9-cc0a-4ab1-ad2b-998b40de6e1b">Another topic which keeps coming back is dealing with differing interpretations of the iCalendar specification regarding recurrences.</p>
       </div>
       <div id="_discussions_and_issues_raised">
         <h1>2.&#xA0; Discussions and issues raised</h1>
-        <p id="_63efdd8a-5719-4a64-b871-4a29e7067e47">During discussions a number of issues were raised. These included:</p>
+        <p id="_6fd34d19-0962-4a16-a29b-59e6ef2f79dc">During discussions a number of issues were raised. These included:</p>
         <div id="_timezones"><h2>2.1. Timezones</h2>
 
-  <p id="_b932d716-fef9-4db4-9ece-803f649ec734">Do servers handle timezone definition changes - e.g. recalculate recurrences based on new timezone: the answer is usually not.</p>
+  <p id="_929242d4-9913-49bb-a3df-1cf7cf393686">Do servers handle timezone definition changes - e.g. recalculate recurrences based on new timezone: the answer is usually not.</p>
 </div>
-        <div id="_vjournal"><h2>2.2. VJOURNAL</h2><p id="_482ce1b5-7f6c-4423-9ca9-f120f7f280f5">There was a proposal for adding an additional status to indicate &#x201C;ARCHIVED&#x201D;</p>
-<p id="_901988bc-242b-49c8-bb7a-85d6ab027f80">Suggested alternatives: use different collection, or perhaps a structured category (this is also backwards-compatible, as opposed to a new status)</p>
-<p id="_6cdc1388-ed73-45d8-82af-4601165fc371">There is also a lack of rich text support - but that&#x2019;s also true for events and tasks - this should also be addressed - see &#x201C;Styled-Description&#x201D; in <a href="https://www.ietf.org/archive/id/draft-douglass-calendar-extension-04.txt">https://www.ietf.org/archive/id/draft-douglass-calendar-extension-04.txt</a></p>
-<p id="_302e5dfc-c0e0-4e40-99d7-c98dccc56316">The general feeling is that JOURNAL is not heavily used.</p></div>
+        <div id="_vjournal"><h2>2.2. VJOURNAL</h2><p id="_b66150c6-7b3a-4ee2-a581-8fc95aebafb3">There was a proposal for adding an additional status to indicate &#x201C;ARCHIVED&#x201D;</p>
+<p id="_40cbe282-f824-45a8-9bfb-ac5ff337b59b">Suggested alternatives: use different collection, or perhaps a structured category (this is also backwards-compatible, as opposed to a new status)</p>
+<p id="_9119aee0-32bd-48bb-b207-64727cffd757">There is also a lack of rich text support - but that&#x2019;s also true for events and tasks - this should also be addressed - see &#x201C;Styled-Description&#x201D; in <a href="https://www.ietf.org/archive/id/draft-douglass-calendar-extension-04.txt">https://www.ietf.org/archive/id/draft-douglass-calendar-extension-04.txt</a></p>
+<p id="_a60c6d2e-e919-4382-8bb5-eb39088a69b1">The general feeling is that JOURNAL is not heavily used.</p></div>
         <div id="_managed_attachments"><h2>2.3. Managed attachments</h2>
 
-  <p id="_e0331362-11ab-4435-b9dc-fbb412fcd7f5">Problem: we cannot add an attachment right away together with an event with managed attachments - we would have to first add an event, than once it synced and we know the uid we can add an attachment.</p>
+  <p id="_659944a7-c99c-483c-b148-67ba08fb3483">Problem: we cannot add an attachment right away together with an event with managed attachments - we would have to first add an event, than once it synced and we know the uid we can add an attachment.</p>
 </div>
-        <div id="_support_for_wiping_devices_raised_by_marten_from_dmfs"><h2>2.4. Support for wiping devices (Raised by Marten from dmfs)</h2><p id="_dd6f770c-802f-4a22-a63a-f06ab5d322ce">Do we need a special operation?</p>
-<p id="_68886fe8-fe36-4bf7-85c3-798b10419c31">The way to go is to use per-device passwords (or OAuth to get device-specific markers) and return empty collections on the first sync.</p>
-<p id="_93353617-cd3b-484e-b14f-8c9e086bb533">This last point led to a discussion on client authentication and whether we could perhaps support open connect. See</p>
-<ul id="_0d85b136-9aed-467a-8807-73630158620b">
+        <div id="_support_for_wiping_devices_raised_by_marten_from_dmfs"><h2>2.4. Support for wiping devices (Raised by Marten from dmfs)</h2><p id="_330208fd-0fc8-4373-a1e1-96820e141928">Do we need a special operation?</p>
+<p id="_cf3df59b-1b6f-4a9f-a182-f4e84bdec3f2">The way to go is to use per-device passwords (or OAuth to get device-specific markers) and return empty collections on the first sync.</p>
+<p id="_ede2956d-c63b-46a2-9f17-015dbe214e39">This last point led to a discussion on client authentication and whether we could perhaps support open connect. See</p>
+<ul id="_2ca3c674-9696-4d48-8440-51c9c42e915c">
   <li>
-    <p id="_12b4ab1c-34c1-4059-8dea-a4173e9f1e5c">
+    <p id="_b5329b40-5b56-4063-951e-c09d0463f1c7">
       <a href="https://tools.ietf.org/html/rfc7591">https://tools.ietf.org/html/rfc7591</a>
     </p>
   </li>
   <li>
-    <p id="_c035d856-fa7f-4482-b263-afe394cbaf0a">
+    <p id="_430e92d5-3078-4967-8779-ffff653b9333">
       <a href="http://openid.net/connect/">http://openid.net/connect/</a>
     </p>
   </li>
@@ -1054,95 +1087,95 @@ of users and does not constitute an endorsement.</p>
       </div>
       <div id="_new_api_discussion">
         <h1>3.&#xA0; New API discussion</h1>
-        <p id="_70412858-4805-4277-bbfb-33bdc4974769">There is a new format proposal
+        <p id="_53cdcc38-1a5f-415e-b3e1-cd10314bbe32">There is a new format proposal
     <a href="https://github.com/CalConnect/API/blob/master/CalendarEvent.mdwn">https://github.com/CalConnect/API/blob/master/CalendarEvent.mdwn</a></p>
-        <p id="_57a90764-0388-4996-b4e0-c647079562cb">Some of the api issues that were discussed were</p>
-        <ul id="_61183d16-58b5-4627-b8d0-b28ee2b59bee">
+        <p id="_2f4c3b0d-3fd4-48d1-9448-a3646f58a8a9">Some of the api issues that were discussed were</p>
+        <ul id="_512f8019-cc7a-45d1-87d1-6726cfa4d0a3">
   <li>
-    <p id="_265c2439-7c51-455c-9c2b-3d18172000e9">Structured location &amp; structured data</p>
+    <p id="_f06183b8-b914-4cba-b875-8faf9a66b37b">Structured location &amp; structured data</p>
   </li>
   <li>
-    <p id="_b49042ce-806d-4aed-becd-b20c9bbcced1">Alerts and defaults support, have a separate field for defaults</p>
+    <p id="_03c38d48-6b1a-4a99-a3ff-67788e83ae49">Alerts and defaults support, have a separate field for defaults</p>
   </li>
   <li>
-    <p id="_d5e31a42-c47c-4d97-b2e6-ceb2ab3bc9fd">isAcknowledged - as currently is it would cause gradual expansion of alerts on the instances; solution: make isAcknowledged store not boolean but the last recurrence instance for which the alert was acknowledged, and only store it on the base range, not on the instances (unless the instance has override alerts).</p>
+    <p id="_39a95088-9d21-437e-8cb8-524c338c5a99">isAcknowledged - as currently is it would cause gradual expansion of alerts on the instances; solution: make isAcknowledged store not boolean but the last recurrence instance for which the alert was acknowledged, and only store it on the base range, not on the instances (unless the instance has override alerts).</p>
   </li>
   <li>
-    <p id="_e129f290-a16d-4f99-8b73-f58b903de670">Attachments</p>
+    <p id="_a1610533-880b-4a97-8279-d764f5e3f51b">Attachments</p>
   </li>
   <li>
-    <p id="_655ed82f-0588-4ef4-86dd-c7795eb7f01a">Multi-language support - to group localizations under a &#x201C;localize&#x201D; component</p>
+    <p id="_2c4065f7-312a-4325-936e-2c5d39cc0b6b">Multi-language support - to group localizations under a &#x201C;localize&#x201D; component</p>
   </li>
   <li>
-    <p id="_07347cc9-aa5f-4922-9517-ab780b5a5050">Custom properties representation</p>
-    <ul id="_185274b8-ef08-4fc5-84cb-6cf0dfeb3aea">
+    <p id="_3e2f5128-8544-40ba-9b67-00e265765a11">Custom properties representation</p>
+    <ul id="_8b1fcfbe-d0a7-4107-823a-17c688214845">
   <li>
-    <p id="_3745c39f-6f56-4a70-8465-5daa7553f685">Should we use a special prefix (like the X-)? The problem is that once use of a property is widespread enough a property&#x2019;s custom name is &#x201C;cut in stone&#x201D;, since everyone&#x2019;s using it.</p>
+    <p id="_e190c70f-9a5b-41fa-9507-9fdac03fc911">Should we use a special prefix (like the X-)? The problem is that once use of a property is widespread enough a property&#x2019;s custom name is &#x201C;cut in stone&#x201D;, since everyone&#x2019;s using it.</p>
   </li>
   <li>
-    <p id="_a4000b2f-9553-4471-857d-e8092e7df1c9">Maybe a special string namespace/registry with easy way of claiming?</p>
+    <p id="_807e92ed-60e1-4ad7-bc38-bf56fdce2fac">Maybe a special string namespace/registry with easy way of claiming?</p>
   </li>
   <li>
-    <p id="_3c341d3c-8582-484b-951f-33c292a922e9">URLs (with domain names)?</p>
-  </li>
-</ul>
+    <p id="_3ee85982-b696-44fe-8159-ac0ba1278891">URLs (with domain names)?</p>
   </li>
 </ul>
-        <p id="_93e4a4ed-80c5-48d7-a85a-1361c3aa9dff">On recurrences there was a discussion on the idea of excluding certain instances based on another event(s)</p>
-        <p id="_6d8c096b-d547-4d06-b2e1-aba79090a6d5">The start and end timezones are expressed through locations: first one corresponds to start, last - to end. The event timezone is independent.</p>
+  </li>
+</ul>
+        <p id="_b72922cc-e04e-4b97-b93b-aceb1f4adbdf">On recurrences there was a discussion on the idea of excluding certain instances based on another event(s)</p>
+        <p id="_8070e5ae-c333-4a4f-ae42-de51203da6d4">The start and end timezones are expressed through locations: first one corresponds to start, last - to end. The event timezone is independent.</p>
       </div>
       <div id="_issues_found_during_testing">
         <h1>4.&#xA0; Issues found during testing</h1>
-        <p id="_072cb588-21d0-4be5-8f43-f306af4d2481">These included:</p>
-        <p id="_9ddd08fb-2cec-4a1f-a8a5-ca8330ce514b">Missing timezones in ICS for single events.</p>
-        <p id="_e1f289b7-a453-4c0c-bc20-8f8931d03366">When the recurrence rule doesn&#x2019;t match the first start then some services silently move the first start to the first actual occurrence (which seems reasonable)</p>
-        <p id="_595d69a7-0050-4d2f-a9ff-d6dd39a83cca">Moving a recurring instance into a different day did not work correctly.</p>
-        <p id="_94560d0f-cf26-4422-a084-78a4e77b817d">Timezone customization is not set for events (at least recurring) sent through iMIP (although the timezone is saved).</p>
-        <p id="_73d27732-e6ef-462b-aa30-65e38909b88f">Some clients were mishandling sequence numbers</p>
-        <p id="_ea079fda-018c-4922-a86c-82b91b0feb32">Create a recurring event in the future, save and send invitations</p>
-        <ul id="_8bb4f35a-4c53-46fb-aebb-a301d1c6f355">
+        <p id="_3a043da9-22d7-4777-851c-974c56fc0930">These included:</p>
+        <p id="_782e4d65-b605-48f4-b5dd-0299a859a5ad">Missing timezones in ICS for single events.</p>
+        <p id="_7ef2e396-1fc5-4a21-b9d2-17648aa5aff5">When the recurrence rule doesn&#x2019;t match the first start then some services silently move the first start to the first actual occurrence (which seems reasonable)</p>
+        <p id="_57935861-8e85-4119-a7d6-9bf9317df0d3">Moving a recurring instance into a different day did not work correctly.</p>
+        <p id="_ff240145-503a-40c7-9038-690553290a90">Timezone customization is not set for events (at least recurring) sent through iMIP (although the timezone is saved).</p>
+        <p id="_0ba121e8-cb94-4fd8-b3e5-53f2848903fc">Some clients were mishandling sequence numbers</p>
+        <p id="_78800661-2228-481a-a757-0a68f6c40d85">Create a recurring event in the future, save and send invitations</p>
+        <ul id="_db75850c-ca28-4b5e-a0c2-6ce554b82f84">
   <li>
-    <p id="_2ac7b1ac-10c1-4797-8416-f136198e2137">&#x201C;Add to Calendar&#x201D; set a response, e.g. Yes</p>
+    <p id="_c0bd52bb-2d38-48ad-978a-742abb99bde3">&#x201C;Add to Calendar&#x201D; set a response, e.g. Yes</p>
   </li>
   <li>
-    <p id="_fd440672-b652-424b-932f-e14421642af5">Move an exception to a different time (again, send updates)</p>
+    <p id="_4dbd4686-f0f6-446d-81e7-fde45de73325">Move an exception to a different time (again, send updates)</p>
   </li>
   <li>
-    <p id="_cd8bd6df-3fed-464c-9976-0688950d7abf">&#x201C;Update Calendar&#x201D; set a response, e.g. Maybe</p>
+    <p id="_b837e37b-ffc3-4a20-8474-34e2ed7d1d79">&#x201C;Update Calendar&#x201D; set a response, e.g. Maybe</p>
   </li>
   <li>
-    <p id="_b3dffe41-72b8-45c3-836d-f697105c01b8">Result: the response is discarded as outdated</p>
-  </li>
-</ul>
-        <p id="_b663c8b3-6fde-4eb9-8953-8b2765a21d5a">Some servers don&#x2019;t send invitations for past events even when the user is explicitly asked whether to send or not and says yes.</p>
-        <p id="_dbaf913c-019d-4007-92ac-3d458beaf0c6">There were problems with autodiscovery</p>
-        <p id="_7faf4695-d93c-418a-8a8a-d5cc771817f4">Some issues discovered and questions about Android clients:</p>
-        <ul id="_1efb35fe-da8a-44b5-b04c-c510ec590745">
-  <li>
-    <p id="_594252df-14f6-41cd-b42e-1c955a6cbeac">may only sync 1 year of data</p>
-  </li>
-  <li>
-    <p id="_74bd90c4-0ee3-469f-9d90-d73a6dc48ceb">attachments first appear and then disappear again</p>
-  </li>
-  <li>
-    <p id="_8ce02680-ed7b-4eb5-ae24-07e39fb27e7d">Is CalDAV syncing support in the future?</p>
-  </li>
-  <li>
-    <p id="_e86df1d2-3892-42a6-ad95-fd4e9227ed07">Android is missing new features or bugs, e.g.:</p>
-    <ul id="_8ca2bb1b-fb17-4d14-abe6-ef4941723690">
-  <li>
-    <p id="_669e53b2-5e41-4188-a0f3-9882825da7b9">bad recurrence expansions</p>
-  </li>
-  <li>
-    <p id="_e847558a-0d52-4733-9ca3-262ff9e1b40b">empty recurring events (when all instances are cancelled)</p>
+    <p id="_6a890525-7498-4d2d-bf8d-52179c74ccaf">Result: the response is discarded as outdated</p>
   </li>
 </ul>
+        <p id="_93f081f7-42ae-4fc1-a33f-39bc022365c3">Some servers don&#x2019;t send invitations for past events even when the user is explicitly asked whether to send or not and says yes.</p>
+        <p id="_35b359af-4eef-4b50-8e83-248b40dc4494">There were problems with autodiscovery</p>
+        <p id="_9a41ca00-fb19-4155-9c57-43773d241eb9">Some issues discovered and questions about Android clients:</p>
+        <ul id="_77787d8e-7122-45ac-a032-8950a60ad2a8">
+  <li>
+    <p id="_919b320d-91eb-4a31-8a11-cb107cbb61f5">may only sync 1 year of data</p>
+  </li>
+  <li>
+    <p id="_c39849a4-bf8f-4777-82ed-3f56b923ce65">attachments first appear and then disappear again</p>
+  </li>
+  <li>
+    <p id="_543a263a-bb31-41a3-8081-c40e522e9016">Is CalDAV syncing support in the future?</p>
+  </li>
+  <li>
+    <p id="_4fb5c3ed-fd5f-4a9c-a4eb-89a7392faa66">Android is missing new features or bugs, e.g.:</p>
+    <ul id="_0398a251-b466-4b5a-96ad-532e9ec45bf9">
+  <li>
+    <p id="_6e5b02d3-f635-4670-9353-40fa180980b6">bad recurrence expansions</p>
+  </li>
+  <li>
+    <p id="_c6a632ab-7663-456a-962a-73587f5a5345">empty recurring events (when all instances are cancelled)</p>
   </li>
 </ul>
-        <p id="_d8b3e6a9-b717-4f6b-9696-7ef62d1350d0">Client iMip bug: invitations to single instances of a recurring event are not handled properly</p>
-        <p id="_a5779c90-c86d-4ae4-999e-4e97e5386a16">Server iMip bug:
+  </li>
+</ul>
+        <p id="_a3c14964-61f8-4efe-8dce-854166c944f7">Client iMip bug: invitations to single instances of a recurring event are not handled properly</p>
+        <p id="_01b6bb1c-104b-4b5a-b119-dc828dbb9a39">Server iMip bug:
 Have a recurring event with one exception moved, then invite an attendee - the invitation only contains the series but not the exception</p>
-        <p id="_409bbf11-891b-4874-9c72-8723a45e9d3d">An interesting fact was noted: for recurring events where the recurrence doesn&#x2019;t match the start date - between Apple, FastMail, Google and Open-Xchange these are all expanded differently (3 different behaviors).</p>
+        <p id="_348371a7-1dda-4c9a-9f1f-9a4745c9612a">An interesting fact was noted: for recurring events where the recurrence doesn&#x2019;t match the start date - between Apple, FastMail, Google and Open-Xchange these are all expanded differently (3 different behaviors).</p>
       </div>
     </main>
   <script type="text/x-mathjax-config">
@@ -1153,7 +1186,7 @@ Have a recurring event with one exception moved, then invite an attendee - the i
  });
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=AM_HTMLorMML"></script>
-<script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script><script>
     //TOC generation
       $('#toc').toc({
           'selectors': 'h1,h2:not(.TermNum)', //elements to use as headings
@@ -1233,5 +1266,4 @@ $('#toggle').on('click', function(){
   placement: 'left'
 };
 anchors.add('h1, h2, h3, h4');
-</script></body>
-</html>
+</script></html>
