@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csd-standard xmlns="https://www.calconnect.org/standards/csd">
+<bibdata type="administrative">
+  <title language="en" format="text/plain">Report on CalConnect Conference XXXVII, September 14-16, 2016</title>
+  <docidentifier type="csd">CC/A 1605:2016</docidentifier>
+  <docnumber>1605</docnumber>
+  <date type="published">
+    <on>2016-09-30T00:00:00Z</on>
+  </date>
+  <edition>1</edition>
+  <version>
+    <revision-date>2016-090-30T00:00:00Z</revision-date>
+  </version>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>CalConnect</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>CalConnect</name>
+    </organization>
+  </contributor>
+  <language>en</language>
+  <script>Latn</script>
+  <status format="plain">published</status>
+  <copyright>
+    <from>2016</from>
+    <owner>
+      <organization>
+        <name>CalConnect</name>
+      </organization>
+    </owner>
+  </copyright>
+  <editorialgroup>
+    <technical-committee>CHAIRS</technical-committee>
+  </editorialgroup>
+</bibdata>
+<preface><foreword obligation="informative"><title>Foreword</title><p id="_4774162f-23c5-4482-a61f-74f52d34fb05">The Calendaring and Scheduling Consortium (“CalConnect”) is global non-profit
+organization with the aim to facilitate interoperability of technologies across
+user-centric systems and applications.</p>
+<p id="_737c16f0-8b32-4120-a80f-e397a2d8961c">CalConnect works closely with liaison partners including international
+organizations such as ISO, OASIS and M3AAWG.</p>
+<p id="_267a7ca9-42cb-49f0-a5e2-0b90c66d9dfa">The procedures used to develop this document and those intended for its further
+maintenance are described in the CalConnect Directives.</p>
+<p id="_8975162c-599c-4a93-8802-aaa9ba0d1d3a">In particular the different approval criteria needed for the different types of
+ISO documents should be noted. This document was drafted in accordance with the
+editorial rules of the CalConnect Directives.</p>
+<p id="_7de0d2d0-654d-4ae8-81f9-9557a5ec1f9d">Attention is drawn to the possibility that some of the elements of this
+document may be the subject of patent rights. CalConnect shall not be held responsible
+for identifying any or all such patent rights. Details of any patent rights
+identified during the development of the document will be in the Introduction
+and/or on the CalConnect list of patent declarations received (see
+www.calconnect.com/patents).</p>
+<p id="_597cbb87-51d5-44ff-be72-4e9979dcff5f">Any trade name used in this document is information given for the convenience
+of users and does not constitute an endorsement.</p>
+<p id="_3c8981de-2947-4696-8a06-282103f4580e">This document was prepared by Technical Committee <em>CHAIRS</em>.</p></foreword><introduction id="_introduction" obligation="informative"><title>Introduction</title><p id="_64f2ecb0-da4d-48aa-a7a7-0933ede538d4">CalConnect XXXVII took place on September 14-16, 2016, hosted by dmfs in Dresden, Germany.  The CalConnect Test Event (Monday,  Tuesday, and Wednesday morning) and Conference (Wednesday afternoon, Thursday and Friday) were held at Schloss Eckberg on the Elbe River.</p>
+<p id="_c7986dfc-3093-4a47-94d9-5cc9270d59d2">The CalConnect Conference was attended by 22 people from 10 members,  plus 3 observers and a representative from the IETF.  The Test Event had 12 participants from 7 members.</p>
+<p id="_f294b031-d16c-4427-94b6-fee99fa31071">The Conference focussed on strategic and possible work items in addition to ongoing work, and finished with the CalConnect Plenary Session on Friday afternoon.  The Conference agenda with notes on the discussion topics may be found at CalConnect XXXVII Conference Schedule.</p></introduction></preface><sections>
+
+<clause id="_status_of_documents_since_last_conference" obligation="normative"><title>Status of Documents Since Last Conference</title><p id="_c02d675e-4699-46b2-a1b5-2c1097532857">Much of the ongoing work in CalConnect is focused on specifications to become internet draft submissions to the IETF and ultimately be progressed to publication as RFCs (Proposed Standards), rather than directly published by CalConnect itself.</p>
+<clause id="_published_documents" obligation="normative">
+  <title>Published Documents</title>
+  <ul id="_861446b3-d690-465e-9603-08558bac4a12">
+  <li>
+    <p id="_d413bc92-c4b9-491d-aac8-316509a653ce">Report on CalConnect Conference XXXVI in Hong Kong</p>
+  </li>
+  <li>
+    <p id="_60d47305-5f95-4025-a08d-f68c88aa5a11">Report on Interoperability Test Event XXXVI</p>
+  </li>
+</ul>
+</clause>
+<clause id="_calconnect_specifications_published_as_rfcs" obligation="normative">
+  <title>CalConnect Specifications Published as RFCs</title>
+  <ul id="_5bda3a82-4332-42b8-aaaf-f5c03be4d1d4">
+  <li>
+    <p id="_5c95c444-eeba-46fb-9264-f453c83abac3">RFC 7953 Calendar Availability (VAVAILABILITY)</p>
+  </li>
+  <li>
+    <p id="_dc872d4f-01d4-4b6e-b63a-9780dabb4a69">RFC ???? New Properties for iCalendar (publication imminent)</p>
+  </li>
+</ul>
+</clause>
+<clause id="_calconnect_drafts_accepted_by_calext_wg_at_ietf_for_progression" obligation="normative">
+  <title>CalConnect Drafts accepted by CALEXT WG at IETF for progression</title>
+  <ul id="_6561fb02-db55-44ee-8108-1620657aa756">
+  <li>
+    <p id="_04dc69bb-8947-4ba7-848f-4cabc0a5a531">Event Publishing Extensions to iCalendar</p>
+  </li>
+  <li>
+    <p id="_fecbf64b-f026-4e19-bd07-c935d4b3aa47">Improved Support for iCalendar Relationships</p>
+  </li>
+  <li>
+    <p id="_698c1624-7516-41d9-9d96-d0b03ae3b35b">CalDAV Managed Attachments</p>
+  </li>
+</ul>
+</clause>
+<clause id="_new_and_updated_calconnect_drafts_at_the_ietf" obligation="normative">
+  <title>New and Updated CalConnect Drafts at the IETF</title>
+  <ul id="_1492cbbc-13cc-4f53-a20a-2ed817ec63f9">
+  <li>
+    <p id="_56e6d062-a116-4e01-a33b-68ca2bd18714">WebDAV User Notifications</p>
+  </li>
+  <li>
+    <p id="_6cd61490-e122-40c3-bec6-6872002d9bfc">WebDAV Resource Sharing</p>
+  </li>
+  <li>
+    <p id="_38062a6e-f2e8-477a-bf44-4cfdcc82d3b5">CalDAV  Calendar Sharing</p>
+  </li>
+  <li>
+    <p id="_39310c8e-ff7a-4b43-ae7c-fb1e72a1ec11">CardDAV Address Book Sharing</p>
+  </li>
+</ul>
+</clause></clause>
+<clause id="_technical_committee_work_and_initiatives_going_forward" obligation="normative"><title>Technical Committee Work and Initiatives Going Forward</title><clause id="_tc_api" obligation="normative">
+  <title>TC API</title>
+  <p id="_86541aae-63ef-4e6f-9e0c-8df4228ba339">Working on a new key/value based data model.  Much of the work is done and the remainder will continue.   Next steps are implementations, find a suitable name for the API. document the iCalendar/JSON Format, develop specification and submit to IETF.</p>
+</clause>
+<clause id="_tc_autodiscovery" obligation="normative">
+  <title>TC AUTODISCOVERY</title>
+  <p id="_8cf705aa-3c4c-4596-b87a-5bbe74f95c41">Draft update in progress</p>
+</clause>
+<clause id="_tc_caldav" obligation="normative"><title>TC CALDAV</title><p id="_8521be33-e61c-45b7-a2e4-a882f6a10e4b">Reviewed issues with recurrence splitting, and new VPATCH and VINSTANCE drafts-in-progress.</p>
+<p id="_53a450b9-ccab-4d5c-ad8d-563b89f93fa5">Interest in either expanding TC Charter or initiating a new TC to cover broader issues than CalDAV-specific.</p></clause>
+<clause id="_tc_devguide" obligation="normative">
+  <title>TC DEVGUIDE</title>
+  <p id="_dba621a9-c387-4ea1-bbf8-da1f90ed6319">Significant additions during Test Event including porting the independent CalDAV and CardDAV Implementations websites to the Developer’s Guide.  Will continue to push for external contributions and additional content.   Interest in documenting libraries such as ical4j and libical in the Developer’s Guide.</p>
+</clause>
+<clause id="_tc_eventpub" obligation="normative">
+  <title>TC EVENTPUB</title>
+  <p id="_b126bf7c-5923-4721-acee-690e8d0b5ab5">Review of DMOZ directory service as source of categorization and event types.</p>
+</clause>
+<clause id="_tc_freebusy" obligation="normative">
+  <title>TC FREEBUSY</title>
+  <p id="_658a6caf-7962-40f9-bae6-7730af5c9c6a">Dormant, current work item VPOLL waiting at IETF to be adopted into Working Group.</p>
+</clause>
+<clause id="_tc_fsc" obligation="normative">
+  <title>TC FSC</title>
+  <p id="_cbe4d4a9-2807-45b3-9f4e-f5aeb4cbc4ce">To be merged into TC SHARING.</p>
+</clause>
+<clause id="_tc_imip" obligation="normative">
+  <title>TC IMIP</title>
+  <p id="_21a6b782-e9af-47d2-8242-ab57be64302b">Documenting best practices on how iTIP over e-Mail (iMIP) should be structured to match existing practice; developing server feature matrix.  Expect to put best practices in DEVGUIDE.</p>
+</clause>
+<clause id="_tc_ioptest" obligation="normative"><title>TC IOPTEST</title><p id="_a15e361c-a819-43a2-a679-34f9e97ed18d">Conducted Interoperability Testing and Developer’s Forum event at CalConnect XXXVII.  (Interoperability Test Event has been rebranded as Test Event and Developers’ Forum; significant technical discussions now taking place during the forum.)</p>
+<p id="_468179b8-ae34-4ae7-b35f-b1f935f47291">Lots of work on CalDAV Tester “Wrapper” developed by Ralf Becker; decided to initiate new TC TESTER specifically to carry this tool forward to provide a black box test of standard appliances, improve server testing.  In particular lack of clients at test events make this tool extremely valuable, potentially provides equivalent to reference implementation.</p></clause>
+<clause id="_tc_ischedule" obligation="normative">
+  <title>TC ISCHEDULE</title>
+  <p id="_d2565a45-0b7c-4e5f-b6c6-452a0b8f8243">Definite interest in moving forward with the draft at the IETF.  “Identify Problem” will not apply for most likely users including large organizations.</p>
+</clause>
+<clause id="_tc_push" obligation="normative">
+  <title>TC PUSH</title>
+  <p id="_cbce3b05-3949-4395-b2f1-f879d12c8a03">Draft to be published to the IETF after minor updates.</p>
+</clause>
+<clause id="_tc_resource" obligation="normative">
+  <title>TC RESOURCE</title>
+  <p id="_5b36b827-a347-4878-b1d9-9e2e9f0030f3">Dormant pending resource drafts adoption at IETF into a working group.</p>
+</clause>
+<clause id="_tc_sharing" obligation="normative">
+  <title>TC SHARING</title>
+  <p id="_a5419456-5d76-4bb2-8a92-cf980d3b134e">Reviewed four drafts, some question as to where in IETF is best place to progress as.  Drafts are essentially ready to move forward when adopted.  Next steps are subscription models and federated sharing.</p>
+</clause>
+<clause id="_tc_tasks" obligation="normative">
+  <title>TC TASKS</title>
+  <p id="_ced10575-29e3-4758-8d42-d66b4c0de95f">Dormant pending adoption of draft by IETF WG</p>
+</clause>
+<clause id="_pc_qr" obligation="normative">
+  <title>PC-QR</title>
+  <p id="_8873d142-a9b6-455c-8357-340761822a62">Formed at CalConnect XXXVI to explore interest in expanding vCard to contain visual data, support non-North American address formats.  Will become TC VCARD.</p>
+</clause>
+<clause id="_pc_sec" obligation="normative">
+  <title>PC-SEC</title>
+  <p id="_f9c4dcea-4a82-4ab9-8e3f-d7304a1b000a">Formed at CalConnect XXXVI to examine security issues with calendaring data and explore possible ways forward.  Will continue as PC until next event.</p>
+</clause></clause>
+<clause id="_plenary_decisions" obligation="normative">
+  <title>Plenary Decisions</title>
+  <ul id="_d6bb3797-8e4d-4717-a07e-c0c4a1ed8b7b">
+  <li>
+    <p id="_208e910e-5af5-4657-8f30-b6d1e96c3875">TC TESTER to be created to carry forward work on CalDAV Tester</p>
+  </li>
+  <li>
+    <p id="_136f8f12-49f1-4255-9f7c-d09ef277e731">TC VCARD to be created to move forward with PC QR issues</p>
+  </li>
+</ul>
+</clause>
+<clause id="_future_events" obligation="normative"><title>Future Events</title><ul id="_4178f222-ab50-4efd-8c00-98ada3298207">
+  <li>
+    <p id="_ee8d6be4-f6b7-4be6-a820-b19496503ea5">CalConnect XXXVIII: February 13-17, 2017 - University of California, Irvine, California</p>
+  </li>
+  <li>
+    <p id="_fd840fa0-313c-49ab-8987-474d71830263">CalConnect XXXIX: June 5-9, 2017 - Tandem, Seattle, Washington</p>
+  </li>
+  <li>
+    <p id="_c87df168-0c5b-4220-b9d8-a1e22b87c9d4">CalConnect XXXX - September 25-29, 2017, Open-Xchange, Cologne, Germany</p>
+  </li>
+</ul>
+<p id="_c7bb44f5-3a08-4e1a-8533-777b6c7aea0d">The general format of the CalConnect Week is:</p>
+<ul id="_4fe5dd34-ca7b-4596-a18a-7e3b9aa54f03">
+  <li>
+    <p id="_78155bf5-8dd3-44bf-98e0-01e6bd84ff43">Monday morning through Wednesday noon, Developer’s Forum (testing, tech discussions)</p>
+  </li>
+  <li>
+    <p id="_c8082a0d-ec9c-44ba-ad6d-5839c4c671d3">Wednesday noon through Friday afternoon, Conference</p>
+  </li>
+</ul></clause>
+<clause id="_pictures_from_calconnect_xxxvii" obligation="normative"><title>Pictures from CalConnect XXXVII</title><p id="_f47f356e-050a-42fd-866a-8e2a65809fe0">Pictures courtesy of Thomas Schäfer, 1&amp;1</p>
+<table id="_76ef0859-4263-48e4-826f-eca6754f037b">
+  <tbody>
+    <tr>
+      <td align="left">
+        <figure id="_ce4c232a-94e3-4ed8-9373-5f9a16e15a11">
+  <image src="images/conference-37/Conference-sketch-45.jpg" id="_1ef8c82d-9400-433a-b206-dbca7a61eeab" imagetype="JPEG" height="auto" width="auto"/>
+</figure>
+      </td>
+      <td align="left">
+        <figure id="_1d12ec13-6cb1-4d2b-bf17-6eb56a35bef9">
+  <image src="images/conference-37/Developers-Forum-Sketch-43.jpg" id="_e0de5901-2808-47da-804c-e53283081a2a" imagetype="JPEG" height="auto" width="auto"/>
+</figure>
+      </td>
+    </tr>
+    <tr>
+      <td align="left">
+        <figure id="_5a3e4db1-26d0-4465-bc63-9794b97a1f3c">
+  <image src="images/conference-37/Group-picture-41.jpg" id="_3791e650-943b-4a4d-b408-884b52c430fb" imagetype="JPEG" height="auto" width="auto"/>
+</figure>
+      </td>
+      <td align="left">
+        <figure id="_1c41ceda-ca0a-41d0-a405-54c2690bdaa0">
+  <image src="images/conference-37/Meeting-Room-35.jpg" id="_3afaa6e2-6354-4e4d-b5be-23b586b78b41" imagetype="JPEG" height="auto" width="auto"/>
+</figure>
+      </td>
+    </tr>
+    <tr>
+      <td align="left">
+        <figure id="_131bc7fd-6b24-4c60-86f9-a24c17c946e0">
+  <image src="images/conference-37/Schloss-Eckberg-31.jpg" id="_a9f01095-ac41-4e07-8929-084eb5452e17" imagetype="JPEG" height="auto" width="auto"/>
+</figure>
+      </td>
+      <td align="left">
+        <figure id="_d52eaa53-96e2-4350-817b-037d8e1239bc">
+  <image src="images/conference-37/Signage-33.jpg" id="_7b71bfdd-2005-4bbd-8a5e-0249d853e578" imagetype="JPEG" height="auto" width="auto"/>
+</figure>
+      </td>
+    </tr>
+    <tr>
+      <td align="left">
+        <figure id="_0cca349c-8415-467b-b984-d60fd940b0e4">
+  <image src="images/conference-37/Thursday-dinner-menu-39.jpg" id="_c95d9635-10ad-4a7d-b8f1-754bf5799376" imagetype="JPEG" height="auto" width="auto"/>
+</figure>
+      </td>
+      <td align="left">
+        <figure id="_47e539d4-f0e3-458e-8dc3-6911632ee3ca">
+  <image src="images/conference-37/Welcome-reception-37.jpg" id="_719c33c6-f82d-4b08-b991-745f01141635" imagetype="JPEG" height="auto" width="auto"/>
+</figure>
+      </td>
+    </tr>
+  </tbody>
+</table></clause></sections>
+</csd-standard>

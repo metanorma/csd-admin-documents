@@ -38,168 +38,200 @@
     <technical-committee>CHAIRS</technical-committee>
   </editorialgroup>
 </bibdata>
-<preface><foreword obligation="informative"><title>Foreword</title><p id="_ee23525a-b318-47a9-91c8-af354ade14e8">The Calendaring and Scheduling Consortium (“CalConnect”) is global non-profit
+<preface><foreword obligation="informative"><title>Foreword</title><p id="_4c878eff-851e-4711-a7d4-9cf791edb9f9">The Calendaring and Scheduling Consortium (“CalConnect”) is global non-profit
 organization with the aim to facilitate interoperability of technologies across
 user-centric systems and applications.</p>
-<p id="_6611014d-909c-4e97-9499-ae8433f4112b">CalConnect works closely with liaison partners including international
+<p id="_dd2a7b2f-b6dc-4878-8522-4972735647d8">CalConnect works closely with liaison partners including international
 organizations such as ISO, OASIS and M3AAWG.</p>
-<p id="_f472fe92-7bac-43a1-b567-e022c16ca0ed">The procedures used to develop this document and those intended for its further
+<p id="_ce75a1c6-be15-47f2-9c7c-cff6dc702ed6">The procedures used to develop this document and those intended for its further
 maintenance are described in the CalConnect Directives.</p>
-<p id="_b064f6b6-9be3-4b22-a086-471b1733eb56">In particular the different approval criteria needed for the different types of
+<p id="_8bbef69a-68f7-4a2d-a03c-039968455bff">In particular the different approval criteria needed for the different types of
 ISO documents should be noted. This document was drafted in accordance with the
 editorial rules of the CalConnect Directives.</p>
-<p id="_8a8f6d98-3082-4817-9a37-9d00ac5e5e1a">Attention is drawn to the possibility that some of the elements of this
+<p id="_45fefc5d-bd85-46dc-b1a1-d274bf6c187c">Attention is drawn to the possibility that some of the elements of this
 document may be the subject of patent rights. CalConnect shall not be held responsible
 for identifying any or all such patent rights. Details of any patent rights
 identified during the development of the document will be in the Introduction
 and/or on the CalConnect list of patent declarations received (see
 www.calconnect.com/patents).</p>
-<p id="_be25b909-792e-435f-99c1-7fc286c9ff67">Any trade name used in this document is information given for the convenience
+<p id="_cf0667f8-9bb1-4749-a53d-1e6d9f5a2fc1">Any trade name used in this document is information given for the convenience
 of users and does not constitute an endorsement.</p>
-<p id="_1d40564c-5230-4f15-9783-43abda604ea2">This document was prepared by Technical Committee <em>CHAIRS</em>.</p></foreword><introduction id="_introduction" obligation="informative"><title>Introduction</title><p id="_bd9a4f78-66cd-4cd2-9ce6-5e2360d48012">CalConnect XLI took place January 31 - February 2, 2018, hosted by Oath in
+<p id="_e9c04e7c-b704-42cc-8f75-70ae429e7b76">This document was prepared by Technical Committee <em>CHAIRS</em>.</p></foreword><introduction id="_introduction" obligation="informative"><title>Introduction</title><p id="_3d46fad4-134e-4566-960a-f7f00c089394">CalConnect XLI took place January 31 - February 2, 2018, hosted by Oath in
 Sunnyvale, California. The CalConnect Test Event (Monday, Tuesday, and Wednesday
 morning) and Conference (Wednesday afternoon, Thursday and Friday) were held at
 Oath’s Sunnyvale campus.</p>
-<p id="_c5c0ba60-6d1b-430c-9501-9ffbda9a29af">The CalConnect Conference was attended by 19 people from 11 members, plus two
+<p id="_4ce99b80-4315-4f4d-ab57-49e4ca1ea214">The CalConnect Conference was attended by 19 people from 11 members, plus two
 CalConnect Directors for a total of 21 The Test Event/Developers Forum had 7
 participants from 6 members and was largely devoted to the forum and CalDAV Tester
 rather than specific testing.</p>
-<p id="_7c65dd94-10ac-41b0-be21-adcd80bee531">The Conference focussed on strategic and possible work items in addition to ongoing
+<p id="_ec51062f-3a33-40a9-b147-3500fac468e1">The Conference focussed on strategic and possible work items in addition to ongoing
 work, and finished with the CalConnect Plenary Session on Friday afternoon. The
 Conference agenda with notes on the discussion topics may be found at CalConnect
 XLI Conference Schedule.</p></introduction></preface><sections>
 
-<clause id="_status_of_documents_since_last_conference" obligation="normative"><title>Status of documents since last conference</title><p id="_aef5ac87-4072-4465-96ca-13ed373f5c76">Much of the ongoing work in CalConnect is focused on specifications to become
+<clause id="_status_of_documents_since_last_conference" obligation="normative"><title>Status of documents since last conference</title><p id="_fadc5dd8-c0cf-4648-b572-04ef292da209">Much of the ongoing work in CalConnect is focused on specifications to become
 internet draft submissions to the IEETF and ultimately be progressed to publication as
 RFCs (Proposed Standards), rather than directly published by CalConnect itself.</p>
-<p id="_121b18ba-6721-4b87-b63c-11ae9d7c7b04">Specifications in progress and not yet published are generally resident on GitHub either
+<p id="_d00bbc7a-8891-4340-99cb-873e097e0b24">Specifications in progress and not yet published are generally resident on GitHub either
 in our public or private areas.</p>
 <clause id="_calconnect_drafts_to_be_published_as_informational_rfcs" obligation="normative">
   <title>CalConnect Drafts to be Published as Informational RFCs</title>
-  <ul id="_d9920e8f-3b1c-4073-b6c3-83c3763a0f4e">
+  <ul id="_77e57517-a5cc-419d-9b90-e842021b42f2">
   <li>
-    <p id="_7afd815c-efb1-4831-8c04-13023feebe5a">CalDAV Managed Attachments (TC CALENDAR)</p>
+    <p id="_28b210b2-3a6a-40aa-81f7-c49d4cad1640">CalDAV Managed Attachments (TC CALENDAR)</p>
   </li>
 </ul>
 </clause>
 <clause id="_calconnect_drafts_in_calext_working_group_last_call_at_ietf" obligation="normative">
   <title>CalConnect Drafts in CALEXT Working Group Last Call at IETF</title>
-  <ul id="_3e4285d6-c17c-4aaa-bf6f-389b34f4c208">
+  <ul id="_a27e905b-7e16-4c3f-acf4-556726108b38">
   <li>
-    <p id="_1f5134a1-52d3-4bc5-9011-136c056721c9">Event Publishing Extensions to iCalendar (TC CALENDAR)</p>
+    <p id="_c1f91011-d172-457a-bc43-7cd17ef282b8">Event Publishing Extensions to iCalendar (TC CALENDAR)</p>
   </li>
   <li>
-    <p id="_5f4924c2-adfb-4d85-b368-ab051fad01b9">Improved Support for iCalendar Relationships (TC CALENDAR</p>
+    <p id="_366ddf56-416b-4696-a1a1-ddfac5387297">Improved Support for iCalendar Relationships (TC CALENDAR</p>
   </li>
 </ul>
 </clause>
 <clause id="_calconnect_drafts_in_progress_at_calext_working_group_at_ietf" obligation="normative">
   <title>CalConnect Drafts in Progress at CALEXT Working Group at IETF</title>
-  <ul id="_79a2c969-b592-4b6d-aeb2-6033998904d2">
+  <ul id="_82d79843-e94a-4a6c-aba0-a328d6450b14">
   <li>
-    <p id="_763e2513-bd65-4cd6-b25d-d2e67f07cb6d">JSCalendar: A JSON representation of Calendar data</p>
+    <p id="_4d53380a-ab92-4115-9927-fd421d3b073e">JSCalendar: A JSON representation of Calendar data</p>
   </li>
 </ul>
 </clause>
 <clause id="_new_and_updated_calconnect_drafts_at_the_ietf" obligation="normative">
   <title>New and Updated CalConnect Drafts at the IETF</title>
-  <ul id="_c8841423-fdef-4834-82bd-0ab4be196a06">
+  <ul id="_1082edab-73f9-4524-97cf-a799116e9175">
   <li>
-    <p id="_1d28f3fd-6782-4128-a227-4a0a966c008a">Calendar Subscription Upgrades</p>
+    <p id="_bbe8684a-0dc2-4f74-b165-6a02ee39c30e">Calendar Subscription Upgrades</p>
   </li>
   <li>
-    <p id="_8f77eedb-414d-4877-b2b9-16867561be1e">The Time Zone Data Distribution Service (TZDIST) Geolocate Extension</p>
+    <p id="_83c80bbd-abd5-4788-b099-1b1d725f4a92">The Time Zone Data Distribution Service (TZDIST) Geolocate Extension</p>
   </li>
   <li>
-    <p id="_7ce284de-57f3-49d8-8dad-33c4bb1a4af2">The Time Zone Information Format (TZif)</p>
+    <p id="_1dfad706-976b-48dc-ba40-f45f0fb669a8">The Time Zone Information Format (TZif)</p>
   </li>
 </ul>
 </clause></clause>
-<clause id="_general_status_and_items" obligation="normative"><title>General status and items</title><p id="_06bb0ea4-3f41-4f32-9084-5a854ba878ec">CalConnect has established a formal Category A Liaison with ISO/TC 154 and is
+<clause id="_general_status_and_items" obligation="normative"><title>General status and items</title><p id="_19704936-9551-4ee6-bbf8-ee5f53c929b2">CalConnect has established a formal Category A Liaison with ISO/TC 154 and is
 exploring a similar liaison with ISO/TC 46. We have also established a reciprocal
 membership liaison with M3AAWG.</p>
-<p id="_08710eb9-2e7e-4c37-be6c-0683c602a394">IETF is considering reopening the TZDIST working group to deal with the new Time
+<p id="_a25fa7b9-0705-4312-b247-f13f170cf502">IETF is considering reopening the TZDIST working group to deal with the new Time
 Zone drafts we have submitted.</p>
-<p id="_ca68917a-5bd8-40fe-bc89-4dddb0006827">CalConnect is discussing whether or not it would be a provider of services (such as a
+<p id="_574ebe73-9573-4fdf-bbcc-43648c21220b">CalConnect is discussing whether or not it would be a provider of services (such as a
 registry) or not. Alternatively we might act as the steward of an effort if not the service
 provider.</p>
-<p id="_9b1c80ff-8eb7-4595-b770-4a58d3bcd91f">Some discussion on a new TC USECASE to try and help developers understand what
+<p id="_a45f0c8c-cfc4-438f-a926-8cd2b5391e10">Some discussion on a new TC USECASE to try and help developers understand what
 is not fit for the purpose.</p>
-<p id="_8411e0ef-8c19-4a97-a354-9fde72c6fe84">Will initiate a new TC CALSPAM to work on calendar spam best practices, a joint effort
+<p id="_e3fa49e4-527a-4bb2-bbe3-fa8a9bd07bf1">Will initiate a new TC CALSPAM to work on calendar spam best practices, a joint effort
 with M3AAWG.</p></clause>
 <clause id="_future_work" obligation="normative"><title>FUTURE WORK</title><clause id="_ad_hoc_on_streaming" obligation="normative">
   <title>Ad Hoc on Streaming</title>
-  <p id="_fbf9e524-4f2b-40e1-aacd-afa70641e5f6">Work on goals, ideas, objectives</p>
+  <p id="_7db88e59-3a43-41be-8b38-4318df55cc82">Work on goals, ideas, objectives</p>
 </clause>
 <clause id="_tc_api" obligation="normative">
   <title>TC API</title>
-  <p id="_7b9139f2-a173-45ef-9c61-9b593681d2f9">Work on JSCalendar is progressing, accommodating contacts and tasks as well as
+  <p id="_4669afbc-cc9f-487f-8490-62cebe693c0a">Work on JSCalendar is progressing, accommodating contacts and tasks as well as
 events.</p>
 </clause>
 <clause id="_tc_autodiscovery" obligation="normative">
   <title>TC AUTODISCOVERY</title>
-  <p id="_6479d850-d4d2-404f-8e51-c10b882a44cd">Pending; Draft update in progress</p>
+  <p id="_108c8b00-2d27-4c29-b153-baa002dc7ce8">Pending; Draft update in progress</p>
 </clause>
-<clause id="_tc_calendar" obligation="normative"><title>TC CALENDAR</title><p id="_37c5a7ff-7448-405f-bd6d-e0ef75d55a07">New Time Zone drafts on a geolocate extension and information formats.</p>
-<p id="_9782b5a5-9f5c-4b89-8747-76daebcc3fb3">Informational RFC on 5545 listing all RFCs connected to calendaring and needed to
+<clause id="_tc_calendar" obligation="normative"><title>TC CALENDAR</title><p id="_25fe0006-38f0-471f-a055-45e64c88b3ad">New Time Zone drafts on a geolocate extension and information formats.</p>
+<p id="_bf994661-c777-44d2-adda-d274f58dc929">Informational RFC on 5545 listing all RFCs connected to calendaring and needed to
 understand, including acknowledging CalConnect.</p>
-<p id="_b377e0a5-2216-47ee-be46-fe72cea27c59">IMIP extensions to better support calendaring invites and responses.</p>
-<p id="_764a49bd-5fcb-4daf-b8ca-907b22661ba4">CalConnect be steward of possible time zone distribution service, but not actual
+<p id="_c22bc4db-f819-4308-ad38-4c5c75ab508a">IMIP extensions to better support calendaring invites and responses.</p>
+<p id="_6289c612-ff3c-4bfa-851e-d59f7b7cb849">CalConnect be steward of possible time zone distribution service, but not actual
 service provider. Google may be interested in providing such a service.</p></clause>
 <clause id="_tc_devguide" obligation="normative">
   <title>TC DEVGUIDE</title>
-  <p id="_e179b470-2d3c-4502-be44-894eed2e868b">Fill in gaps in current information, look at use cases. Do we need a TC USECASE?</p>
+  <p id="_ccc87719-4550-4cd6-9011-cdc11036d1bb">Fill in gaps in current information, look at use cases. Do we need a TC USECASE?</p>
 </clause>
-<clause id="_tc_ioptest" obligation="normative"><title>TC IOPTEST</title><p id="_26263251-d200-4011-8f6b-e7da53262d1b">Support Tokyo event.</p>
-<p id="_759a2b43-b8ce-42e6-93b1-236b9da6c887">See separate report on Test Event at CalConnect XLI. TC IOPTEST calls have been
+<clause id="_tc_ioptest" obligation="normative"><title>TC IOPTEST</title><p id="_e55c1cc7-a4e3-4f96-a22d-c8d96e07f2ed">Support Tokyo event.</p>
+<p id="_19c7d623-5bf2-4b0a-8448-f6109f5d92b8">See separate report on Test Event at CalConnect XLI. TC IOPTEST calls have been
 integrated into the Event Planning calls and no separate TC IOPTEST calls were held.</p></clause>
 <clause id="_tc_push" obligation="normative">
   <title>TC PUSH</title>
-  <p id="_430cceab-16c5-4244-89dd-31877b9541d0">Draft has been submitted to the IETF; we are exploring which working group should
+  <p id="_66410b70-119d-4ea7-9eca-4c163c3b1b1a">Draft has been submitted to the IETF; we are exploring which working group should
 handle it. Looking for more implementations.</p>
 </clause>
 <clause id="_tc_sharing" obligation="normative">
   <title>TC SHARING</title>
-  <p id="_eab0c845-81d6-4eeb-9818-1b1e52dbc87b">Annotation, subscription, server side subscription</p>
+  <p id="_951305c3-3b0c-4ac9-ac93-3b51e304f35c">Annotation, subscription, server side subscription</p>
 </clause>
 <clause id="_tc_tester" obligation="normative">
   <title>TC TESTER</title>
-  <p id="_ecf3d21c-bf8b-4f88-aa88-ca3efb7c8422">Brief report on the status of the work.</p>
+  <p id="_7736ce49-88bc-4d93-b64b-e1ce11594c62">Brief report on the status of the work.</p>
 </clause>
 <clause id="_tc_vcard" obligation="normative">
   <title>TC VCARD</title>
-  <p id="_bb81365a-c056-46e6-81aa-4304ab06fa82">Maintain liaison with ISO TC 211, progress work</p>
+  <p id="_555313f7-f94d-4407-9ea7-278edcb1ac5b">Maintain liaison with ISO TC 211, progress work</p>
 </clause></clause>
 <clause id="_plenary_meeting" obligation="normative">
   <title>Plenary meeting</title>
-  <ul id="_e547a3fa-b1cb-471d-9bd2-f922eb5ee3f5">
+  <ul id="_fa736ee6-46d0-4139-99d9-ee822d2db0bd">
   <li>
-    <p id="_d34a6afd-f5a0-45fe-bed5-ad0f36c20e93">Jorte will host CalConnect XLII on June 4-8, 2018, in Tokyo, Japan.</p>
+    <p id="_fd88839c-4921-44e6-b8d5-a21297d5920f">Jorte will host CalConnect XLII on June 4-8, 2018, in Tokyo, Japan.</p>
   </li>
   <li>
-    <p id="_952281b6-24dc-4e74-95c4-1a65e8db33ad">1&amp;1 will host CalConnect XLIII on September 24-28, 2018, in Karlsruhe, Germany.</p>
+    <p id="_be36ada5-ab10-4e0d-8bec-cad23afccb2a">1&amp;1 will host CalConnect XLIII on September 24-28, 2018, in Karlsruhe, Germany.</p>
   </li>
   <li>
-    <p id="_092f149d-4e32-4dd5-ac89-95d76699a264">A request for volunteers to host Winter 2019 and beyond was issued.</p>
+    <p id="_2004eee3-ac6f-4793-adb6-4b26e627a46e">A request for volunteers to host Winter 2019 and beyond was issued.</p>
   </li>
 </ul>
 </clause>
-<clause id="_future_events" obligation="normative"><title>Future events</title><ul id="_8129efbe-ac72-437e-b63a-2c49b0a2f852">
+<clause id="_future_events" obligation="normative"><title>Future events</title><ul id="_324c12ae-8392-47d7-b6e8-ec32d4bf6fa7">
   <li>
-    <p id="_9e6d335e-9abb-44ac-a566-2c774853891a">CalConnect XLII - June 4-8, 2018 - Jorte, Tokyo, Japan</p>
+    <p id="_61e2e007-b8c9-4507-b45e-380ab1e9048f">CalConnect XLII - June 4-8, 2018 - Jorte, Tokyo, Japan</p>
   </li>
   <li>
-    <p id="_93d99b9c-81b5-460d-b5f8-d4d1b27b67e5">CalConnect XLIII - September 24-28, 2018 - 1&amp;1, Karlsruhe, Germany</p>
+    <p id="_d1e9a6c2-fa02-44c3-8005-cc394ac9190e">CalConnect XLIII - September 24-28, 2018 - 1&amp;1, Karlsruhe, Germany</p>
   </li>
 </ul>
-<p id="_62b1e859-b10f-414e-8270-aca260ea504f">The general format of the CalConnect Week has been as below. This will be modified
+<p id="_646a5c36-e5c7-48b4-b295-d6d10b2a69d9">The general format of the CalConnect Week has been as below. This will be modified
 significantly for Tokyo and an entirely new format brought in for Karlsruhe in
 September.</p>
-<p id="_87026750-e320-42a0-a48f-a68242d011eb">Monday morning through Wednesday noon, Test Event and Developer’s Forum
+<p id="_d2397539-5531-42df-a4de-73642d24fad0">Monday morning through Wednesday noon, Test Event and Developer’s Forum
 (testing, tech discussions)</p>
-<p id="_d7e215e9-5d76-4162-b336-b93e51b50b01">Wednesday noon through Friday afternoon, Conference</p></clause>
-<clause id="_pictures_from_calconnect_xli" obligation="normative">
-  <title>Pictures from CalConnect XLI</title>
-  <p id="_da471ce8-86ec-487f-8dca-db88fae86d13">Pictures courtesy of Thomas Schäfer, 1&amp;1, and Gary Schwartz.</p>
-</clause></sections>
+<p id="_583e836d-e1c7-4750-a732-c4ddbe5e9609">Wednesday noon through Friday afternoon, Conference</p></clause>
+<clause id="_pictures_from_calconnect_xli" obligation="normative"><title>Pictures from CalConnect XLI</title><p id="_668a0d11-d84a-4d5a-be06-a457d19baf74">Pictures courtesy of Thomas Schäfer, 1&amp;1, and Gary Schwartz.</p>
+<table id="_f2964d4d-70ce-4fa8-9ebe-fdf204e936a6">
+  <tbody>
+    <tr>
+      <td colspan="2" align="left">
+        <figure id="_fa3c4659-415a-4191-ab4f-da9256a0c17c">
+  <image src="images/conference-41/img_9074-31.jpg" id="_b534968f-9f84-4a4f-8156-ba20ed544120" imagetype="JPEG" height="auto" width="auto"/>
+</figure>
+      </td>
+    </tr>
+    <tr>
+      <td align="left">
+        <figure id="_edc7f521-73fa-4b57-a095-78307f629aa1">
+  <image src="images/conference-41/img_9073-35.jpg" id="_0bac964c-2223-49ed-8564-a13b140d2b35" imagetype="JPEG" height="auto" width="auto"/>
+</figure>
+      </td>
+      <td align="left">
+        <figure id="_059d5111-7026-41ae-986f-596085d3ffa7">
+  <image src="images/conference-41/img_9077-41.jpg" id="_988cc8b3-9e31-436e-b3b5-60320781c74a" imagetype="JPEG" height="auto" width="auto"/>
+</figure>
+      </td>
+    </tr>
+    <tr>
+      <td align="left">
+        <figure id="_07df33a0-74a0-4aa0-a18c-5c83e1363168">
+  <image src="images/conference-41/img_9102-33.jpg" id="_2f0880c4-7111-4689-a059-54243ac81bc7" imagetype="JPEG" height="auto" width="auto"/>
+</figure>
+      </td>
+      <td align="left">
+        <figure id="_9e30caa9-b0a4-45e2-853f-e7a07df90e5b">
+  <image src="images/conference-41/Yahoo-Hallway-1-37.jpg" id="_3ea7e017-a620-4561-994c-3747e30904c1" imagetype="JPEG" height="auto" width="auto"/>
+</figure>
+      </td>
+    </tr>
+  </tbody>
+</table></clause></sections>
 </csd-standard>
