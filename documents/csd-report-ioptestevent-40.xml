@@ -38,111 +38,111 @@
     <technical-committee>IOPTEST</technical-committee>
   </editorialgroup>
 </bibdata>
-<preface><foreword obligation="informative"><title>Foreword</title><p id="_9f163aa0-f064-4092-ab5d-16d0c400c631">The Calendaring and Scheduling Consortium (“CalConnect”) is global non-profit
+<preface><foreword obligation="informative"><title>Foreword</title><p id="_715dc58d-eef6-4b54-90ad-199f0797866b">The Calendaring and Scheduling Consortium (“CalConnect”) is global non-profit
 organization with the aim to facilitate interoperability of technologies across
 user-centric systems and applications.</p>
-<p id="_8ff13967-90fe-4886-8185-29177410d80c">CalConnect works closely with liaison partners including international
+<p id="_239ad010-3df9-4e11-8568-0b44cd9385c7">CalConnect works closely with liaison partners including international
 organizations such as ISO, OASIS and M3AAWG.</p>
-<p id="_b8fbe9ca-8986-4574-b1b5-a297f0dec851">The procedures used to develop this document and those intended for its further
+<p id="_08fbf5ec-62c8-4e22-84ae-7eecbd00464c">The procedures used to develop this document and those intended for its further
 maintenance are described in the CalConnect Directives.</p>
-<p id="_ee8331cd-2ace-40a4-b9dc-67494dc0fd9d">In particular the different approval criteria needed for the different types of
+<p id="_a156470e-c2bd-466c-b322-8e8ffac46a8e">In particular the different approval criteria needed for the different types of
 ISO documents should be noted. This document was drafted in accordance with the
 editorial rules of the CalConnect Directives.</p>
-<p id="_52960ab0-ea8d-4b54-9137-bc3627d3c09b">Attention is drawn to the possibility that some of the elements of this
+<p id="_220cca59-6029-4139-bc30-5e33f86169b7">Attention is drawn to the possibility that some of the elements of this
 document may be the subject of patent rights. CalConnect shall not be held responsible
 for identifying any or all such patent rights. Details of any patent rights
 identified during the development of the document will be in the Introduction
 and/or on the CalConnect list of patent declarations received (see
 www.calconnect.com/patents).</p>
-<p id="_fd5fcaac-f932-483b-b7ef-1381375a018f">Any trade name used in this document is information given for the convenience
+<p id="_c458adb4-8e30-459f-8f11-246235b63aa5">Any trade name used in this document is information given for the convenience
 of users and does not constitute an endorsement.</p>
-<p id="_928d698f-8088-4722-b3db-d00e98b6b063">This document was prepared by Technical Committee <em>IOPTEST</em>.</p></foreword></preface><sections>
-<clause id="_report" obligation="normative"><title>Report</title><p id="_64bdf09d-3291-4fa0-b4de-55aa78462218">The event was hosted by Open-Xchange in Cologne, Germany on September 25-27,
+<p id="_3a925b88-91dd-4501-9e9d-f8316fd5ca66">This document was prepared by Technical Committee <em>IOPTEST</em>.</p></foreword></preface><sections>
+<clause id="_report" obligation="normative"><title>Report</title><p id="_c1aacb31-4aba-4131-98c9-dc1b6e2d52bc">The event was hosted by Open-Xchange in Cologne, Germany on September 25-27,
 2017.</p>
-<p id="_b0f7eb12-0d66-45ad-8d66-be5f3f450004">In attendance for this interoperability event and developers forum were:</p>
-<ul id="_fb41da9d-f3cf-4ebf-ab9b-f524face6ed9">
+<p id="_f94cc83a-7d05-412d-88bd-2217c3ffc9a6">In attendance for this interoperability event and developers forum were:</p>
+<ul id="_87f5359d-31e3-4fb2-8657-a49b9c73bfb3">
   <li>
-    <p id="_da2d1630-8509-4dd1-b78c-d3155e710ea2">Mike Douglass Spherical Cow Group - managing the event</p>
+    <p id="_8af0e287-138a-4e1c-9b6e-36973ca7b371">Mike Douglass Spherical Cow Group - managing the event</p>
   </li>
   <li>
-    <p id="_a0ff52ba-4d27-43bf-a5bb-cc37829a2f0d">Ken Murchison, Robert Stepanek for Fastmail</p>
+    <p id="_75cc0d3d-f7a8-4cb4-a41c-64e6d86b700d">Ken Murchison, Robert Stepanek for Fastmail</p>
   </li>
   <li>
-    <p id="_e6817ec4-4302-4fa3-90a1-5a7c3e8c8ead">Thomas Schäfer for 1&amp;1</p>
+    <p id="_00eabf8e-b9f8-489c-a178-75240bb5ffde">Thomas Schäfer for 1&amp;1</p>
   </li>
   <li>
-    <p id="_29b7da14-1cf7-469e-b4ce-476befb3887f">Marten Gajda for dmfs</p>
+    <p id="_bf8588bb-af6f-44ae-aa4e-8621a7fa2cd0">Marten Gajda for dmfs</p>
   </li>
   <li>
-    <p id="_0afd6d0b-d684-44ed-bdf0-269bd6f517fb">Gren Eliot for Zimbra</p>
+    <p id="_f465d491-425e-4dd5-a36a-5305802b537f">Gren Eliot for Zimbra</p>
   </li>
   <li>
-    <p id="_bff6084a-4799-4f53-85c2-0e45fd968146">Ralf Becker for eGroupware</p>
+    <p id="_025fdf4e-72b0-42cf-be0d-c5b689ffeaa7">Ralf Becker for eGroupware</p>
   </li>
   <li>
-    <p id="_0603e16e-9666-445e-82a1-4a8a6dcd25bf">Martin Herfurth and Tobias Friedrich for Open-Xchange</p>
+    <p id="_28594cd9-17b0-4d23-9026-5a13e4926d45">Martin Herfurth and Tobias Friedrich for Open-Xchange</p>
   </li>
   <li>
-    <p id="_c6c5ad98-343a-458b-91b8-d9484c202bb1">Peter Tam for Ribose</p>
+    <p id="_7904de2e-2ead-44c7-9f46-afa0c18a9eaa">Peter Tam for Ribose</p>
   </li>
 </ul>
-<p id="_fd4adbbe-c01a-4d74-9298-636b2d30d508">There was a significant amount of discussion around the new JSCalendar draft which also
+<p id="_9570f916-24ee-4fe5-afaa-f328886e354d">There was a significant amount of discussion around the new JSCalendar draft which also
 spilled over into discussions on vCard. The JSCalendar specification is now felt to be relatively
 stable and as yet there are few comments on the draft from outside CalConnect.The IETF will
 be contacted to see if we can move this into a working group.</p>
-<p id="_d9ea28a9-4b13-4bea-b00d-b8bdda012dc2">There were some discussions about the relative merit of multiple RFCs for different aspects of
+<p id="_dcedd61b-752e-4b6d-aa6a-fc8e4d714002">There were some discussions about the relative merit of multiple RFCs for different aspects of
 the standard (events v tasks) as against a single all encompassing draft.</p>
-<p id="_a3c06149-a05b-441e-8245-0b1998139e8e">This led on to a discussion of the contacts api and the desire to come up with a format for
+<p id="_f3ff7144-d20e-4975-b044-c2b137d8db0b">This led on to a discussion of the contacts api and the desire to come up with a format for
 contacts that is based on the JSCalendar work. One idea is to define a common data model for
 contacts, independent from data format and exchange protocols. Robert and Peter will share
 the current work documents to see what’s the overlap.</p>
-<p id="_da88b2a9-ae01-490c-81df-9d7c5477ced1">Additionally Peter has been working on a GraphQL-based contacts API. The intent is to propose
+<p id="_a9d1665e-d433-4a6c-96a6-93e65cef101d">Additionally Peter has been working on a GraphQL-based contacts API. The intent is to propose
 this as a standard at some point.</p>
-<p id="_61f4aae2-c403-4e8e-9898-120293877887">FastMail with the Cyrus server worked on subscription upgrade with dmfs and successfully
+<p id="_53ded56c-9aef-4b42-ad74-901939bc91bb">FastMail with the Cyrus server worked on subscription upgrade with dmfs and successfully
 tested with WebCal-Sync. It should be noted how recurrence overrides are handled. Some
 additional points on subscription upgrade:</p>
-<ul id="_8c897531-6628-49bf-83cf-fa974df0ff74">
+<ul id="_c2a50af2-3222-4bac-ac30-6485f5a85759">
   <li>
-    <p id="_981cc52f-037b-49d0-bf2b-30296f4d2577">Prefer=minimal will cause VTIMEZONEs to NOT be returned in subscription
+    <p id="_beff0233-c8cb-400c-8d38-b70361d4ddc1">Prefer=minimal will cause VTIMEZONEs to NOT be returned in subscription
 upgrade. It can be overridden by using CalDAV-Timezones:T</p>
   </li>
   <li>
-    <p id="_7abae427-7ce5-41e0-9981-8606d3e92c84">Realized that CalDAV-Timezones SHOULD/MUST be included in Vary header
+    <p id="_faeb8f2a-6f15-4571-ad06-31751b2f4eb9">Realized that CalDAV-Timezones SHOULD/MUST be included in Vary header
 when server supports TZ-by-ref and subscription upgrade
 There was some work done switching DEVGUIDE from old to new infrastructure. This required
 a DNS change and bugfixing redirects.</p>
   </li>
 </ul>
-<p id="_b061340f-d774-43e2-aaf8-5487280c04fd">There was a lot of work around the CalDAV tester. Apple is no longer maintaining this tool so we
+<p id="_68c1af4b-3adc-49a4-a42c-70320d618168">There was a lot of work around the CalDAV tester. Apple is no longer maintaining this tool so we
 are free to apply our own updates to a CalConnect maintained copy. There was some
 discussion around how we should avoid conflicts - the suggestion is to create a ticket for a test
 or test you want to work on. Committing back to the core should be fine at least at this stage.</p>
-<p id="_49bd693d-00d7-45e5-a077-7cf372e49b59">Some work was started on trying to build bootstrap code into the tester. For many servers this
+<p id="_b0bd3921-18bc-4367-8e24-ab39b5e2a3b3">Some work was started on trying to build bootstrap code into the tester. For many servers this
 will remove the need fo a lot of configuration as the tester should be able to discover most of
 what it needs.</p>
-<p id="_c78c2218-d349-40cd-b934-39bf4307214d">Open-Xchange had been discouraged by the enormous number of failures in the original tester.</p>
-<p id="_5d04d615-5c64-4b20-8a35-f6ded116d40c">During this session they managed to get much further - concentrating on a smaller number fo
+<p id="_70f7082a-656c-4310-b487-e96f5008ed13">Open-Xchange had been discouraged by the enormous number of failures in the original tester.</p>
+<p id="_1a17afa6-b3d3-400c-a089-709159896d5e">During this session they managed to get much further - concentrating on a smaller number fo
 tests.</p>
-<p id="_e91aaf80-19ce-42c3-93dd-50fd0139152c">Ralf for eGroupware has implemented caldavtester - a wrapper around the Apple originated
+<p id="_a7a70d47-4027-4cee-b4f5-21f4909083ef">Ralf for eGroupware has implemented caldavtester - a wrapper around the Apple originated
 tester. This provides a GUI, options for selecting tests and features to determine what changes
 happened as a result of server updates. Some work was done to add new feature to that tool.</p>
-<p id="_67d900bb-8545-42a6-bae1-cf3b111caf49">A number of changes were also made to some tests to make them less Apple specific - fro
+<p id="_8777aad6-5805-4afd-8725-b832e5fb5db4">A number of changes were also made to some tests to make them less Apple specific - fro
 example, redirects now accept all valid http redirect codes.
 As the large number of errors were reduced we all find that errors in our own server code
 surface.</p>
-<p id="_deba711f-31a9-425d-a49b-76d8c64ebd33">Zimbra also did some work on fixing an issue with shared addressbooks not visible from iOS /
+<p id="_80f3db9b-0dba-4f76-a5c9-091b9f4bd37e">Zimbra also did some work on fixing an issue with shared addressbooks not visible from iOS /
 CardDAV-Sync on Android.</p>
-<p id="_534ba498-2fe8-4e29-b161-09c62bc09e28">Further discussions covered:</p>
-<ul id="_6373d397-1467-4c88-97c3-048d166f171a">
+<p id="_0f548a42-04ac-476c-99e4-5ead3185026c">Further discussions covered:</p>
+<ul id="_36fde532-1683-4dbd-a4c9-ccf91da4abcd">
   <li>
-    <p id="_c28ae9e7-b874-4e46-9ad4-59716a903e87">iTip improvements: new response for scheduling requests</p>
+    <p id="_cc8ffea2-5a7c-4729-91f7-6b6f694a1738">iTip improvements: new response for scheduling requests</p>
   </li>
   <li>
-    <p id="_8415cdf8-9297-489e-9b23-6fa14698580c">Optimistic updates</p>
+    <p id="_3cbe08a6-4cde-4284-89f0-5274462b01ac">Optimistic updates</p>
   </li>
   <li>
-    <p id="_a4677666-ff41-4087-a27e-02aec4252a74">The need to check the CalDAV specification wrt caching proxies</p>
+    <p id="_fa50d348-0256-471c-877e-11f938201a3e">The need to check the CalDAV specification wrt caching proxies</p>
   </li>
 </ul>
-<p id="_4b60be67-d160-4e90-b813-b7853270f16e">In all this was a very productive session.</p></clause></sections>
+<p id="_c7602e12-f939-42c6-8604-05ac2906a5ef">In all this was a very productive session.</p></clause></sections>
 </csd-standard>
