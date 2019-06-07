@@ -38,48 +38,48 @@
     <technical-committee>IOPTEST</technical-committee> 
   </editorialgroup> 
 </bibdata>
-<preface><foreword obligation="informative"><title>Foreword</title><p id="_55f97a7e-66fd-49b9-92c5-16414260631b">The Calendaring and Scheduling Consortium (“CalConnect”) is a global non-profit   
+<preface><foreword obligation="informative"><title>Foreword</title><p id="_991fd6c9-2601-4a62-8343-ee3bafd4609b">The Calendaring and Scheduling Consortium (“CalConnect”) is a global non-profit   
 organization with the aim to facilitate interoperability of technologies across   
 user-centric systems and applications.</p>  
-<p id="_48b1f9cd-4c6f-469e-899c-c9ca5ff24b10">CalConnect works closely with liaison partners including international   
+<p id="_455c9446-84bb-48d5-a7b8-19db19563edc">CalConnect works closely with liaison partners including international   
 organizations such as ISO, OASIS and M3AAWG.</p>  
-<p id="_85e9917f-b259-4f45-b260-ef22a1e9e0bc">The procedures used to develop this document and those intended for its further   
+<p id="_2b8bbd96-1d89-4ba4-9cf7-8347575f4fb3">The procedures used to develop this document and those intended for its further   
 maintenance are described in the CalConnect Directives.</p>  
-<p id="_00daa28c-9a64-4ea5-a0ac-3b763d9c6911">In particular the different approval criteria needed for the different types of   
+<p id="_40657c0f-9fac-4dcf-8d94-dbd91a14af1e">In particular the different approval criteria needed for the different types of   
 ISO documents should be noted. This document was drafted in accordance with the   
 editorial rules of the CalConnect Directives.</p>  
-<p id="_8fbc0cf0-f0ae-400e-a77c-4afffa5e40f2">Attention is drawn to the possibility that some of the elements of this   
+<p id="_3aa158ba-82b9-465a-86d0-7d3379efc8ef">Attention is drawn to the possibility that some of the elements of this   
 document may be the subject of patent rights. CalConnect shall not be held responsible   
 for identifying any or all such patent rights. Details of any patent rights   
 identified during the development of the document will be in the Introduction   
 and/or on the CalConnect list of patent declarations received (see   
 www.calconnect.com/patents).</p>  
-<p id="_d0877a8d-1e6f-41af-8f16-192ce27f7465">Any trade name used in this document is information given for the convenience   
+<p id="_bb346195-ade5-44fb-a1ec-77778d330a07">Any trade name used in this document is information given for the convenience   
 of users and does not constitute an endorsement.</p>  
-<p id="_a071262e-99dd-4e97-89ba-782ed6fa7635">This document was prepared by Technical Committee <em>IOPTEST</em>.</p></foreword></preface><sections> 
-<clause id="_report" obligation="normative"><title>Report</title><p id="_09f01011-5b8e-47b5-bd4b-227df4ed3ca2">The event was hosted by Jorte in Tokyo, Japan, June 4-8, 2018</p>  
-<p id="_84f574de-69ca-4f86-93b1-750f95458b3e">In attendance for this interoperability event and developers forum were representatives from</p>  
-<ul id="_309a8251-e74c-410b-a01c-aaba1776740a">   
+<p id="_8353a06c-94ae-47b2-bc19-e0cd8c7ce84a">This document was prepared by Technical Committee <em>IOPTEST</em>.</p></foreword></preface><sections> 
+<clause id="_report" obligation="normative"><title>Report</title><p id="_59b9f965-ba0c-4846-9185-1d2d1347fe15">The event was hosted by Jorte in Tokyo, Japan, June 4-8, 2018</p>  
+<p id="_dde4fbae-9b03-458d-9ad0-9088631702e9">In attendance for this interoperability event and developers forum were representatives from</p>  
+<ul id="_37ee9fd6-3d5d-4b08-9f5f-c15cd5a20260">   
   <li>   
-    <p id="_3c4f03aa-5f98-4cad-b416-21bfb07390d3">Spherical Cow Group</p>   
+    <p id="_8302e7ed-f109-426f-b15a-0b5d02131d3a">Spherical Cow Group</p>   
   </li>   
   <li>   
-    <p id="_6c8eae7b-aed7-4382-b29b-4b3785f0ff23">FastMail</p>   
+    <p id="_31f50c59-0659-4e31-af64-7e5daae75fd2">FastMail</p>   
   </li>   
   <li>   
-    <p id="_b4986b72-85c0-47e6-ad78-9da7c8d8d8e6">Open-Xchange</p>   
+    <p id="_089e61e4-f7eb-4034-9bf2-eadf5050fce8">Open-Xchange</p>   
   </li>   
   <li>   
-    <p id="_04db6ea1-1cb6-42a3-ad9e-0d15f92bf2f0">Ribose</p>   
+    <p id="_d7156827-161a-4e29-957c-ff28a0e0b061">Ribose</p>   
   </li>   
   <li>   
-    <p id="_cdeeba6e-36dd-4f13-bdf9-f9a7ef3ed681">Jorte</p>   
+    <p id="_b5c67a45-3067-41a5-9f97-6f8df9a8665f">Jorte</p>   
   </li>   
 </ul>  
-<p id="_be675105-38c9-404d-91fa-474c81cc171e">Despite that small attendance we were all kept busy on a number of issues which required discussion and implementation.</p>  
-<p id="_c307dca3-00a0-43d3-9342-2779c6316e67">Vpoll was being worked on by Robert Stepanek of FastMail in preparation for a presentation and demonstration in the conference.</p>  
-<p id="_533fbbdb-02ee-42e7-ad27-22ce398a0ac7">We had further discussions on the new JSCalendar specification Robert is working on. As the specification nears completion there are some remaining issues. The description property and localization, client-side alarm handling amd attendee-specific sequencing. As ever there were discussions about various aspects of recurrences.</p>  
-<p id="_4781120f-f7d9-4785-99bb-6992ee79cd13">The new server side subscriptions specification was discussed and the Open-Xchange members carried out a preliminary implementation of the specification. This specification allows DAV clients to POST subscription requests to the server which then manages the synchronization of the data. Open-Xchange proposed some additions be added: a “refresh now” option for clients and persisting and signaling account errors to clients. These most likely will be added to the final specification.</p>  
-<p id="_af4d99ed-bd83-4513-8468-0899eb43dfac">We talked about the progress being made with the VObject and VCard work in preparation for presentations later in the week.</p>  
-<p id="_8040163c-9741-4ba7-b59f-a63398df3aca">Apart from the larger issues above these meetings provided the opportunity for face-to-face in depth discussion on various topics.</p></clause></sections>
+<p id="_b009fb34-f373-4669-8357-9de1f39456d4">Despite that small attendance we were all kept busy on a number of issues which required discussion and implementation.</p>  
+<p id="_51a8a092-fd78-42ec-b98c-bd7a39613eb5">Vpoll was being worked on by Robert Stepanek of FastMail in preparation for a presentation and demonstration in the conference.</p>  
+<p id="_2b909f42-1d24-4487-b390-506bf420ee86">We had further discussions on the new JSCalendar specification Robert is working on. As the specification nears completion there are some remaining issues. The description property and localization, client-side alarm handling amd attendee-specific sequencing. As ever there were discussions about various aspects of recurrences.</p>  
+<p id="_faed352d-cf33-4c50-b627-3c63a5c966fe">The new server side subscriptions specification was discussed and the Open-Xchange members carried out a preliminary implementation of the specification. This specification allows DAV clients to POST subscription requests to the server which then manages the synchronization of the data. Open-Xchange proposed some additions be added: a “refresh now” option for clients and persisting and signaling account errors to clients. These most likely will be added to the final specification.</p>  
+<p id="_0f0e5d5e-c842-4b41-8643-af4441cea6aa">We talked about the progress being made with the VObject and VCard work in preparation for presentations later in the week.</p>  
+<p id="_abbfcfd4-4a82-44a6-bef4-8bc83c66d41b">Apart from the larger issues above these meetings provided the opportunity for face-to-face in depth discussion on various topics.</p></clause></sections>
 </csd-standard>
