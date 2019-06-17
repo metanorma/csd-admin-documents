@@ -38,45 +38,45 @@
     <technical-committee>IOPTEST</technical-committee> 
   </editorialgroup> 
 </bibdata>
-<preface><foreword obligation="informative"><title>Foreword</title><p id="_c833e52d-9cfc-4996-8f77-39d140304547">The Calendaring and Scheduling Consortium (“CalConnect”) is a global non-profit   
+<preface><foreword obligation="informative"><title>Foreword</title><p id="_bc79ec4d-8a4f-4eeb-ba34-9177c56a4bd2">The Calendaring and Scheduling Consortium (“CalConnect”) is a global non-profit   
 organization with the aim to facilitate interoperability of technologies across   
 user-centric systems and applications.</p>  
-<p id="_90f110f0-a4e8-4d05-b0f7-cedc083e0125">CalConnect works closely with liaison partners including international   
+<p id="_aadb868b-7dd8-497a-9be2-d8527cf3ccf3">CalConnect works closely with liaison partners including international   
 organizations such as ISO, OASIS and M3AAWG.</p>  
-<p id="_b7b1ea7a-9324-4e08-b8b0-bcb3c934e2d2">The procedures used to develop this document and those intended for its further   
+<p id="_6546b290-b902-4914-97a3-035e90d67bb3">The procedures used to develop this document and those intended for its further   
 maintenance are described in the CalConnect Directives.</p>  
-<p id="_64dc3c1c-25cd-4151-b5a0-037138a49a7c">In particular the different approval criteria needed for the different types of   
+<p id="_e54afcca-c7bf-4518-93a3-1874af1836c9">In particular the different approval criteria needed for the different types of   
 ISO documents should be noted. This document was drafted in accordance with the   
 editorial rules of the CalConnect Directives.</p>  
-<p id="_9cfe6c88-5c57-4eb5-a560-762a55fe7a52">Attention is drawn to the possibility that some of the elements of this   
+<p id="_6519940b-59d5-48c2-a382-4ce42db7aa48">Attention is drawn to the possibility that some of the elements of this   
 document may be the subject of patent rights. CalConnect shall not be held responsible   
 for identifying any or all such patent rights. Details of any patent rights   
 identified during the development of the document will be in the Introduction   
 and/or on the CalConnect list of patent declarations received (see   
 www.calconnect.com/patents).</p>  
-<p id="_da980674-d758-403b-8b6f-e7738fa737dd">Any trade name used in this document is information given for the convenience   
+<p id="_1a4791d0-2667-4589-8ade-fff79a698eff">Any trade name used in this document is information given for the convenience   
 of users and does not constitute an endorsement.</p>  
-<p id="_1e2e5bad-edb2-432a-bf68-c7c51e2d4220">This document was prepared by Technical Committee <em>IOPTEST</em>.</p></foreword></preface><sections> 
-<clause id="_report" obligation="normative"><title>Report</title><p id="_c0e82010-6d72-4f17-8395-a98977a065b2">The Calconnect interoperability event was hosted by AOL at their Palo Alto site on January 11th through the morning of the 13th.</p>  
-<p id="_08f43f18-8b17-4ba8-af3d-fe45adf2ef4f">While it was a smaller than usual event much valuable work took place. There was the usual mix of in-depth discussions and actual testing of implementations.</p>  
-<p id="_4650c982-3f06-4712-84d9-8892a6bb2b67">On the testing front there was:</p>  
-<ul id="_5636226c-19e6-4aa1-9b71-35bc0f9b8732">   
+<p id="_d948a963-32f8-40c3-af3e-d8c916cead92">This document was prepared by Technical Committee <em>IOPTEST</em>.</p></foreword></preface><sections> 
+<clause id="_report" obligation="normative"><title>Report</title><p id="_09584852-e610-4407-b578-8d7abe27b9b2">The Calconnect interoperability event was hosted by AOL at their Palo Alto site on January 11th through the morning of the 13th.</p>  
+<p id="_56436c81-b51f-4940-8ce6-c43713a963d5">While it was a smaller than usual event much valuable work took place. There was the usual mix of in-depth discussions and actual testing of implementations.</p>  
+<p id="_b951e774-8380-4c07-84f5-9f18d59bafdf">On the testing front there was:</p>  
+<ul id="_5205973f-cc19-478b-b5cc-8362e80d83a3">   
   <li>   
-    <p id="_a6b40f19-ac0b-4e59-b9c1-b37233155107">Work on the server-info document</p>   
+    <p id="_09b85b2e-1f76-4cd0-af38-1e438c185721">Work on the server-info document</p>   
   </li>   
   <li>   
-    <p id="_cb27cd0b-7bf7-4a99-96c9-946683381c2d">CalDav Tester</p>   
+    <p id="_80c40bdf-9591-4715-8bac-af096ac473c5">CalDav Tester</p>   
   </li>   
   <li>   
-    <p id="_8d32ed27-3a82-4d98-a075-24bde6fe561e">Ralph Beckers caldav tester scripts</p>   
+    <p id="_95b4c3db-d3df-4368-a4b1-7fbbd2d0a43d">Ralph Beckers caldav tester scripts</p>   
   </li>   
   <li>   
-    <p id="_2020c2be-12ba-4777-9258-d162fe0ae834">General CalDAV</p>   
+    <p id="_a83a35ad-aae7-4a21-b855-888b3555a2c9">General CalDAV</p>   
   </li>   
 </ul>  
-<p id="_e81d9f06-6349-4d51-a4a1-a66886afcdcb">The server-info document is a new specification being developed to provide cacheable server information for use by clients, detailing services available and some limits. This has been implemented by a number of servers and some clients. Each interoperability event has led to changes in the specification. The general feeling is that it is now ready for wider testing and use.</p>  
-<p id="_41586346-59ef-41d4-8699-d8e33f66ccd5">The CalDAV tester is associated with Apple’s Darwin open source server offering and provides many tests of CardDAV, CalDAV and related features. It is very configurable. Ralph Becker’s tool helps to run the tests and store results.</p>  
-<p id="_26cf0cb0-c313-4151-b8b0-151b2cf860ff">While historically, this has been an event focusing on interoperability testing we have been moving towards having more in-depth, developer-centric discussions on topics of interest.</p>  
-<p id="_4c169472-2914-432f-8dde-7df88f81b121">This event was no exception with discussions on all of the above topics as well as how best to move forward with the new developers guide.</p>  
-<p id="_52e430af-67bd-4745-82ad-a79a7435d51a">We are looking forward to being back to our usual larger attendance at Hong Kong in April. Check the website over the coming weeks as we will be updating the schedule to reflect the specific interests of the attendees,</p></clause></sections>
+<p id="_e464fa8a-c97f-4b19-8cac-526ecf587724">The server-info document is a new specification being developed to provide cacheable server information for use by clients, detailing services available and some limits. This has been implemented by a number of servers and some clients. Each interoperability event has led to changes in the specification. The general feeling is that it is now ready for wider testing and use.</p>  
+<p id="_07a3cff7-5e60-430b-b2e7-463af21d6fc5">The CalDAV tester is associated with Apple’s Darwin open source server offering and provides many tests of CardDAV, CalDAV and related features. It is very configurable. Ralph Becker’s tool helps to run the tests and store results.</p>  
+<p id="_fc2df157-c51d-4fd9-bc2b-88f6d8af47a8">While historically, this has been an event focusing on interoperability testing we have been moving towards having more in-depth, developer-centric discussions on topics of interest.</p>  
+<p id="_186a8809-f90e-4b5f-a266-d448f06a9bd1">This event was no exception with discussions on all of the above topics as well as how best to move forward with the new developers guide.</p>  
+<p id="_d2b5f156-0046-4f08-98ba-9b0a57de0900">We are looking forward to being back to our usual larger attendance at Hong Kong in April. Check the website over the coming weeks as we will be updating the schedule to reflect the specific interests of the attendees,</p></clause></sections>
 </csd-standard>
