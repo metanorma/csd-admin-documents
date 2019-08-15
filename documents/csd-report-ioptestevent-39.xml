@@ -1,83 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <csd-standard xmlns="https://www.calconnect.org/standards/csd">
-<bibdata type="administrative"> 
-  <title language="en" format="text/plain">Report on Test Event and Developers Forum XXXIX, June 12-14, 2017</title> 
-  <docidentifier type="csd">CC/A 1704:2017</docidentifier> 
-  <docnumber>1704</docnumber> 
-  <date type="published"> 
-    <on>2017-07-21T00:00:00Z</on> 
-  </date> 
-  <contributor> 
-    <role type="author"/> 
-    <organization> 
-      <name>CalConnect</name> 
-    </organization> 
-  </contributor> 
-  <contributor> 
-    <role type="publisher"/> 
-    <organization> 
-      <name>CalConnect</name> 
-    </organization> 
-  </contributor> 
-  <edition>1</edition> 
-  <version> 
-    <revision-date>2017-07-21T00:00:00Z</revision-date> 
-  </version> 
-  <language>en</language> 
-  <script>Latn</script> 
-  <status format="plain">published</status> 
-  <copyright> 
-    <from>2017</from> 
-    <owner> 
-      <organization> 
-        <name>CalConnect</name> 
-      </organization> 
-    </owner> 
-  </copyright> 
-  <editorialgroup> 
-    <technical-committee>IOPTEST</technical-committee> 
-  </editorialgroup> 
+<bibdata type="standard">
+  <title language="en" format="text/plain">Report on Test Event and Developers Forum XXXIX, June 12-14, 2017</title>
+  <docidentifier type="csd">CC/A 1704:2017</docidentifier>
+  <docnumber>1704</docnumber>
+  <date type="published">
+    <on>2017-07-21T00:00:00Z</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>CalConnect</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>CalConnect</name>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <version>
+    <revision-date>2017-07-21T00:00:00Z</revision-date>
+  </version>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>published</stage>
+  </status>
+  <copyright>
+    <from>2017</from>
+    <owner>
+      <organization>
+        <name>CalConnect</name>
+      </organization>
+    </owner>
+  </copyright>
+  <ext>
+    <doctype>administrative</doctype>
+    <editorialgroup>
+      <technical-committee>IOPTEST</technical-committee>
+    </editorialgroup>
+  </ext>
 </bibdata>
-<preface><foreword obligation="informative"><title>Foreword</title><p id="_e711ff45-eac1-4983-b3b0-0a8c0ce43c25">The Calendaring and Scheduling Consortium (“CalConnect”) is a global non-profit   
-organization with the aim to facilitate interoperability of technologies across   
-user-centric systems and applications.</p>  
-<p id="_60205c60-10b3-4d21-bf6f-3b979a7d6acb">CalConnect works closely with liaison partners including international   
-organizations such as ISO, OASIS and M3AAWG.</p>  
-<p id="_bb9c8f97-2768-449c-a3e1-7a3ab31f969f">The procedures used to develop this document and those intended for its further   
-maintenance are described in the CalConnect Directives.</p>  
-<p id="_856aaec3-9098-47e0-a109-89e96ced2755">In particular the different approval criteria needed for the different types of   
-ISO documents should be noted. This document was drafted in accordance with the   
-editorial rules of the CalConnect Directives.</p>  
-<p id="_bd1f68e9-c7c8-479f-970b-a0254dde6fc8">Attention is drawn to the possibility that some of the elements of this   
-document may be the subject of patent rights. CalConnect shall not be held responsible   
-for identifying any or all such patent rights. Details of any patent rights   
-identified during the development of the document will be in the Introduction   
-and/or on the CalConnect list of patent declarations received (see   
-www.calconnect.com/patents).</p>  
-<p id="_d7dbb6c2-f8a5-445b-aceb-67c7a5c7fe0b">Any trade name used in this document is information given for the convenience   
-of users and does not constitute an endorsement.</p>  
-<p id="_451a2445-1fe7-42c2-a03a-29cbfa50b264">This document was prepared by Technical Committee <em>IOPTEST</em>.</p></foreword></preface><sections> 
-<clause id="_report" obligation="normative"><title>Report</title><p id="_46631e8d-3781-44d2-ae35-59a86a017ec4">The event was hosted by Tandem in Seattle, Washington on June 12-14, 2017</p>  
-<p id="_a07e41ba-8800-4a64-8fdd-a137201f0c4f">The interoperability test event and developers forum had a relatively small number of attendees. While this led to little actual testing we did spend our time discussing some of the intricate details of work that is in progress.</p>  
-<p id="_da9dd87c-e493-4fee-840a-a7d3f54b80cc">In attendance were:</p>  
-<ul id="_f2b4659c-f325-4f8e-ac6b-78d9a2a1e8fa">   
-  <li>   
-    <p id="_921e6fe8-18c7-4459-8671-7ee2c750a3d3">Tandem (our hosts)</p>   
-  </li>   
-  <li>   
-    <p id="_e15be5c6-123d-4de4-aa88-0b3e810d093e">Spherical Cow Group with Bedework</p>   
-  </li>   
-  <li>   
-    <p id="_bfed7275-1713-4bc0-9ab0-112daf80da6f">Eventable</p>   
-  </li>   
-  <li>   
-    <p id="_8dbd0186-f62c-49e2-9401-753518f4962b">FastMail</p>   
-  </li>   
-  <li>   
-    <p id="_9397bd95-c4b6-4631-b26b-f91b1919510c">Ribose</p>   
-  </li>   
-</ul>  
-<p id="_32056695-351f-4ecf-bd4c-6a0991070844">There was discussion of how to deal with categorization for the new data model and representation being developed in TC-API. This led to an agreement on the value being a URI and that the actual details of what that represented was outside of the scope of the TC-API work. This will also lead to some changes in the new calendaring extensions for event publication draft. Additionally we looked at what it was necessary to add to the data model to successfully handle tasks.</p>  
-<p id="_78586eb6-f898-4993-9211-e8b11e7969bd">We spent some time working on the subscription upgrade specification to ensure this would work successfully with caching servers. There was some discussion on how to flag a deleted event.The eventual consensus was to define a new “Deleted” status. We also felt it was important to define a time-range query as that is probably a very frequent use of subscriptions - e.g. what events happen this week? The consensus was that we should use a HEAD request to discover the possible upgrades rather than an OPTIONS request.</p>  
-<p id="_07ba6b02-bfbd-439a-aabf-c388002a70dd">We spent some time discussing various aspects of VCARD. There was a lot to be discussed around the exact meaning of the UID. The wording of the specifications suggest that it is associated with the actual entity — i.e. a human or a resource. Many of us thought that it should really be tied to a particular representation of that entity. Associated with that was the issue of who or what should merge cards that appear to represent the same entity. A number of us felt that no merge should be attempted - it is up to the consumer to decide if two vCards represent the same person. Perhaps UIs should consider adding the ability to explicitly link VCARDs representing the same person. There is probably further discussion to be had on this issue.</p></clause></sections>
+<preface><foreword obligation="informative"><title>Foreword</title><p id="_c07b30a8-e894-4593-9b95-2bcf72c5d275">The Calendaring and Scheduling Consortium (“CalConnect”) is a global non-profit
+organization with the aim to facilitate interoperability of technologies across
+user-centric systems and applications.</p>
+<p id="_3aab177e-f2e2-40c8-ac1e-788ff10abbee">CalConnect works closely with liaison partners including international
+organizations such as ISO, OASIS and M3AAWG.</p>
+<p id="_32e60316-2da2-46ec-a4e7-a68235ac37ce">The procedures used to develop this document and those intended for its further
+maintenance are described in the CalConnect Directives.</p>
+<p id="_8e5f9270-0f49-46bf-ba43-b2753b7b89c4">In particular the different approval criteria needed for the different types of
+ISO documents should be noted. This document was drafted in accordance with the
+editorial rules of the CalConnect Directives.</p>
+<p id="_e2c8760f-b90c-4d73-b79c-3a3f08ad2919">Attention is drawn to the possibility that some of the elements of this
+document may be the subject of patent rights. CalConnect shall not be held responsible
+for identifying any or all such patent rights. Details of any patent rights
+identified during the development of the document will be in the Introduction
+and/or on the CalConnect list of patent declarations received (see
+www.calconnect.com/patents).</p>
+<p id="_61b8ce90-7858-4839-967a-21b841b4ffa2">Any trade name used in this document is information given for the convenience
+of users and does not constitute an endorsement.</p>
+<p id="_9e6bed5b-f6e3-4e55-84b6-4031ff224095">This document was prepared by Technical Committee <em>IOPTEST</em>.</p></foreword></preface><sections>
+<clause id="_report" obligation="normative"><title>Report</title><p id="_321a8085-70b6-4c6d-9abc-11bf93a66f39">The event was hosted by Tandem in Seattle, Washington on June 12-14, 2017</p>
+<p id="_fbee5363-0398-4c61-bd26-497b720a4736">The interoperability test event and developers forum had a relatively small number of attendees. While this led to little actual testing we did spend our time discussing some of the intricate details of work that is in progress.</p>
+<p id="_69fc8fed-aead-4fb6-96f0-bb5ae5f42896">In attendance were:</p>
+<ul id="_b4467dc5-86e2-448b-8d35-a71a5402a95e">
+  <li>
+    <p id="_af94f200-e924-4c12-9830-1ccc35e2fb22">Tandem (our hosts)</p>
+  </li>
+  <li>
+    <p id="_12fd1ead-b565-41a4-87b5-bc4dc77c1380">Spherical Cow Group with Bedework</p>
+  </li>
+  <li>
+    <p id="_b5fa5b48-3152-459e-8a6e-54ba78bf6169">Eventable</p>
+  </li>
+  <li>
+    <p id="_02b948d1-6178-4ac4-923a-62e444b5977e">FastMail</p>
+  </li>
+  <li>
+    <p id="_18062502-ec98-412e-9635-979dd68d87c2">Ribose</p>
+  </li>
+</ul>
+<p id="_049fa8bf-9507-4d71-adbd-abd7a9922d15">There was discussion of how to deal with categorization for the new data model and representation being developed in TC-API. This led to an agreement on the value being a URI and that the actual details of what that represented was outside of the scope of the TC-API work. This will also lead to some changes in the new calendaring extensions for event publication draft. Additionally we looked at what it was necessary to add to the data model to successfully handle tasks.</p>
+<p id="_4391c537-4db3-4975-a5ab-3fc150301702">We spent some time working on the subscription upgrade specification to ensure this would work successfully with caching servers. There was some discussion on how to flag a deleted event.The eventual consensus was to define a new “Deleted” status. We also felt it was important to define a time-range query as that is probably a very frequent use of subscriptions - e.g. what events happen this week? The consensus was that we should use a HEAD request to discover the possible upgrades rather than an OPTIONS request.</p>
+<p id="_cf879f54-8ad0-4af6-972d-3d10a209b1a4">We spent some time discussing various aspects of VCARD. There was a lot to be discussed around the exact meaning of the UID. The wording of the specifications suggest that it is associated with the actual entity — i.e. a human or a resource. Many of us thought that it should really be tied to a particular representation of that entity. Associated with that was the issue of who or what should merge cards that appear to represent the same entity. A number of us felt that no merge should be attempted - it is up to the consumer to decide if two vCards represent the same person. Perhaps UIs should consider adding the ability to explicitly link VCARDs representing the same person. There is probably further discussion to be had on this issue.</p></clause></sections>
 </csd-standard>

@@ -181,17 +181,19 @@ main {
     padding: 0 1.5em 0 1.5em;
     overflow: visible; } }
 
-@media screen {
-  div.figure > img {
-    width: 100%;
-    height: auto; } }
+div.figure > img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 100%;
+  height: auto; }
 
 #toc ul {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-#toc li {
+#toc li a {
   padding: 5px 10px; }
 
 #toc a {
@@ -200,6 +202,7 @@ main {
   display: block; }
 
 #toc a:hover {
+  box-shadow: none;
   color: white; }
 
 #toc .h2 {
@@ -876,18 +879,24 @@ a.anchorjs-link:hover {
     margin-top: 2em; } }
 
 -->
-</style><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        <title>Report on Test Event and Developers Forum XXXIX, June 12-14, 2017</title>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</style><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Report on Test Event and Developers Forum XXXIX, June 12-14, 2017</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!--TOC script import-->
-    <script type="text/javascript" src="https://cdn.rawgit.com/jgallen23/toc/0.3.2/dist/toc.min.js"></script>
+<!--TOC script import-->
+<script type="text/javascript" src="https://cdn.rawgit.com/jgallen23/toc/0.3.2/dist/toc.min.js"></script>
+<script type="text/javascript">function toclevel() { var i; var text = "";
+  for(i = 1; i <= 2; i++) {
+    if (i > 1) { text += ","; } text += "h" + i + ":not(:empty):not(.TermNum)"; } 
+  return text;}
+</script>
 
-    <!--Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Space+Mono:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Overpass:300,300i,600,900" rel="stylesheet" />
-    <!--Font awesome import for the link icon-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" />
+<!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Space+Mono:400,700" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Overpass:300,300i,600,900" rel="stylesheet" />
+
+<!--Font awesome import for the link icon-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" />
 <style class="anchorjs"></style>
 </head>
   <body lang="EN-US" link="blue" vlink="#954F72" xml:lang="EN-US" class="container">
@@ -903,85 +912,86 @@ a.anchorjs-link:hover {
 
 <header>
 
-<!--<div class="WordSection1">-->
+  <!--<div class="WordSection1">-->
   <div class="coverpage">
     <div class="wrapper-top">
 
-  <div class="coverpage-doc-identity">
-    <div class="doc-number">
-      <span class="docnumber">CC/A 1704:2017</span>
-      <!-- <span class="docnumber-separator">:</span>
-      <span class="docyear">2017</span> -->
+      <div class="coverpage-doc-identity">
+        <div class="doc-number">
+          <span class="docnumber">CC/A 1704:2017</span>
+          <!-- <span class="docnumber-separator">:</span>
+            <span class="docyear">2017</span> -->
+        </div>
+
+        <div class="coverpage-title">
+          <span class="title-first">Report on Test Event and Developers Forum XXXIX, June 12-14, 2017</span>
+          <!--<span class="title-second"></span>-->
+        </div>
+      </div>
+
+      <div class="coverpage-logo">
+        <span>The Calendaring and Scheduling Consortium</span>
+      </div>
+
+      <div class="coverpage-tc-name">
+        <span>TC IOPTEST</span>
+      </div>
+
+      
+
+      
+
+      <div class="coverpage-contributors">
+        
+
+      </div>
     </div>
 
-    <div class="coverpage-title">
-      <span class="title-first">Report on Test Event and Developers Forum XXXIX, June 12-14, 2017</span>
-      <!--<span class="title-second"></span>-->
+    <div class="title-section1">
+      <div class="coverpage-stage-block">
+        <span class="coverpage-stage" id="administrative">CalConnect Administrative</span>
+      </div>
+
+      <div class="coverpage-stage-block">
+        <span class="coverpage-maturity" id="published"></span>
+      </div>
+
+      
+
+      <div class="copyright">
+        <p class="year">
+        &#xA9; 2017 The Calendaring and Scheduling Consortium, Inc.
+        </p>
+
+        <p class="message">
+        All rights reserved. Unless otherwise specified, no part of this
+        publication may be reproduced or utilized otherwise in any form or by any
+        means, electronic or mechanical, including photocopying, or posting on the
+        internet or an intranet, without prior written permission. Permission can
+        be requested from the address below.
+        </p>
+
+        <div class="contact-info">
+          <p class="name">The Calendaring and Scheduling Consortium, Inc.</p>
+          <p class="address">
+          4390 Chaffin Lane<br />
+          McKinleyville<br />
+          California 95519<br />
+          United States of America<br />
+          <br />
+          <a href="mailto:copyright@calconnect.org">copyright@calconnect.org</a><br />
+          <a href="www.calconnect.org">www.calconnect.org</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="rule"></div>
     </div>
   </div>
+</header>
 
-  <div class="coverpage-logo">
-    <span>The Calendaring and Scheduling Consortium</span>
-  </div>
-
-  <div class="coverpage-tc-name">
-    <span>TC IOPTEST</span>
-  </div>
-
-
-
-
-
-  
-
-  </div>
-
-  <div class="title-section1">
-  <div class="coverpage-stage-block">
-    <span class="coverpage-stage" id="administrative">CalConnect Administrative</span>
-  </div>
-
-  <div class="coverpage-stage-block">
-    <span class="coverpage-maturity" id="published"></span>
-</div>
-
-
-
-<div class="copyright">
-  <p class="year">
-    &#xA9; 2017 The Calendaring and Scheduling Consortium, Inc.
-  </p>
-
-  <p class="message">
-    All rights reserved. Unless otherwise specified, no part of this
-    publication may be reproduced or utilized otherwise in any form or by any
-    means, electronic or mechanical, including photocopying, or posting on the
-    internet or an intranet, without prior written permission. Permission can
-    be requested from the address below.
-  </p>
-
-<div class="contact-info">
-  <p class="name">The Calendaring and Scheduling Consortium, Inc.</p>
-  <p class="address">
-    4390 Chaffin Lane<br />
-    McKinleyville<br />
-    California 95519<br />
-    United States of America<br />
-    <br />
-    <a href="mailto:copyright@calconnect.org">copyright@calconnect.org</a><br />
-    <a href="www.calconnect.org">www.calconnect.org</a>
-  </p>
-</div>
-</div>
-
-<div class="rule"></div>
-</div>
-
-
-
-</div></header></div>
       <p>&#xA0;</p>
-    </body>
+    </div>
     <br />
     <div class="prefatory-section"><nav>
   <h1 id="content">Contents</h1>
@@ -999,52 +1009,52 @@ a.anchorjs-link:hover {
       <br />
       <div>
         <h1 class="ForewordTitle">Foreword</h1>
-        <p id="_e711ff45-eac1-4983-b3b0-0a8c0ce43c25">The Calendaring and Scheduling Consortium (&#x201C;CalConnect&#x201D;) is a global non-profit
+        <p id="_c07b30a8-e894-4593-9b95-2bcf72c5d275">The Calendaring and Scheduling Consortium (&#x201C;CalConnect&#x201D;) is a global non-profit
 organization with the aim to facilitate interoperability of technologies across
 user-centric systems and applications.</p>
-        <p id="_60205c60-10b3-4d21-bf6f-3b979a7d6acb">CalConnect works closely with liaison partners including international
+        <p id="_3aab177e-f2e2-40c8-ac1e-788ff10abbee">CalConnect works closely with liaison partners including international
 organizations such as ISO, OASIS and M3AAWG.</p>
-        <p id="_bb9c8f97-2768-449c-a3e1-7a3ab31f969f">The procedures used to develop this document and those intended for its further
+        <p id="_32e60316-2da2-46ec-a4e7-a68235ac37ce">The procedures used to develop this document and those intended for its further
 maintenance are described in the CalConnect Directives.</p>
-        <p id="_856aaec3-9098-47e0-a109-89e96ced2755">In particular the different approval criteria needed for the different types of
+        <p id="_8e5f9270-0f49-46bf-ba43-b2753b7b89c4">In particular the different approval criteria needed for the different types of
 ISO documents should be noted. This document was drafted in accordance with the
 editorial rules of the CalConnect Directives.</p>
-        <p id="_bd1f68e9-c7c8-479f-970b-a0254dde6fc8">Attention is drawn to the possibility that some of the elements of this
+        <p id="_e2c8760f-b90c-4d73-b79c-3a3f08ad2919">Attention is drawn to the possibility that some of the elements of this
 document may be the subject of patent rights. CalConnect shall not be held responsible
 for identifying any or all such patent rights. Details of any patent rights
 identified during the development of the document will be in the Introduction
 and/or on the CalConnect list of patent declarations received (see
 www.calconnect.com/patents).</p>
-        <p id="_d7dbb6c2-f8a5-445b-aceb-67c7a5c7fe0b">Any trade name used in this document is information given for the convenience
+        <p id="_61b8ce90-7858-4839-967a-21b841b4ffa2">Any trade name used in this document is information given for the convenience
 of users and does not constitute an endorsement.</p>
-        <p id="_451a2445-1fe7-42c2-a03a-29cbfa50b264">This document was prepared by Technical Committee <i>IOPTEST</i>.</p>
+        <p id="_9e6bed5b-f6e3-4e55-84b6-4031ff224095">This document was prepared by Technical Committee <i>IOPTEST</i>.</p>
       </div>
       <p class="zzSTDTitle1">Report on Test Event and Developers Forum XXXIX, June 12-14, 2017</p>
       <div id="_report">
         <h1>1.&#xA0; Report</h1>
-        <p id="_46631e8d-3781-44d2-ae35-59a86a017ec4">The event was hosted by Tandem in Seattle, Washington on June 12-14, 2017</p>
-        <p id="_a07e41ba-8800-4a64-8fdd-a137201f0c4f">The interoperability test event and developers forum had a relatively small number of attendees. While this led to little actual testing we did spend our time discussing some of the intricate details of work that is in progress.</p>
-        <p id="_da9dd87c-e493-4fee-840a-a7d3f54b80cc">In attendance were:</p>
-        <ul id="_f2b4659c-f325-4f8e-ac6b-78d9a2a1e8fa">
+        <p id="_321a8085-70b6-4c6d-9abc-11bf93a66f39">The event was hosted by Tandem in Seattle, Washington on June 12-14, 2017</p>
+        <p id="_fbee5363-0398-4c61-bd26-497b720a4736">The interoperability test event and developers forum had a relatively small number of attendees. While this led to little actual testing we did spend our time discussing some of the intricate details of work that is in progress.</p>
+        <p id="_69fc8fed-aead-4fb6-96f0-bb5ae5f42896">In attendance were:</p>
+        <ul id="_b4467dc5-86e2-448b-8d35-a71a5402a95e">
   <li>
-    <p id="_921e6fe8-18c7-4459-8671-7ee2c750a3d3">Tandem (our hosts)</p>
+    <p id="_af94f200-e924-4c12-9830-1ccc35e2fb22">Tandem (our hosts)</p>
   </li>
   <li>
-    <p id="_e15be5c6-123d-4de4-aa88-0b3e810d093e">Spherical Cow Group with Bedework</p>
+    <p id="_12fd1ead-b565-41a4-87b5-bc4dc77c1380">Spherical Cow Group with Bedework</p>
   </li>
   <li>
-    <p id="_bfed7275-1713-4bc0-9ab0-112daf80da6f">Eventable</p>
+    <p id="_b5fa5b48-3152-459e-8a6e-54ba78bf6169">Eventable</p>
   </li>
   <li>
-    <p id="_8dbd0186-f62c-49e2-9401-753518f4962b">FastMail</p>
+    <p id="_02b948d1-6178-4ac4-923a-62e444b5977e">FastMail</p>
   </li>
   <li>
-    <p id="_9397bd95-c4b6-4631-b26b-f91b1919510c">Ribose</p>
+    <p id="_18062502-ec98-412e-9635-979dd68d87c2">Ribose</p>
   </li>
 </ul>
-        <p id="_32056695-351f-4ecf-bd4c-6a0991070844">There was discussion of how to deal with categorization for the new data model and representation being developed in TC-API. This led to an agreement on the value being a URI and that the actual details of what that represented was outside of the scope of the TC-API work. This will also lead to some changes in the new calendaring extensions for event publication draft. Additionally we looked at what it was necessary to add to the data model to successfully handle tasks.</p>
-        <p id="_78586eb6-f898-4993-9211-e8b11e7969bd">We spent some time working on the subscription upgrade specification to ensure this would work successfully with caching servers. There was some discussion on how to flag a deleted event.The eventual consensus was to define a new &#x201C;Deleted&#x201D; status. We also felt it was important to define a time-range query as that is probably a very frequent use of subscriptions - e.g. what events happen this week? The consensus was that we should use a HEAD request to discover the possible upgrades rather than an OPTIONS request.</p>
-        <p id="_07ba6b02-bfbd-439a-aabf-c388002a70dd">We spent some time discussing various aspects of VCARD. There was a lot to be discussed around the exact meaning of the UID. The wording of the specifications suggest that it is associated with the actual entity &#x2014; i.e. a human or a resource. Many of us thought that it should really be tied to a particular representation of that entity. Associated with that was the issue of who or what should merge cards that appear to represent the same entity. A number of us felt that no merge should be attempted - it is up to the consumer to decide if two vCards represent the same person. Perhaps UIs should consider adding the ability to explicitly link VCARDs representing the same person. There is probably further discussion to be had on this issue.</p>
+        <p id="_049fa8bf-9507-4d71-adbd-abd7a9922d15">There was discussion of how to deal with categorization for the new data model and representation being developed in TC-API. This led to an agreement on the value being a URI and that the actual details of what that represented was outside of the scope of the TC-API work. This will also lead to some changes in the new calendaring extensions for event publication draft. Additionally we looked at what it was necessary to add to the data model to successfully handle tasks.</p>
+        <p id="_4391c537-4db3-4975-a5ab-3fc150301702">We spent some time working on the subscription upgrade specification to ensure this would work successfully with caching servers. There was some discussion on how to flag a deleted event.The eventual consensus was to define a new &#x201C;Deleted&#x201D; status. We also felt it was important to define a time-range query as that is probably a very frequent use of subscriptions - e.g. what events happen this week? The consensus was that we should use a HEAD request to discover the possible upgrades rather than an OPTIONS request.</p>
+        <p id="_cf879f54-8ad0-4af6-972d-3d10a209b1a4">We spent some time discussing various aspects of VCARD. There was a lot to be discussed around the exact meaning of the UID. The wording of the specifications suggest that it is associated with the actual entity &#x2014; i.e. a human or a resource. Many of us thought that it should really be tied to a particular representation of that entity. Associated with that was the issue of who or what should merge cards that appear to represent the same entity. A number of us felt that no merge should be attempted - it is up to the consumer to decide if two vCards represent the same person. Perhaps UIs should consider adding the ability to explicitly link VCARDs representing the same person. There is probably further discussion to be had on this issue.</p>
       </div>
     </main>
   <script type="text/x-mathjax-config">
@@ -1054,11 +1064,11 @@ of users and does not constitute an endorsement.</p>
     }
  });
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=AM_HTMLorMML"></script>
-<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script><script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=AM_HTMLorMML" async="async"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>  <script>
     //TOC generation
       $('#toc').toc({
-          'selectors': 'h1,h2:not(.TermNum)', //elements to use as headings
+          'selectors': toclevel(), //elements to use as headings
           'container': 'main', //element to find all selectors in
           'smoothScrolling': true, //enable or disable smooth scrolling on click
           'prefix': 'toc', //prefix for anchor tags and class names
@@ -1120,9 +1130,12 @@ $('#toggle').on('click', function(){
  * https://github.com/bryanbraun/anchorjs
  * Copyright (c) 2017 Bryan Braun; Licensed MIT
  */
-!function(A,e){"use strict";"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&module.exports?module.exports=e():(A.AnchorJS=e(),A.anchors=new A.AnchorJS)}(this,function(){"use strict";return function(A){function e(A){A.icon=A.hasOwnProperty("icon")?A.icon:"",A.visible=A.hasOwnProperty("visible")?A.visible:"hover",A.placement=A.hasOwnProperty("placement")?A.placement:"right",A.ariaLabel=A.hasOwnProperty("ariaLabel")?A.ariaLabel:"Anchor",A.class=A.hasOwnProperty("class")?A.class:"",A.truncate=A.hasOwnProperty("truncate")?Math.floor(A.truncate):64}function t(A){var e;if("string"==typeof A||A instanceof String)e=[].slice.call(document.querySelectorAll(A));else{if(!(Array.isArray(A)||A instanceof NodeList))throw new Error("The selector provided to AnchorJS was invalid.");e=[].slice.call(A)}return e}function i(){if(null===document.head.querySelector("style.anchorjs")){var A,e=document.createElement("style");e.className="anchorjs",e.appendChild(document.createTextNode("")),void 0===(A=document.head.querySelector('[rel="stylesheet"], style'))?document.head.appendChild(e):document.head.insertBefore(e,A),e.sheet.insertRule(" .anchorjs-link {   opacity: 0;   text-decoration: none;   -webkit-font-smoothing: antialiased;   -moz-osx-font-smoothing: grayscale; }",e.sheet.cssRules.length),e.sheet.insertRule(" *:hover > .anchorjs-link, .anchorjs-link:focus  {   opacity: 1; }",e.sheet.cssRules.length),e.sheet.insertRule(" [data-anchorjs-icon]::after {   content: attr(data-anchorjs-icon); }",e.sheet.cssRules.length),e.sheet.insertRule(' @font-face {   font-family: "anchorjs-icons";   src: url(data:n/a;base64,AAEAAAALAIAAAwAwT1MvMg8yG2cAAAE4AAAAYGNtYXDp3gC3AAABpAAAAExnYXNwAAAAEAAAA9wAAAAIZ2x5ZlQCcfwAAAH4AAABCGhlYWQHFvHyAAAAvAAAADZoaGVhBnACFwAAAPQAAAAkaG10eASAADEAAAGYAAAADGxvY2EACACEAAAB8AAAAAhtYXhwAAYAVwAAARgAAAAgbmFtZQGOH9cAAAMAAAAAunBvc3QAAwAAAAADvAAAACAAAQAAAAEAAHzE2p9fDzz1AAkEAAAAAADRecUWAAAAANQA6R8AAAAAAoACwAAAAAgAAgAAAAAAAAABAAADwP/AAAACgAAA/9MCrQABAAAAAAAAAAAAAAAAAAAAAwABAAAAAwBVAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAMCQAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAg//0DwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAIAAAACgAAxAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADAAAAAIAAgAAgAAACDpy//9//8AAAAg6cv//f///+EWNwADAAEAAAAAAAAAAAAAAAAACACEAAEAAAAAAAAAAAAAAAAxAAACAAQARAKAAsAAKwBUAAABIiYnJjQ3NzY2MzIWFxYUBwcGIicmNDc3NjQnJiYjIgYHBwYUFxYUBwYGIwciJicmNDc3NjIXFhQHBwYUFxYWMzI2Nzc2NCcmNDc2MhcWFAcHBgYjARQGDAUtLXoWOR8fORYtLTgKGwoKCjgaGg0gEhIgDXoaGgkJBQwHdR85Fi0tOAobCgoKOBoaDSASEiANehoaCQkKGwotLXoWOR8BMwUFLYEuehYXFxYugC44CQkKGwo4GkoaDQ0NDXoaShoKGwoFBe8XFi6ALjgJCQobCjgaShoNDQ0NehpKGgobCgoKLYEuehYXAAAADACWAAEAAAAAAAEACAAAAAEAAAAAAAIAAwAIAAEAAAAAAAMACAAAAAEAAAAAAAQACAAAAAEAAAAAAAUAAQALAAEAAAAAAAYACAAAAAMAAQQJAAEAEAAMAAMAAQQJAAIABgAcAAMAAQQJAAMAEAAMAAMAAQQJAAQAEAAMAAMAAQQJAAUAAgAiAAMAAQQJAAYAEAAMYW5jaG9yanM0MDBAAGEAbgBjAGgAbwByAGoAcwA0ADAAMABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAP) format("truetype"); }',e.sheet.cssRules.length)}}this.options=A||{},this.elements=[],e(this.options),this.isTouchDevice=function(){return!!("ontouchstart"in window||window.DocumentTouch&&document instanceof DocumentTouch)},this.add=function(A){var n,o,s,a,r,c,h,l,u,d,f,p=[];if(e(this.options),"touch"===(f=this.options.visible)&&(f=this.isTouchDevice()?"always":"hover"),A||(A="h2, h3, h4, h5, h6"),0===(n=t(A)).length)return this;for(i(),o=document.querySelectorAll("[id]"),s=[].map.call(o,function(A){return A.id}),r=0;r<n.length;r++)if(this.hasAnchorJSLink(n[r]))p.push(r);else{if(n[r].hasAttribute("id"))a=n[r].getAttribute("id");else if(n[r].hasAttribute("data-anchor-id"))a=n[r].getAttribute("data-anchor-id");else{u=l=this.urlify(n[r].textContent),h=0;do{void 0!==c&&(u=l+"-"+h),c=s.indexOf(u),h+=1}while(-1!==c);c=void 0,s.push(u),n[r].setAttribute("id",u),a=u}a.replace(/-/g," "),(d=document.createElement("a")).className="anchorjs-link "+this.options.class,d.href="#"+a,d.setAttribute("aria-label",this.options.ariaLabel),d.setAttribute("data-anchorjs-icon",this.options.icon),"always"===f&&(d.style.opacity="1"),""===this.options.icon&&(d.style.font="1em/1 anchorjs-icons","left"===this.options.placement&&(d.style.lineHeight="inherit")),"left"===this.options.placement?(d.style.position="absolute",d.style.marginLeft="-1em",d.style.paddingRight="0.5em",n[r].insertBefore(d,n[r].firstChild)):(d.style.paddingLeft="0.375em",n[r].appendChild(d))}for(r=0;r<p.length;r++)n.splice(p[r]-r,1);return this.elements=this.elements.concat(n),this},this.remove=function(A){for(var e,i,n=t(A),o=0;o<n.length;o++)(i=n[o].querySelector(".anchorjs-link"))&&(-1!==(e=this.elements.indexOf(n[o]))&&this.elements.splice(e,1),n[o].removeChild(i));return this},this.removeAll=function(){this.remove(this.elements)},this.urlify=function(A){var t=/[& +$,:;=?@"#{}|^~[`%!'<>\]\.\/\(\)\*\\]/g;return this.options.truncate||e(this.options),A.trim().replace(/\'/gi,"").replace(t,"-").replace(/-{2,}/g,"-").substring(0,this.options.truncate).replace(/^-+|-+$/gm,"").toLowerCase()},this.hasAnchorJSLink=function(A){var e=A.firstChild&&(" "+A.firstChild.className+" ").indexOf(" anchorjs-link ")>-1,t=A.lastChild&&(" "+A.lastChild.className+" ").indexOf(" anchorjs-link ")>-1;return e||t||!1}}});  </script>
+!function(A,e){"use strict";"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&module.exports?module.exports=e():(A.AnchorJS=e(),A.anchors=new A.AnchorJS)}(this,function(){"use strict";return function(A){function e(A){A.icon=A.hasOwnProperty("icon")?A.icon:"",A.visible=A.hasOwnProperty("visible")?A.visible:"hover",A.placement=A.hasOwnProperty("placement")?A.placement:"right",A.ariaLabel=A.hasOwnProperty("ariaLabel")?A.ariaLabel:"Anchor",A.class=A.hasOwnProperty("class")?A.class:"",A.truncate=A.hasOwnProperty("truncate")?Math.floor(A.truncate):64}function t(A){var e;if("string"==typeof A||A instanceof String)e=[].slice.call(document.querySelectorAll(A));else{if(!(Array.isArray(A)||A instanceof NodeList))throw new Error("The selector provided to AnchorJS was invalid.");e=[].slice.call(A)}return e}function i(){if(null===document.head.querySelector("style.anchorjs")){var A,e=document.createElement("style");e.className="anchorjs",e.appendChild(document.createTextNode("")),void 0===(A=document.head.querySelector('[rel="stylesheet"], style'))?document.head.appendChild(e):document.head.insertBefore(e,A),e.sheet.insertRule(" .anchorjs-link {   opacity: 0;   text-decoration: none;   -webkit-font-smoothing: antialiased;   -moz-osx-font-smoothing: grayscale; }",e.sheet.cssRules.length),e.sheet.insertRule(" *:hover > .anchorjs-link, .anchorjs-link:focus  {   opacity: 1; }",e.sheet.cssRules.length),e.sheet.insertRule(" [data-anchorjs-icon]::after {   content: attr(data-anchorjs-icon); }",e.sheet.cssRules.length),e.sheet.insertRule(' @font-face {   font-family: "anchorjs-icons";   src: url(data:n/a;base64,AAEAAAALAIAAAwAwT1MvMg8yG2cAAAE4AAAAYGNtYXDp3gC3AAABpAAAAExnYXNwAAAAEAAAA9wAAAAIZ2x5ZlQCcfwAAAH4AAABCGhlYWQHFvHyAAAAvAAAADZoaGVhBnACFwAAAPQAAAAkaG10eASAADEAAAGYAAAADGxvY2EACACEAAAB8AAAAAhtYXhwAAYAVwAAARgAAAAgbmFtZQGOH9cAAAMAAAAAunBvc3QAAwAAAAADvAAAACAAAQAAAAEAAHzE2p9fDzz1AAkEAAAAAADRecUWAAAAANQA6R8AAAAAAoACwAAAAAgAAgAAAAAAAAABAAADwP/AAAACgAAA/9MCrQABAAAAAAAAAAAAAAAAAAAAAwABAAAAAwBVAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAMCQAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAg//0DwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAIAAAACgAAxAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADAAAAAIAAgAAgAAACDpy//9//8AAAAg6cv//f///+EWNwADAAEAAAAAAAAAAAAAAAAACACEAAEAAAAAAAAAAAAAAAAxAAACAAQARAKAAsAAKwBUAAABIiYnJjQ3NzY2MzIWFxYUBwcGIicmNDc3NjQnJiYjIgYHBwYUFxYUBwYGIwciJicmNDc3NjIXFhQHBwYUFxYWMzI2Nzc2NCcmNDc2MhcWFAcHBgYjARQGDAUtLXoWOR8fORYtLTgKGwoKCjgaGg0gEhIgDXoaGgkJBQwHdR85Fi0tOAobCgoKOBoaDSASEiANehoaCQkKGwotLXoWOR8BMwUFLYEuehYXFxYugC44CQkKGwo4GkoaDQ0NDXoaShoKGwoFBe8XFi6ALjgJCQobCjgaShoNDQ0NehpKGgobCgoKLYEuehYXAAAADACWAAEAAAAAAAEACAAAAAEAAAAAAAIAAwAIAAEAAAAAAAMACAAAAAEAAAAAAAQACAAAAAEAAAAAAAUAAQALAAEAAAAAAAYACAAAAAMAAQQJAAEAEAAMAAMAAQQJAAIABgAcAAMAAQQJAAMAEAAMAAMAAQQJAAQAEAAMAAMAAQQJAAUAAgAiAAMAAQQJAAYAEAAMYW5jaG9yanM0MDBAAGEAbgBjAGgAbwByAGoAcwA0ADAAMABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAP) format("truetype"); }',e.sheet.cssRules.length)}}this.options=A||{},this.elements=[],e(this.options),this.isTouchDevice=function(){return!!("ontouchstart"in window||window.DocumentTouch&&document instanceof DocumentTouch)},this.add=function(A){var n,o,s,a,r,c,h,l,u,d,f,p=[];if(e(this.options),"touch"===(f=this.options.visible)&&(f=this.isTouchDevice()?"always":"hover"),A||(A="h2, h3, h4, h5, h6"),0===(n=t(A)).length)return this;for(i(),o=document.querySelectorAll("[id]"),s=[].map.call(o,function(A){return A.id}),r=0;r<n.length;r++)if(this.hasAnchorJSLink(n[r]))p.push(r);else{if(n[r].hasAttribute("id"))a=n[r].getAttribute("id");else if(n[r].hasAttribute("data-anchor-id"))a=n[r].getAttribute("data-anchor-id");else{u=l=this.urlify(n[r].textContent),h=0;do{void 0!==c&&(u=l+"-"+h),c=s.indexOf(u),h+=1}while(-1!==c);c=void 0,s.push(u),n[r].setAttribute("id",u),a=u}a.replace(/-/g," "),(d=document.createElement("a")).className="anchorjs-link "+this.options.class,d.href="#"+a,d.setAttribute("aria-label",this.options.ariaLabel),d.setAttribute("data-anchorjs-icon",this.options.icon),"always"===f&&(d.style.opacity="1"),""===this.options.icon&&(d.style.font="1em/1 anchorjs-icons","left"===this.options.placement&&(d.style.lineHeight="inherit")),"left"===this.options.placement?(d.style.position="absolute",d.style.marginLeft="-1em",d.style.paddingRight="0.5em",n[r].insertBefore(d,n[r].firstChild)):(d.style.paddingLeft="0.375em",n[r].appendChild(d))}for(r=0;r<p.length;r++)n.splice(p[r]-r,1);return this.elements=this.elements.concat(n),this},this.remove=function(A){for(var e,i,n=t(A),o=0;o<n.length;o++)(i=n[o].querySelector(".anchorjs-link"))&&(-1!==(e=this.elements.indexOf(n[o]))&&this.elements.splice(e,1),n[o].removeChild(i));return this},this.removeAll=function(){this.remove(this.elements)},this.urlify=function(A){var t=/[& +$,:;=?@"#{}|^~[`%!'<>\]\.\/\(\)\*\]/g;return this.options.truncate||e(this.options),A.trim().replace(/
+</html>
+/gi,"").replace(t,"-").replace(/-{2,}/g,"-").substring(0,this.options.truncate).replace(/^-+|-+$/gm,"").toLowerCase()},this.hasAnchorJSLink=function(A){var e=A.firstChild&&(" "+A.firstChild.className+" ").indexOf(" anchorjs-link ")>-1,t=A.lastChild&&(" "+A.lastChild.className+" ").indexOf(" anchorjs-link ")>-1;return e||t||!1}}});  </script>
 
   <script>
+/*
   $(document).ready(function() {
           $('[id^=toc]').each(function ()
           {
@@ -1131,8 +1144,13 @@ $('#toggle').on('click', function(){
              currentToc.wrap("<a href='" + url + "#" + currentToc.attr("id") + "' </a>");
           });
 });
+*/
   anchors.options = {
   placement: 'left'
 };
 anchors.add('h1, h2, h3, h4');
-</script></html>
+</script>
+
+
+</body>
+</html>

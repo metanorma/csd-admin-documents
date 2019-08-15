@@ -181,17 +181,19 @@ main {
     padding: 0 1.5em 0 1.5em;
     overflow: visible; } }
 
-@media screen {
-  div.figure > img {
-    width: 100%;
-    height: auto; } }
+div.figure > img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 100%;
+  height: auto; }
 
 #toc ul {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-#toc li {
+#toc li a {
   padding: 5px 10px; }
 
 #toc a {
@@ -200,6 +202,7 @@ main {
   display: block; }
 
 #toc a:hover {
+  box-shadow: none;
   color: white; }
 
 #toc .h2 {
@@ -876,18 +879,24 @@ a.anchorjs-link:hover {
     margin-top: 2em; } }
 
 -->
-</style><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        <title>Report on Test Event and Developers Forum XXXVIII, February 13-15, 2017</title>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</style><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Report on Test Event and Developers Forum XXXVIII, February 13-15, 2017</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!--TOC script import-->
-    <script type="text/javascript" src="https://cdn.rawgit.com/jgallen23/toc/0.3.2/dist/toc.min.js"></script>
+<!--TOC script import-->
+<script type="text/javascript" src="https://cdn.rawgit.com/jgallen23/toc/0.3.2/dist/toc.min.js"></script>
+<script type="text/javascript">function toclevel() { var i; var text = "";
+  for(i = 1; i <= 2; i++) {
+    if (i > 1) { text += ","; } text += "h" + i + ":not(:empty):not(.TermNum)"; } 
+  return text;}
+</script>
 
-    <!--Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Space+Mono:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Overpass:300,300i,600,900" rel="stylesheet" />
-    <!--Font awesome import for the link icon-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" />
+<!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Space+Mono:400,700" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Overpass:300,300i,600,900" rel="stylesheet" />
+
+<!--Font awesome import for the link icon-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" />
 <style class="anchorjs"></style>
 </head>
   <body lang="EN-US" link="blue" vlink="#954F72" xml:lang="EN-US" class="container">
@@ -903,85 +912,86 @@ a.anchorjs-link:hover {
 
 <header>
 
-<!--<div class="WordSection1">-->
+  <!--<div class="WordSection1">-->
   <div class="coverpage">
     <div class="wrapper-top">
 
-  <div class="coverpage-doc-identity">
-    <div class="doc-number">
-      <span class="docnumber">CC/A 1702:2017</span>
-      <!-- <span class="docnumber-separator">:</span>
-      <span class="docyear">2017</span> -->
+      <div class="coverpage-doc-identity">
+        <div class="doc-number">
+          <span class="docnumber">CC/A 1702:2017</span>
+          <!-- <span class="docnumber-separator">:</span>
+            <span class="docyear">2017</span> -->
+        </div>
+
+        <div class="coverpage-title">
+          <span class="title-first">Report on Test Event and Developers Forum XXXVIII, February 13-15, 2017</span>
+          <!--<span class="title-second"></span>-->
+        </div>
+      </div>
+
+      <div class="coverpage-logo">
+        <span>The Calendaring and Scheduling Consortium</span>
+      </div>
+
+      <div class="coverpage-tc-name">
+        <span>TC IOPTEST</span>
+      </div>
+
+      
+
+      
+
+      <div class="coverpage-contributors">
+        
+
+      </div>
     </div>
 
-    <div class="coverpage-title">
-      <span class="title-first">Report on Test Event and Developers Forum XXXVIII, February 13-15, 2017</span>
-      <!--<span class="title-second"></span>-->
+    <div class="title-section1">
+      <div class="coverpage-stage-block">
+        <span class="coverpage-stage" id="administrative">CalConnect Administrative</span>
+      </div>
+
+      <div class="coverpage-stage-block">
+        <span class="coverpage-maturity" id="published"></span>
+      </div>
+
+      
+
+      <div class="copyright">
+        <p class="year">
+        &#xA9; 2017 The Calendaring and Scheduling Consortium, Inc.
+        </p>
+
+        <p class="message">
+        All rights reserved. Unless otherwise specified, no part of this
+        publication may be reproduced or utilized otherwise in any form or by any
+        means, electronic or mechanical, including photocopying, or posting on the
+        internet or an intranet, without prior written permission. Permission can
+        be requested from the address below.
+        </p>
+
+        <div class="contact-info">
+          <p class="name">The Calendaring and Scheduling Consortium, Inc.</p>
+          <p class="address">
+          4390 Chaffin Lane<br />
+          McKinleyville<br />
+          California 95519<br />
+          United States of America<br />
+          <br />
+          <a href="mailto:copyright@calconnect.org">copyright@calconnect.org</a><br />
+          <a href="www.calconnect.org">www.calconnect.org</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="rule"></div>
     </div>
   </div>
+</header>
 
-  <div class="coverpage-logo">
-    <span>The Calendaring and Scheduling Consortium</span>
-  </div>
-
-  <div class="coverpage-tc-name">
-    <span>TC IOPTEST</span>
-  </div>
-
-
-
-
-
-  
-
-  </div>
-
-  <div class="title-section1">
-  <div class="coverpage-stage-block">
-    <span class="coverpage-stage" id="administrative">CalConnect Administrative</span>
-  </div>
-
-  <div class="coverpage-stage-block">
-    <span class="coverpage-maturity" id="published"></span>
-</div>
-
-
-
-<div class="copyright">
-  <p class="year">
-    &#xA9; 2017 The Calendaring and Scheduling Consortium, Inc.
-  </p>
-
-  <p class="message">
-    All rights reserved. Unless otherwise specified, no part of this
-    publication may be reproduced or utilized otherwise in any form or by any
-    means, electronic or mechanical, including photocopying, or posting on the
-    internet or an intranet, without prior written permission. Permission can
-    be requested from the address below.
-  </p>
-
-<div class="contact-info">
-  <p class="name">The Calendaring and Scheduling Consortium, Inc.</p>
-  <p class="address">
-    4390 Chaffin Lane<br />
-    McKinleyville<br />
-    California 95519<br />
-    United States of America<br />
-    <br />
-    <a href="mailto:copyright@calconnect.org">copyright@calconnect.org</a><br />
-    <a href="www.calconnect.org">www.calconnect.org</a>
-  </p>
-</div>
-</div>
-
-<div class="rule"></div>
-</div>
-
-
-
-</div></header></div>
       <p>&#xA0;</p>
-    </body>
+    </div>
     <br />
     <div class="prefatory-section"><nav>
   <h1 id="content">Contents</h1>
@@ -999,72 +1009,72 @@ a.anchorjs-link:hover {
       <br />
       <div>
         <h1 class="ForewordTitle">Foreword</h1>
-        <p id="_c5d78f55-55c4-47d3-9d56-d117dee1351f">The Calendaring and Scheduling Consortium (&#x201C;CalConnect&#x201D;) is a global non-profit
+        <p id="_75458857-5b1e-4d32-b7a1-df247da63a9c">The Calendaring and Scheduling Consortium (&#x201C;CalConnect&#x201D;) is a global non-profit
 organization with the aim to facilitate interoperability of technologies across
 user-centric systems and applications.</p>
-        <p id="_7132625c-7297-4318-a9d4-e2bc52945044">CalConnect works closely with liaison partners including international
+        <p id="_fe3c8346-69c1-4b27-8931-13bee3c68f5b">CalConnect works closely with liaison partners including international
 organizations such as ISO, OASIS and M3AAWG.</p>
-        <p id="_d8bef702-0136-4387-b9f6-0e3f4e1ad673">The procedures used to develop this document and those intended for its further
+        <p id="_d5b9b5b3-e5df-424a-8ee4-242b2cac4fc7">The procedures used to develop this document and those intended for its further
 maintenance are described in the CalConnect Directives.</p>
-        <p id="_d70652f8-7085-4654-bd38-d1451b6f4bf9">In particular the different approval criteria needed for the different types of
+        <p id="_0f16d09c-1b7d-41b9-871e-de535a1150aa">In particular the different approval criteria needed for the different types of
 ISO documents should be noted. This document was drafted in accordance with the
 editorial rules of the CalConnect Directives.</p>
-        <p id="_3f6203e7-7f0d-4b66-9b56-4de964cb52d7">Attention is drawn to the possibility that some of the elements of this
+        <p id="_a0298f77-8ec6-454f-a9a9-884dc2098b77">Attention is drawn to the possibility that some of the elements of this
 document may be the subject of patent rights. CalConnect shall not be held responsible
 for identifying any or all such patent rights. Details of any patent rights
 identified during the development of the document will be in the Introduction
 and/or on the CalConnect list of patent declarations received (see
 www.calconnect.com/patents).</p>
-        <p id="_b031e76e-e6bd-4b6c-bdec-80eec3d0d5c3">Any trade name used in this document is information given for the convenience
+        <p id="_c81767c4-f1db-42db-91f6-978d151c2cf2">Any trade name used in this document is information given for the convenience
 of users and does not constitute an endorsement.</p>
-        <p id="_dba90ffa-4864-485e-8987-a02b527dd2f0">This document was prepared by Technical Committee <i>IOPTEST</i>.</p>
+        <p id="_57b45ec6-b4f6-4336-9094-ead93584e866">This document was prepared by Technical Committee <i>IOPTEST</i>.</p>
       </div>
       <p class="zzSTDTitle1">Report on Test Event and Developers Forum XXXVIII, February 13-15, 2017</p>
       <div id="_report">
         <h1>1.&#xA0; Report</h1>
-        <p id="_b9466438-3b9b-45b2-8261-f2b38e944f8d">The event was hosted by the University of California, Irvine, in Irvine California on February 13-15, 2017</p>
-        <p id="_fbb1a731-425c-4276-9a44-0d971d3ac789">The participants in this event were:</p>
-        <ul id="_751d1138-14b7-41e4-b164-5c7ec58cc69d">
+        <p id="_95798ed0-1bc6-45e8-bba5-b96d628920e6">The event was hosted by the University of California, Irvine, in Irvine California on February 13-15, 2017</p>
+        <p id="_dba476ce-4651-4707-bddc-ffb7ace6fd21">The participants in this event were:</p>
+        <ul id="_2fe22fea-156c-4543-9445-f72a2c2fae31">
   <li>
-    <p id="_3cc9e034-29b5-4c98-bc4a-349ba5b2a252">1and1</p>
+    <p id="_dd6086ea-06c7-4478-b3c8-1469458c29a7">1and1</p>
   </li>
   <li>
-    <p id="_2a25b1c4-ec05-4825-abe1-8253737ffdaa">AOL</p>
+    <p id="_476e2e47-4e58-4dad-82fa-6993200d12da">AOL</p>
   </li>
   <li>
-    <p id="_6dc58554-2681-475a-850c-b7d5c3c28b4f">Apple</p>
+    <p id="_9a18c04c-31e3-4e42-956f-7c1931923d83">Apple</p>
   </li>
   <li>
-    <p id="_122bae65-afb0-45a1-be47-c502b80dd101">FastMail</p>
+    <p id="_3676da27-c5dd-4d3e-bdd2-72344c44a31a">FastMail</p>
   </li>
   <li>
-    <p id="_db63c74d-da1f-4b91-829e-c616b17fc994">Google</p>
+    <p id="_82406991-1db0-4967-9ab6-57bcf5fd9a1c">Google</p>
   </li>
   <li>
-    <p id="_317fe546-0cb8-4901-af19-632170916699">SCG (Bedework)</p>
+    <p id="_9553c559-7528-4d7d-b7af-a14ab0f2f4c7">SCG (Bedework)</p>
   </li>
   <li>
-    <p id="_d85e66bb-c130-4db2-a05b-13f9b7a8485c">Zimbra</p>
-  </li>
-</ul>
-        <p id="_4694dbe3-2fa1-4b83-9697-ee96b03aea68">There were a number of areas some or all of us were interested in pursuing. These included:</p>
-        <ul id="_77bda162-973f-4350-a8a5-d02aff834bb4">
-  <li>
-    <p id="_25c955c2-78d1-4a3e-a7d4-1b7a877d7c06">For the Java people bringing ourselves up to date with the latest ical4j</p>
-  </li>
-  <li>
-    <p id="_bba25ff8-437f-45d8-86fc-4f8a52246125">Coming up with a way of handling updates to the caldav tester suite.</p>
-  </li>
-  <li>
-    <p id="_b616236d-298d-4304-8399-5f131b6dfc43">Discussions on developer guide directions</p>
+    <p id="_32e5c389-1857-4404-8412-31206d2a5b27">Zimbra</p>
   </li>
 </ul>
-        <p id="_7db86c71-725b-4be4-be49-b9e37b57812d">There were the usual crop of issues that attendees wanted to address. iMIP has been a major topic lately and the forum provided an opportunity for some members to deal with problems they had been experiencing.</p>
-        <p id="_a8f7eac4-1e07-4ad1-82ad-fbce659ca31a">Ical4j has been the topic of much discussion for some months. We used this session as an opportunity to work on bringing ourselves up to date with the latest version - or at least investigating how much work it would be. 1&amp;1, Bedework, Zimbra and AOL were present and are users of iCal4j. In the coming months we will discuss what changes we would like to see made to that library.</p>
-        <p id="_49ae57fc-af14-49f5-ab91-1dcafdf9f01a">At the Dresden meeting we decided to create a CalConnect fork of the Darwin CalDAV tester and work on some of the tests to make them more usable for non-Apple servers. In the intervening period some changes were proposed and we spent some time this meeting discussing how we might get these changes merged back into the CalConnect fork. The intent is to come up with a subset of tests that any server developer should be able to run and expect to get a 100% success rate. A number of us have localized versions of the tester and we would like to merge many of these changes into the CalConnect version so that they can benefit everybody.</p>
-        <p id="_923a1526-75f9-449b-beaa-4d4c314352b6">The meeting was a chance to carry out some of the internal changes to the developer guide that had been contemplated. These should make it easier to organize the content in the future.</p>
-        <p id="_ff8bbda7-306b-4118-aeb7-5e818a411124">There was further discussion on the new data model being worked on by TC API and its JSON representation.</p>
-        <p id="_1aac1236-c5f7-44f0-aa3e-94177b7edfff">We also spent some time talking over the issue of calendar spam and how this differs, if at all, from email spam. This allowed us to collect our thoughts ready for a wider discussion in the conference that followed. While calendar spam has not been a major ongoing issue it has already caused some problems and we need to be ready to deal with the inevitable.</p>
+        <p id="_a028d95f-5a19-47f7-9164-98359930dc0a">There were a number of areas some or all of us were interested in pursuing. These included:</p>
+        <ul id="_3221dc63-3a09-4544-bb8e-f8490d725118">
+  <li>
+    <p id="_a491e5d2-8105-41dc-a674-e1cd23f68209">For the Java people bringing ourselves up to date with the latest ical4j</p>
+  </li>
+  <li>
+    <p id="_1620c9e8-3c5c-40f4-8a5d-887dbcf251fc">Coming up with a way of handling updates to the caldav tester suite.</p>
+  </li>
+  <li>
+    <p id="_463049c2-7b9c-4bb5-b3e5-0bc1dd103311">Discussions on developer guide directions</p>
+  </li>
+</ul>
+        <p id="_de6a5a69-667a-4fc6-b958-f4e1d27cffb6">There were the usual crop of issues that attendees wanted to address. iMIP has been a major topic lately and the forum provided an opportunity for some members to deal with problems they had been experiencing.</p>
+        <p id="_edbd271f-ac70-483b-8a61-066dfd74b714">Ical4j has been the topic of much discussion for some months. We used this session as an opportunity to work on bringing ourselves up to date with the latest version - or at least investigating how much work it would be. 1&amp;1, Bedework, Zimbra and AOL were present and are users of iCal4j. In the coming months we will discuss what changes we would like to see made to that library.</p>
+        <p id="_d52f257f-9793-47cd-805f-b434998510cd">At the Dresden meeting we decided to create a CalConnect fork of the Darwin CalDAV tester and work on some of the tests to make them more usable for non-Apple servers. In the intervening period some changes were proposed and we spent some time this meeting discussing how we might get these changes merged back into the CalConnect fork. The intent is to come up with a subset of tests that any server developer should be able to run and expect to get a 100% success rate. A number of us have localized versions of the tester and we would like to merge many of these changes into the CalConnect version so that they can benefit everybody.</p>
+        <p id="_cc2e4cce-5e2c-4bbf-a077-3e5f4a0a2300">The meeting was a chance to carry out some of the internal changes to the developer guide that had been contemplated. These should make it easier to organize the content in the future.</p>
+        <p id="_128e4d1c-9881-450b-b68c-ccf34b46cf89">There was further discussion on the new data model being worked on by TC API and its JSON representation.</p>
+        <p id="_f3339d64-916d-4610-8388-b1abf8e348c6">We also spent some time talking over the issue of calendar spam and how this differs, if at all, from email spam. This allowed us to collect our thoughts ready for a wider discussion in the conference that followed. While calendar spam has not been a major ongoing issue it has already caused some problems and we need to be ready to deal with the inevitable.</p>
       </div>
     </main>
   <script type="text/x-mathjax-config">
@@ -1074,11 +1084,11 @@ of users and does not constitute an endorsement.</p>
     }
  });
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=AM_HTMLorMML"></script>
-<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script><script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=AM_HTMLorMML" async="async"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>  <script>
     //TOC generation
       $('#toc').toc({
-          'selectors': 'h1,h2:not(.TermNum)', //elements to use as headings
+          'selectors': toclevel(), //elements to use as headings
           'container': 'main', //element to find all selectors in
           'smoothScrolling': true, //enable or disable smooth scrolling on click
           'prefix': 'toc', //prefix for anchor tags and class names
@@ -1140,9 +1150,12 @@ $('#toggle').on('click', function(){
  * https://github.com/bryanbraun/anchorjs
  * Copyright (c) 2017 Bryan Braun; Licensed MIT
  */
-!function(A,e){"use strict";"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&module.exports?module.exports=e():(A.AnchorJS=e(),A.anchors=new A.AnchorJS)}(this,function(){"use strict";return function(A){function e(A){A.icon=A.hasOwnProperty("icon")?A.icon:"",A.visible=A.hasOwnProperty("visible")?A.visible:"hover",A.placement=A.hasOwnProperty("placement")?A.placement:"right",A.ariaLabel=A.hasOwnProperty("ariaLabel")?A.ariaLabel:"Anchor",A.class=A.hasOwnProperty("class")?A.class:"",A.truncate=A.hasOwnProperty("truncate")?Math.floor(A.truncate):64}function t(A){var e;if("string"==typeof A||A instanceof String)e=[].slice.call(document.querySelectorAll(A));else{if(!(Array.isArray(A)||A instanceof NodeList))throw new Error("The selector provided to AnchorJS was invalid.");e=[].slice.call(A)}return e}function i(){if(null===document.head.querySelector("style.anchorjs")){var A,e=document.createElement("style");e.className="anchorjs",e.appendChild(document.createTextNode("")),void 0===(A=document.head.querySelector('[rel="stylesheet"], style'))?document.head.appendChild(e):document.head.insertBefore(e,A),e.sheet.insertRule(" .anchorjs-link {   opacity: 0;   text-decoration: none;   -webkit-font-smoothing: antialiased;   -moz-osx-font-smoothing: grayscale; }",e.sheet.cssRules.length),e.sheet.insertRule(" *:hover > .anchorjs-link, .anchorjs-link:focus  {   opacity: 1; }",e.sheet.cssRules.length),e.sheet.insertRule(" [data-anchorjs-icon]::after {   content: attr(data-anchorjs-icon); }",e.sheet.cssRules.length),e.sheet.insertRule(' @font-face {   font-family: "anchorjs-icons";   src: url(data:n/a;base64,AAEAAAALAIAAAwAwT1MvMg8yG2cAAAE4AAAAYGNtYXDp3gC3AAABpAAAAExnYXNwAAAAEAAAA9wAAAAIZ2x5ZlQCcfwAAAH4AAABCGhlYWQHFvHyAAAAvAAAADZoaGVhBnACFwAAAPQAAAAkaG10eASAADEAAAGYAAAADGxvY2EACACEAAAB8AAAAAhtYXhwAAYAVwAAARgAAAAgbmFtZQGOH9cAAAMAAAAAunBvc3QAAwAAAAADvAAAACAAAQAAAAEAAHzE2p9fDzz1AAkEAAAAAADRecUWAAAAANQA6R8AAAAAAoACwAAAAAgAAgAAAAAAAAABAAADwP/AAAACgAAA/9MCrQABAAAAAAAAAAAAAAAAAAAAAwABAAAAAwBVAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAMCQAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAg//0DwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAIAAAACgAAxAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADAAAAAIAAgAAgAAACDpy//9//8AAAAg6cv//f///+EWNwADAAEAAAAAAAAAAAAAAAAACACEAAEAAAAAAAAAAAAAAAAxAAACAAQARAKAAsAAKwBUAAABIiYnJjQ3NzY2MzIWFxYUBwcGIicmNDc3NjQnJiYjIgYHBwYUFxYUBwYGIwciJicmNDc3NjIXFhQHBwYUFxYWMzI2Nzc2NCcmNDc2MhcWFAcHBgYjARQGDAUtLXoWOR8fORYtLTgKGwoKCjgaGg0gEhIgDXoaGgkJBQwHdR85Fi0tOAobCgoKOBoaDSASEiANehoaCQkKGwotLXoWOR8BMwUFLYEuehYXFxYugC44CQkKGwo4GkoaDQ0NDXoaShoKGwoFBe8XFi6ALjgJCQobCjgaShoNDQ0NehpKGgobCgoKLYEuehYXAAAADACWAAEAAAAAAAEACAAAAAEAAAAAAAIAAwAIAAEAAAAAAAMACAAAAAEAAAAAAAQACAAAAAEAAAAAAAUAAQALAAEAAAAAAAYACAAAAAMAAQQJAAEAEAAMAAMAAQQJAAIABgAcAAMAAQQJAAMAEAAMAAMAAQQJAAQAEAAMAAMAAQQJAAUAAgAiAAMAAQQJAAYAEAAMYW5jaG9yanM0MDBAAGEAbgBjAGgAbwByAGoAcwA0ADAAMABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAP) format("truetype"); }',e.sheet.cssRules.length)}}this.options=A||{},this.elements=[],e(this.options),this.isTouchDevice=function(){return!!("ontouchstart"in window||window.DocumentTouch&&document instanceof DocumentTouch)},this.add=function(A){var n,o,s,a,r,c,h,l,u,d,f,p=[];if(e(this.options),"touch"===(f=this.options.visible)&&(f=this.isTouchDevice()?"always":"hover"),A||(A="h2, h3, h4, h5, h6"),0===(n=t(A)).length)return this;for(i(),o=document.querySelectorAll("[id]"),s=[].map.call(o,function(A){return A.id}),r=0;r<n.length;r++)if(this.hasAnchorJSLink(n[r]))p.push(r);else{if(n[r].hasAttribute("id"))a=n[r].getAttribute("id");else if(n[r].hasAttribute("data-anchor-id"))a=n[r].getAttribute("data-anchor-id");else{u=l=this.urlify(n[r].textContent),h=0;do{void 0!==c&&(u=l+"-"+h),c=s.indexOf(u),h+=1}while(-1!==c);c=void 0,s.push(u),n[r].setAttribute("id",u),a=u}a.replace(/-/g," "),(d=document.createElement("a")).className="anchorjs-link "+this.options.class,d.href="#"+a,d.setAttribute("aria-label",this.options.ariaLabel),d.setAttribute("data-anchorjs-icon",this.options.icon),"always"===f&&(d.style.opacity="1"),""===this.options.icon&&(d.style.font="1em/1 anchorjs-icons","left"===this.options.placement&&(d.style.lineHeight="inherit")),"left"===this.options.placement?(d.style.position="absolute",d.style.marginLeft="-1em",d.style.paddingRight="0.5em",n[r].insertBefore(d,n[r].firstChild)):(d.style.paddingLeft="0.375em",n[r].appendChild(d))}for(r=0;r<p.length;r++)n.splice(p[r]-r,1);return this.elements=this.elements.concat(n),this},this.remove=function(A){for(var e,i,n=t(A),o=0;o<n.length;o++)(i=n[o].querySelector(".anchorjs-link"))&&(-1!==(e=this.elements.indexOf(n[o]))&&this.elements.splice(e,1),n[o].removeChild(i));return this},this.removeAll=function(){this.remove(this.elements)},this.urlify=function(A){var t=/[& +$,:;=?@"#{}|^~[`%!'<>\]\.\/\(\)\*\\]/g;return this.options.truncate||e(this.options),A.trim().replace(/\'/gi,"").replace(t,"-").replace(/-{2,}/g,"-").substring(0,this.options.truncate).replace(/^-+|-+$/gm,"").toLowerCase()},this.hasAnchorJSLink=function(A){var e=A.firstChild&&(" "+A.firstChild.className+" ").indexOf(" anchorjs-link ")>-1,t=A.lastChild&&(" "+A.lastChild.className+" ").indexOf(" anchorjs-link ")>-1;return e||t||!1}}});  </script>
+!function(A,e){"use strict";"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&module.exports?module.exports=e():(A.AnchorJS=e(),A.anchors=new A.AnchorJS)}(this,function(){"use strict";return function(A){function e(A){A.icon=A.hasOwnProperty("icon")?A.icon:"",A.visible=A.hasOwnProperty("visible")?A.visible:"hover",A.placement=A.hasOwnProperty("placement")?A.placement:"right",A.ariaLabel=A.hasOwnProperty("ariaLabel")?A.ariaLabel:"Anchor",A.class=A.hasOwnProperty("class")?A.class:"",A.truncate=A.hasOwnProperty("truncate")?Math.floor(A.truncate):64}function t(A){var e;if("string"==typeof A||A instanceof String)e=[].slice.call(document.querySelectorAll(A));else{if(!(Array.isArray(A)||A instanceof NodeList))throw new Error("The selector provided to AnchorJS was invalid.");e=[].slice.call(A)}return e}function i(){if(null===document.head.querySelector("style.anchorjs")){var A,e=document.createElement("style");e.className="anchorjs",e.appendChild(document.createTextNode("")),void 0===(A=document.head.querySelector('[rel="stylesheet"], style'))?document.head.appendChild(e):document.head.insertBefore(e,A),e.sheet.insertRule(" .anchorjs-link {   opacity: 0;   text-decoration: none;   -webkit-font-smoothing: antialiased;   -moz-osx-font-smoothing: grayscale; }",e.sheet.cssRules.length),e.sheet.insertRule(" *:hover > .anchorjs-link, .anchorjs-link:focus  {   opacity: 1; }",e.sheet.cssRules.length),e.sheet.insertRule(" [data-anchorjs-icon]::after {   content: attr(data-anchorjs-icon); }",e.sheet.cssRules.length),e.sheet.insertRule(' @font-face {   font-family: "anchorjs-icons";   src: url(data:n/a;base64,AAEAAAALAIAAAwAwT1MvMg8yG2cAAAE4AAAAYGNtYXDp3gC3AAABpAAAAExnYXNwAAAAEAAAA9wAAAAIZ2x5ZlQCcfwAAAH4AAABCGhlYWQHFvHyAAAAvAAAADZoaGVhBnACFwAAAPQAAAAkaG10eASAADEAAAGYAAAADGxvY2EACACEAAAB8AAAAAhtYXhwAAYAVwAAARgAAAAgbmFtZQGOH9cAAAMAAAAAunBvc3QAAwAAAAADvAAAACAAAQAAAAEAAHzE2p9fDzz1AAkEAAAAAADRecUWAAAAANQA6R8AAAAAAoACwAAAAAgAAgAAAAAAAAABAAADwP/AAAACgAAA/9MCrQABAAAAAAAAAAAAAAAAAAAAAwABAAAAAwBVAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAMCQAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAg//0DwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAIAAAACgAAxAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADAAAAAIAAgAAgAAACDpy//9//8AAAAg6cv//f///+EWNwADAAEAAAAAAAAAAAAAAAAACACEAAEAAAAAAAAAAAAAAAAxAAACAAQARAKAAsAAKwBUAAABIiYnJjQ3NzY2MzIWFxYUBwcGIicmNDc3NjQnJiYjIgYHBwYUFxYUBwYGIwciJicmNDc3NjIXFhQHBwYUFxYWMzI2Nzc2NCcmNDc2MhcWFAcHBgYjARQGDAUtLXoWOR8fORYtLTgKGwoKCjgaGg0gEhIgDXoaGgkJBQwHdR85Fi0tOAobCgoKOBoaDSASEiANehoaCQkKGwotLXoWOR8BMwUFLYEuehYXFxYugC44CQkKGwo4GkoaDQ0NDXoaShoKGwoFBe8XFi6ALjgJCQobCjgaShoNDQ0NehpKGgobCgoKLYEuehYXAAAADACWAAEAAAAAAAEACAAAAAEAAAAAAAIAAwAIAAEAAAAAAAMACAAAAAEAAAAAAAQACAAAAAEAAAAAAAUAAQALAAEAAAAAAAYACAAAAAMAAQQJAAEAEAAMAAMAAQQJAAIABgAcAAMAAQQJAAMAEAAMAAMAAQQJAAQAEAAMAAMAAQQJAAUAAgAiAAMAAQQJAAYAEAAMYW5jaG9yanM0MDBAAGEAbgBjAGgAbwByAGoAcwA0ADAAMABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAP) format("truetype"); }',e.sheet.cssRules.length)}}this.options=A||{},this.elements=[],e(this.options),this.isTouchDevice=function(){return!!("ontouchstart"in window||window.DocumentTouch&&document instanceof DocumentTouch)},this.add=function(A){var n,o,s,a,r,c,h,l,u,d,f,p=[];if(e(this.options),"touch"===(f=this.options.visible)&&(f=this.isTouchDevice()?"always":"hover"),A||(A="h2, h3, h4, h5, h6"),0===(n=t(A)).length)return this;for(i(),o=document.querySelectorAll("[id]"),s=[].map.call(o,function(A){return A.id}),r=0;r<n.length;r++)if(this.hasAnchorJSLink(n[r]))p.push(r);else{if(n[r].hasAttribute("id"))a=n[r].getAttribute("id");else if(n[r].hasAttribute("data-anchor-id"))a=n[r].getAttribute("data-anchor-id");else{u=l=this.urlify(n[r].textContent),h=0;do{void 0!==c&&(u=l+"-"+h),c=s.indexOf(u),h+=1}while(-1!==c);c=void 0,s.push(u),n[r].setAttribute("id",u),a=u}a.replace(/-/g," "),(d=document.createElement("a")).className="anchorjs-link "+this.options.class,d.href="#"+a,d.setAttribute("aria-label",this.options.ariaLabel),d.setAttribute("data-anchorjs-icon",this.options.icon),"always"===f&&(d.style.opacity="1"),""===this.options.icon&&(d.style.font="1em/1 anchorjs-icons","left"===this.options.placement&&(d.style.lineHeight="inherit")),"left"===this.options.placement?(d.style.position="absolute",d.style.marginLeft="-1em",d.style.paddingRight="0.5em",n[r].insertBefore(d,n[r].firstChild)):(d.style.paddingLeft="0.375em",n[r].appendChild(d))}for(r=0;r<p.length;r++)n.splice(p[r]-r,1);return this.elements=this.elements.concat(n),this},this.remove=function(A){for(var e,i,n=t(A),o=0;o<n.length;o++)(i=n[o].querySelector(".anchorjs-link"))&&(-1!==(e=this.elements.indexOf(n[o]))&&this.elements.splice(e,1),n[o].removeChild(i));return this},this.removeAll=function(){this.remove(this.elements)},this.urlify=function(A){var t=/[& +$,:;=?@"#{}|^~[`%!'<>\]\.\/\(\)\*\]/g;return this.options.truncate||e(this.options),A.trim().replace(/
+</html>
+/gi,"").replace(t,"-").replace(/-{2,}/g,"-").substring(0,this.options.truncate).replace(/^-+|-+$/gm,"").toLowerCase()},this.hasAnchorJSLink=function(A){var e=A.firstChild&&(" "+A.firstChild.className+" ").indexOf(" anchorjs-link ")>-1,t=A.lastChild&&(" "+A.lastChild.className+" ").indexOf(" anchorjs-link ")>-1;return e||t||!1}}});  </script>
 
   <script>
+/*
   $(document).ready(function() {
           $('[id^=toc]').each(function ()
           {
@@ -1151,8 +1164,13 @@ $('#toggle').on('click', function(){
              currentToc.wrap("<a href='" + url + "#" + currentToc.attr("id") + "' </a>");
           });
 });
+*/
   anchors.options = {
   placement: 'left'
 };
 anchors.add('h1, h2, h3, h4');
-</script></html>
+</script>
+
+
+</body>
+</html>

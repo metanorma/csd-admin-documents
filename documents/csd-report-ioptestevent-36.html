@@ -181,17 +181,19 @@ main {
     padding: 0 1.5em 0 1.5em;
     overflow: visible; } }
 
-@media screen {
-  div.figure > img {
-    width: 100%;
-    height: auto; } }
+div.figure > img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 100%;
+  height: auto; }
 
 #toc ul {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-#toc li {
+#toc li a {
   padding: 5px 10px; }
 
 #toc a {
@@ -200,6 +202,7 @@ main {
   display: block; }
 
 #toc a:hover {
+  box-shadow: none;
   color: white; }
 
 #toc .h2 {
@@ -876,18 +879,24 @@ a.anchorjs-link:hover {
     margin-top: 2em; } }
 
 -->
-</style><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        <title>Report on CalConnect Interoperability Test Event XXXVI, April 18-19, 2016</title>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</style><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Report on CalConnect Interoperability Test Event XXXVI, April 18-19, 2016</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!--TOC script import-->
-    <script type="text/javascript" src="https://cdn.rawgit.com/jgallen23/toc/0.3.2/dist/toc.min.js"></script>
+<!--TOC script import-->
+<script type="text/javascript" src="https://cdn.rawgit.com/jgallen23/toc/0.3.2/dist/toc.min.js"></script>
+<script type="text/javascript">function toclevel() { var i; var text = "";
+  for(i = 1; i <= 2; i++) {
+    if (i > 1) { text += ","; } text += "h" + i + ":not(:empty):not(.TermNum)"; } 
+  return text;}
+</script>
 
-    <!--Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Space+Mono:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Overpass:300,300i,600,900" rel="stylesheet" />
-    <!--Font awesome import for the link icon-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" />
+<!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Space+Mono:400,700" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Overpass:300,300i,600,900" rel="stylesheet" />
+
+<!--Font awesome import for the link icon-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" />
 <style class="anchorjs"></style>
 </head>
   <body lang="EN-US" link="blue" vlink="#954F72" xml:lang="EN-US" class="container">
@@ -903,85 +912,86 @@ a.anchorjs-link:hover {
 
 <header>
 
-<!--<div class="WordSection1">-->
+  <!--<div class="WordSection1">-->
   <div class="coverpage">
     <div class="wrapper-top">
 
-  <div class="coverpage-doc-identity">
-    <div class="doc-number">
-      <span class="docnumber">CC/A 1604:2016</span>
-      <!-- <span class="docnumber-separator">:</span>
-      <span class="docyear">2016</span> -->
+      <div class="coverpage-doc-identity">
+        <div class="doc-number">
+          <span class="docnumber">CC/A 1604:2016</span>
+          <!-- <span class="docnumber-separator">:</span>
+            <span class="docyear">2016</span> -->
+        </div>
+
+        <div class="coverpage-title">
+          <span class="title-first">Report on CalConnect Interoperability Test Event XXXVI, April 18-19, 2016</span>
+          <!--<span class="title-second"></span>-->
+        </div>
+      </div>
+
+      <div class="coverpage-logo">
+        <span>The Calendaring and Scheduling Consortium</span>
+      </div>
+
+      <div class="coverpage-tc-name">
+        <span>TC IOPTEST</span>
+      </div>
+
+      
+
+      
+
+      <div class="coverpage-contributors">
+        
+
+      </div>
     </div>
 
-    <div class="coverpage-title">
-      <span class="title-first">Report on CalConnect Interoperability Test Event XXXVI, April 18-19, 2016</span>
-      <!--<span class="title-second"></span>-->
+    <div class="title-section1">
+      <div class="coverpage-stage-block">
+        <span class="coverpage-stage" id="administrative">CalConnect Administrative</span>
+      </div>
+
+      <div class="coverpage-stage-block">
+        <span class="coverpage-maturity" id="published"></span>
+      </div>
+
+      
+
+      <div class="copyright">
+        <p class="year">
+        &#xA9; 2016 The Calendaring and Scheduling Consortium, Inc.
+        </p>
+
+        <p class="message">
+        All rights reserved. Unless otherwise specified, no part of this
+        publication may be reproduced or utilized otherwise in any form or by any
+        means, electronic or mechanical, including photocopying, or posting on the
+        internet or an intranet, without prior written permission. Permission can
+        be requested from the address below.
+        </p>
+
+        <div class="contact-info">
+          <p class="name">The Calendaring and Scheduling Consortium, Inc.</p>
+          <p class="address">
+          4390 Chaffin Lane<br />
+          McKinleyville<br />
+          California 95519<br />
+          United States of America<br />
+          <br />
+          <a href="mailto:copyright@calconnect.org">copyright@calconnect.org</a><br />
+          <a href="www.calconnect.org">www.calconnect.org</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="rule"></div>
     </div>
   </div>
+</header>
 
-  <div class="coverpage-logo">
-    <span>The Calendaring and Scheduling Consortium</span>
-  </div>
-
-  <div class="coverpage-tc-name">
-    <span>TC IOPTEST</span>
-  </div>
-
-
-
-
-
-  
-
-  </div>
-
-  <div class="title-section1">
-  <div class="coverpage-stage-block">
-    <span class="coverpage-stage" id="administrative">CalConnect Administrative</span>
-  </div>
-
-  <div class="coverpage-stage-block">
-    <span class="coverpage-maturity" id="published"></span>
-</div>
-
-
-
-<div class="copyright">
-  <p class="year">
-    &#xA9; 2016 The Calendaring and Scheduling Consortium, Inc.
-  </p>
-
-  <p class="message">
-    All rights reserved. Unless otherwise specified, no part of this
-    publication may be reproduced or utilized otherwise in any form or by any
-    means, electronic or mechanical, including photocopying, or posting on the
-    internet or an intranet, without prior written permission. Permission can
-    be requested from the address below.
-  </p>
-
-<div class="contact-info">
-  <p class="name">The Calendaring and Scheduling Consortium, Inc.</p>
-  <p class="address">
-    4390 Chaffin Lane<br />
-    McKinleyville<br />
-    California 95519<br />
-    United States of America<br />
-    <br />
-    <a href="mailto:copyright@calconnect.org">copyright@calconnect.org</a><br />
-    <a href="www.calconnect.org">www.calconnect.org</a>
-  </p>
-</div>
-</div>
-
-<div class="rule"></div>
-</div>
-
-
-
-</div></header></div>
       <p>&#xA0;</p>
-    </body>
+    </div>
     <br />
     <div class="prefatory-section"><nav>
   <h1 id="content">Contents</h1>
@@ -999,87 +1009,87 @@ a.anchorjs-link:hover {
       <br />
       <div>
         <h1 class="ForewordTitle">Foreword</h1>
-        <p id="_039455bb-2fc4-442b-a6a4-f4fdb9e7981e">The Calendaring and Scheduling Consortium (&#x201C;CalConnect&#x201D;) is a global non-profit
+        <p id="_72fd531c-e981-4856-a4fb-f5d0e93a7f3e">The Calendaring and Scheduling Consortium (&#x201C;CalConnect&#x201D;) is a global non-profit
 organization with the aim to facilitate interoperability of technologies across
 user-centric systems and applications.</p>
-        <p id="_691b3eee-3721-4b1f-9a7c-8ff87744f2e5">CalConnect works closely with liaison partners including international
+        <p id="_3f369726-8ed7-480a-b69e-16ebc7726081">CalConnect works closely with liaison partners including international
 organizations such as ISO, OASIS and M3AAWG.</p>
-        <p id="_c585cff4-c4ba-48fe-92cb-1dc862e12c81">The procedures used to develop this document and those intended for its further
+        <p id="_8876ac16-0dbe-4777-af41-ceb39880cbd1">The procedures used to develop this document and those intended for its further
 maintenance are described in the CalConnect Directives.</p>
-        <p id="_da36038e-4dca-4127-95d0-37b58264d905">In particular the different approval criteria needed for the different types of
+        <p id="_e216a79f-4e54-42e7-8cc2-25baf6115fb1">In particular the different approval criteria needed for the different types of
 ISO documents should be noted. This document was drafted in accordance with the
 editorial rules of the CalConnect Directives.</p>
-        <p id="_ae74bcf4-9e48-4e8f-a704-4683309df1c9">Attention is drawn to the possibility that some of the elements of this
+        <p id="_66c6c2ed-af3e-466a-8b00-b1db57269a5a">Attention is drawn to the possibility that some of the elements of this
 document may be the subject of patent rights. CalConnect shall not be held responsible
 for identifying any or all such patent rights. Details of any patent rights
 identified during the development of the document will be in the Introduction
 and/or on the CalConnect list of patent declarations received (see
 www.calconnect.com/patents).</p>
-        <p id="_2fcd52cf-ed4e-480e-babb-bf7e67e8497c">Any trade name used in this document is information given for the convenience
+        <p id="_bd2e1831-0dd6-4afa-9018-4b5d40a21569">Any trade name used in this document is information given for the convenience
 of users and does not constitute an endorsement.</p>
-        <p id="_66cc5f72-b6e4-42c2-a370-240e2bc62f61">This document was prepared by Technical Committee <i>IOPTEST</i>.</p>
+        <p id="_dd2f9867-50f3-4f57-98e5-aaaac36d47fb">This document was prepared by Technical Committee <i>IOPTEST</i>.</p>
       </div>
       <p class="zzSTDTitle1">Report on CalConnect Interoperability Test Event XXXVI, April 18-19, 2016</p>
       <div id="_report">
         <h1>1.&#xA0; Report</h1>
-        <p id="_4f893ced-b04f-414b-b5b2-5c1d08fdf8ce">The Calconnect interoperability event was hosted by Ribose and OGCIO at Cyberport in Hong Kong on April 18 and 19, 2016.</p>
-        <p id="_937080c3-0ec0-451d-9842-289f0d33dc36">The event at HongKong continued our move to a more forum like approach, combining testing of new and standard calendar features with a number of in-depth discussions.</p>
-        <p id="_71d246fc-7412-43e7-ba7a-59d9c1a87b6d">The following organizations were attending</p>
-        <ul id="_2d3913bd-1672-4b96-81bd-d41e2b2babc0">
+        <p id="_60d60204-3c5d-4c93-8906-306f25e5ff59">The Calconnect interoperability event was hosted by Ribose and OGCIO at Cyberport in Hong Kong on April 18 and 19, 2016.</p>
+        <p id="_a458d119-992a-402c-b8d3-9de79aadc8fb">The event at HongKong continued our move to a more forum like approach, combining testing of new and standard calendar features with a number of in-depth discussions.</p>
+        <p id="_fff13a2c-f4e6-48da-9f65-556da9ca34be">The following organizations were attending</p>
+        <ul id="_75a388c4-d1d6-44f7-a135-1d3c6cc7173a">
   <li>
-    <p id="_873a10d8-a039-4166-8e34-347e28aebe3c">dmfs GmbH (formerly SmoothSync)</p>
+    <p id="_fa5f9574-9fc8-47a5-ac29-806683c01132">dmfs GmbH (formerly SmoothSync)</p>
   </li>
   <li>
-    <p id="_bd6fa99c-560a-477a-ba3a-8aed096a9d12">FastMail</p>
+    <p id="_aea4da42-1723-456b-b6a8-36deef38feef">FastMail</p>
   </li>
   <li>
-    <p id="_df37e2d7-5166-4dd4-82e3-67828d8e1d48">Fruux</p>
+    <p id="_d20313a0-85f6-405a-ae95-730afb9caa72">Fruux</p>
   </li>
   <li>
-    <p id="_2a3f48fc-7701-4670-b375-465a7bfa2341">Google</p>
+    <p id="_d881b1c4-33d4-4700-8913-45a1a9580084">Google</p>
   </li>
   <li>
-    <p id="_381a6462-afbb-41fa-9b56-088614a6e967">Open-change</p>
+    <p id="_e68e88e5-b240-4c35-962e-d20804e0035b">Open-change</p>
   </li>
   <li>
-    <p id="_81d947b5-e0fe-47d3-b0ea-16de79919666">Philipp Gewischt</p>
+    <p id="_6b47c1a7-be1e-4702-8418-23efe540b798">Philipp Gewischt</p>
   </li>
   <li>
-    <p id="_aaeadc08-c5a9-4f7a-a93c-5bab39ed4010">Ribose</p>
+    <p id="_52838bf5-32c6-404d-a724-7cae671e7b46">Ribose</p>
   </li>
   <li>
-    <p id="_81eff9f8-8f47-4459-841f-21a42e957817">Spherical Cow Group</p>
+    <p id="_618e79ab-12f9-4bcf-9b77-69f0f295fcbb">Spherical Cow Group</p>
   </li>
 </ul>
-        <p id="_504f9a56-6bf1-49d1-b171-256a7cfb1189">A major topic for this event - as for the last one - is trying to make iMip more reliable. In some cases it is the representation of the data which is the issue, other times it is incorrect handling of iTip.</p>
-        <p id="_dd85de6b-1878-429e-8c36-1d2a16ea1a4c">Another topic which keeps coming back is dealing with differing interpretations of the iCalendar specification regarding recurrences.</p>
+        <p id="_69908f88-a90a-455a-847c-d659687aab2d">A major topic for this event - as for the last one - is trying to make iMip more reliable. In some cases it is the representation of the data which is the issue, other times it is incorrect handling of iTip.</p>
+        <p id="_9de079da-f890-49b9-a99c-651a10a3d873">Another topic which keeps coming back is dealing with differing interpretations of the iCalendar specification regarding recurrences.</p>
       </div>
       <div id="_discussions_and_issues_raised">
         <h1>2.&#xA0; Discussions and issues raised</h1>
-        <p id="_99f5df54-5d27-443d-97df-5185576e2e82">During discussions a number of issues were raised. These included:</p>
+        <p id="_1039af68-c949-4044-8454-b96580c3d0ea">During discussions a number of issues were raised. These included:</p>
         <div id="_timezones"><h2>2.1. Timezones</h2>
 
-  <p id="_954099d0-cad1-4026-a6e6-1f9d09bca00d">Do servers handle timezone definition changes - e.g. recalculate recurrences based on new timezone: the answer is usually not.</p>
+  <p id="_dac7b478-6b38-4861-951d-edd1f54258fe">Do servers handle timezone definition changes - e.g. recalculate recurrences based on new timezone: the answer is usually not.</p>
 </div>
-        <div id="_vjournal"><h2>2.2. VJOURNAL</h2><p id="_3b68dafb-8f35-4690-9b51-956c8810bf7c">There was a proposal for adding an additional status to indicate &#x201C;ARCHIVED&#x201D;</p>
-<p id="_25999e7e-8a05-44f3-8761-42091555ac11">Suggested alternatives: use different collection, or perhaps a structured category (this is also backwards-compatible, as opposed to a new status)</p>
-<p id="_66d4fe58-1388-4f30-b628-39f84d1e8f4c">There is also a lack of rich text support - but that&#x2019;s also true for events and tasks - this should also be addressed - see &#x201C;Styled-Description&#x201D; in <a href="https://www.ietf.org/archive/id/draft-douglass-calendar-extension-04.txt">https://www.ietf.org/archive/id/draft-douglass-calendar-extension-04.txt</a></p>
-<p id="_3306e952-2ce8-4a1a-9841-a58259eb28ab">The general feeling is that JOURNAL is not heavily used.</p></div>
+        <div id="_vjournal"><h2>2.2. VJOURNAL</h2><p id="_8bb6bb3e-4dbb-42f2-a6f6-2774ad12633a">There was a proposal for adding an additional status to indicate &#x201C;ARCHIVED&#x201D;</p>
+<p id="_9e1470b6-8c1a-4e96-a68e-a26362c8969c">Suggested alternatives: use different collection, or perhaps a structured category (this is also backwards-compatible, as opposed to a new status)</p>
+<p id="_6f817a1d-eed5-4240-a61e-883a4f376741">There is also a lack of rich text support - but that&#x2019;s also true for events and tasks - this should also be addressed - see &#x201C;Styled-Description&#x201D; in <a href="https://www.ietf.org/archive/id/draft-douglass-calendar-extension-04.txt">https://www.ietf.org/archive/id/draft-douglass-calendar-extension-04.txt</a></p>
+<p id="_03c09cf0-ee7f-48e3-965a-2be78b71a06a">The general feeling is that JOURNAL is not heavily used.</p></div>
         <div id="_managed_attachments"><h2>2.3. Managed attachments</h2>
 
-  <p id="_b72fa04f-5bc0-4b9c-ab4c-7b6325e9f7ab">Problem: we cannot add an attachment right away together with an event with managed attachments - we would have to first add an event, than once it synced and we know the uid we can add an attachment.</p>
+  <p id="_655c86fa-9636-4745-97fd-d9bf1e81102b">Problem: we cannot add an attachment right away together with an event with managed attachments - we would have to first add an event, than once it synced and we know the uid we can add an attachment.</p>
 </div>
-        <div id="_support_for_wiping_devices_raised_by_marten_from_dmfs"><h2>2.4. Support for wiping devices (Raised by Marten from dmfs)</h2><p id="_6f5cf242-2c6e-45fd-a983-2ac40fe75751">Do we need a special operation?</p>
-<p id="_76660359-8b10-4c8d-b6da-ed3a2d296110">The way to go is to use per-device passwords (or OAuth to get device-specific markers) and return empty collections on the first sync.</p>
-<p id="_d7d32cd3-f67b-496f-8a8a-20b067ce5b45">This last point led to a discussion on client authentication and whether we could perhaps support open connect. See</p>
-<ul id="_34b3a6ef-2cab-46ea-8ff5-f45786e58ece">
+        <div id="_support_for_wiping_devices_raised_by_marten_from_dmfs"><h2>2.4. Support for wiping devices (Raised by Marten from dmfs)</h2><p id="_b0a092f2-2fb7-43e9-8092-14b6ce372e04">Do we need a special operation?</p>
+<p id="_1c4d177d-27db-4e83-8173-9e469c96a507">The way to go is to use per-device passwords (or OAuth to get device-specific markers) and return empty collections on the first sync.</p>
+<p id="_5b663b06-ae6d-4b70-8c0a-3f5be2ce21b7">This last point led to a discussion on client authentication and whether we could perhaps support open connect. See</p>
+<ul id="_b7e9a929-5e9b-4351-b045-dffbd32d43d5">
   <li>
-    <p id="_01465ff4-2d70-4a6f-930c-773872239b6c">
+    <p id="_af543256-27e6-418e-ab50-70822a9e2b0f">
       <a href="https://tools.ietf.org/html/rfc7591">https://tools.ietf.org/html/rfc7591</a>
     </p>
   </li>
   <li>
-    <p id="_d59fd095-cc57-4113-a39d-1d1a658246a3">
+    <p id="_a30120e1-f2d3-4ea1-abcb-81cf62ab0aac">
       <a href="http://openid.net/connect/">http://openid.net/connect/</a>
     </p>
   </li>
@@ -1087,95 +1097,95 @@ of users and does not constitute an endorsement.</p>
       </div>
       <div id="_new_api_discussion">
         <h1>3.&#xA0; New API discussion</h1>
-        <p id="_3ad53e70-3be8-43bf-9769-df7c0fab2557">There is a new format proposal
+        <p id="_ef136156-e1ea-4887-ac62-de2f46df1218">There is a new format proposal
     <a href="https://github.com/CalConnect/API/blob/master/CalendarEvent.mdwn">https://github.com/CalConnect/API/blob/master/CalendarEvent.mdwn</a></p>
-        <p id="_4a82951e-ede3-46aa-a429-307d0bf50475">Some of the api issues that were discussed were</p>
-        <ul id="_030e7bda-a3f1-458a-b9e6-b70093761d07">
+        <p id="_8e204521-7391-4160-97a2-4a73f6a18536">Some of the api issues that were discussed were</p>
+        <ul id="_3af3d600-6978-44aa-ba67-74dc1ed8f4f6">
   <li>
-    <p id="_cdf2847d-0875-488d-920b-bd38b7e90940">Structured location &amp; structured data</p>
+    <p id="_dddb2b1c-013d-4aa4-88bf-4cbb35b9e087">Structured location &amp; structured data</p>
   </li>
   <li>
-    <p id="_7159ec9e-3ace-420c-ae86-d15932c45b12">Alerts and defaults support, have a separate field for defaults</p>
+    <p id="_a55e46ca-b6ec-4d04-83df-7a4a1c1646b3">Alerts and defaults support, have a separate field for defaults</p>
   </li>
   <li>
-    <p id="_5fe6de8d-4324-4fe4-b2dc-7286b6f18329">isAcknowledged - as currently is it would cause gradual expansion of alerts on the instances; solution: make isAcknowledged store not boolean but the last recurrence instance for which the alert was acknowledged, and only store it on the base range, not on the instances (unless the instance has override alerts).</p>
+    <p id="_d1264bc4-a714-4442-9634-e9eec1f46980">isAcknowledged - as currently is it would cause gradual expansion of alerts on the instances; solution: make isAcknowledged store not boolean but the last recurrence instance for which the alert was acknowledged, and only store it on the base range, not on the instances (unless the instance has override alerts).</p>
   </li>
   <li>
-    <p id="_596bf8f7-785e-40ff-a55a-f6d52cf4e30e">Attachments</p>
+    <p id="_d70c7987-52f6-4fdd-b914-7e69a7d332e3">Attachments</p>
   </li>
   <li>
-    <p id="_bd9d6080-8554-4de1-b8a4-961a8846358d">Multi-language support - to group localizations under a &#x201C;localize&#x201D; component</p>
+    <p id="_bca185f1-6714-48f4-a5e1-6fa7d8bf5d8c">Multi-language support - to group localizations under a &#x201C;localize&#x201D; component</p>
   </li>
   <li>
-    <p id="_dccba594-6029-4245-ad04-72579897d2b9">Custom properties representation</p>
-    <ul id="_cc03bebc-a757-4f08-8b8d-5d0b965eedd9">
+    <p id="_6550f4ec-f510-4b86-8ffa-44f6fe30af1a">Custom properties representation</p>
+    <ul id="_51d17ebf-1734-4b57-bf69-85d3a481d03a">
   <li>
-    <p id="_762bb4bf-b2ad-4c2e-b740-acc0a3051035">Should we use a special prefix (like the X-)? The problem is that once use of a property is widespread enough a property&#x2019;s custom name is &#x201C;cut in stone&#x201D;, since everyone&#x2019;s using it.</p>
+    <p id="_e1b1f2f5-5970-479c-8c4e-c89501f2da4b">Should we use a special prefix (like the X-)? The problem is that once use of a property is widespread enough a property&#x2019;s custom name is &#x201C;cut in stone&#x201D;, since everyone&#x2019;s using it.</p>
   </li>
   <li>
-    <p id="_c62dae08-b6a1-4d04-a97b-02ff31142314">Maybe a special string namespace/registry with easy way of claiming?</p>
+    <p id="_5c041a24-1b62-43e8-a189-c94e4f97bace">Maybe a special string namespace/registry with easy way of claiming?</p>
   </li>
   <li>
-    <p id="_6800fbc0-a4f9-4018-ad93-cdabd3cccec9">URLs (with domain names)?</p>
-  </li>
-</ul>
+    <p id="_a2e66408-9bf4-4b72-ad86-3c71c77f3e89">URLs (with domain names)?</p>
   </li>
 </ul>
-        <p id="_eb4e5f3c-7c0c-4727-9c73-b024f8e7176e">On recurrences there was a discussion on the idea of excluding certain instances based on another event(s)</p>
-        <p id="_733cb13f-8843-4266-b820-abc17d9a46a9">The start and end timezones are expressed through locations: first one corresponds to start, last - to end. The event timezone is independent.</p>
+  </li>
+</ul>
+        <p id="_e9015b5a-3d2a-43f0-a414-c8535bc49b98">On recurrences there was a discussion on the idea of excluding certain instances based on another event(s)</p>
+        <p id="_4522ddd4-1fba-47fc-b7be-6826b6fcd184">The start and end timezones are expressed through locations: first one corresponds to start, last - to end. The event timezone is independent.</p>
       </div>
       <div id="_issues_found_during_testing">
         <h1>4.&#xA0; Issues found during testing</h1>
-        <p id="_9432eed2-c68f-451a-8fa1-6fc03f9ac4c3">These included:</p>
-        <p id="_62c51530-2b9d-464b-b718-bad027ccfa7c">Missing timezones in ICS for single events.</p>
-        <p id="_6898d726-8c75-44be-b8d5-69e090f3b39a">When the recurrence rule doesn&#x2019;t match the first start then some services silently move the first start to the first actual occurrence (which seems reasonable)</p>
-        <p id="_074c1bbb-d7d2-423a-8f4d-c80e254a330d">Moving a recurring instance into a different day did not work correctly.</p>
-        <p id="_78a68333-7c3e-4544-835e-d55a374ad1ad">Timezone customization is not set for events (at least recurring) sent through iMIP (although the timezone is saved).</p>
-        <p id="_0a1f3fb4-5c6d-4559-b63d-9745faf35894">Some clients were mishandling sequence numbers</p>
-        <p id="_ff48523a-a71a-45a1-82c1-c981093a2fe8">Create a recurring event in the future, save and send invitations</p>
-        <ul id="_3b343e1d-e3ca-4f74-bd15-fc006e7f9751">
+        <p id="_244cefb3-662e-4159-91d4-229f64e63982">These included:</p>
+        <p id="_4bdab8d8-aea0-4519-aa6c-0ed25f5c6592">Missing timezones in ICS for single events.</p>
+        <p id="_49712c6f-837a-47d3-bf20-4b7c03922e40">When the recurrence rule doesn&#x2019;t match the first start then some services silently move the first start to the first actual occurrence (which seems reasonable)</p>
+        <p id="_15c83d09-6551-4543-9636-b04f7f919c80">Moving a recurring instance into a different day did not work correctly.</p>
+        <p id="_e8b4170d-5e8f-4f95-90b5-45778764563e">Timezone customization is not set for events (at least recurring) sent through iMIP (although the timezone is saved).</p>
+        <p id="_a01ca485-9419-4850-9de3-61ac32bc768e">Some clients were mishandling sequence numbers</p>
+        <p id="_b0b80e1b-6005-4974-af3a-53b7f501cbae">Create a recurring event in the future, save and send invitations</p>
+        <ul id="_95340c30-81df-4eb4-bbd8-f6d0767bccc6">
   <li>
-    <p id="_0d6807d7-cae8-4c80-9b9b-bd2ba723b586">&#x201C;Add to Calendar&#x201D; set a response, e.g. Yes</p>
+    <p id="_f4285cb1-fca1-4611-a18c-588a295f5923">&#x201C;Add to Calendar&#x201D; set a response, e.g. Yes</p>
   </li>
   <li>
-    <p id="_3e0229c4-de7a-4219-87ef-355df041310a">Move an exception to a different time (again, send updates)</p>
+    <p id="_9cc92e18-ae44-4a6d-92b1-b6db1bbc7d52">Move an exception to a different time (again, send updates)</p>
   </li>
   <li>
-    <p id="_a297001b-994c-4e92-874c-ea083535b3b0">&#x201C;Update Calendar&#x201D; set a response, e.g. Maybe</p>
+    <p id="_f053ffaa-96b7-4059-b991-38acc71dc073">&#x201C;Update Calendar&#x201D; set a response, e.g. Maybe</p>
   </li>
   <li>
-    <p id="_58595d47-d84f-4cb0-bcdf-dc37b4bc4237">Result: the response is discarded as outdated</p>
-  </li>
-</ul>
-        <p id="_0a5c16f4-3731-4d69-9a0b-b7c8219e0c7c">Some servers don&#x2019;t send invitations for past events even when the user is explicitly asked whether to send or not and says yes.</p>
-        <p id="_c3c67c78-2274-4032-b490-98d4d8bf65c9">There were problems with autodiscovery</p>
-        <p id="_d0507bd3-38a6-4436-8a3c-6fc663477742">Some issues discovered and questions about Android clients:</p>
-        <ul id="_9f866c03-fa55-4971-8c44-f78f4c06a4ae">
-  <li>
-    <p id="_bb97cde6-cdc5-4601-80a3-926aab06dd7f">may only sync 1 year of data</p>
-  </li>
-  <li>
-    <p id="_966db586-9ae6-4d3a-8990-3329c64cda66">attachments first appear and then disappear again</p>
-  </li>
-  <li>
-    <p id="_07b2b4d6-9671-4f59-a9eb-29c9eca76e1c">Is CalDAV syncing support in the future?</p>
-  </li>
-  <li>
-    <p id="_130b177b-4367-4fc1-aa7c-0a14603ed0d2">Android is missing new features or bugs, e.g.:</p>
-    <ul id="_537fc99c-d896-44d8-b391-4d725bff30e7">
-  <li>
-    <p id="_831540a7-c7a5-4d3f-bb77-c3fd3c3cbaea">bad recurrence expansions</p>
-  </li>
-  <li>
-    <p id="_73e1ff9f-e019-44b2-85db-58cff9a7b7b3">empty recurring events (when all instances are cancelled)</p>
+    <p id="_15d09fca-eb0e-4130-8627-ee13e2b3f303">Result: the response is discarded as outdated</p>
   </li>
 </ul>
+        <p id="_38605cb8-ef3c-42ad-a096-ad0470ef30d4">Some servers don&#x2019;t send invitations for past events even when the user is explicitly asked whether to send or not and says yes.</p>
+        <p id="_1a58a25c-60e9-4dd2-835e-85f48fb34004">There were problems with autodiscovery</p>
+        <p id="_19a80ff7-92a4-4810-977f-4cb1eff239f6">Some issues discovered and questions about Android clients:</p>
+        <ul id="_53b25a82-4e20-40ef-8bd9-0a1dd391925d">
+  <li>
+    <p id="_2b1b48f0-ea85-4663-87db-62cbcd7db337">may only sync 1 year of data</p>
+  </li>
+  <li>
+    <p id="_cf9bae46-6b49-4bad-a336-23396d6bc48c">attachments first appear and then disappear again</p>
+  </li>
+  <li>
+    <p id="_a8ab1bf5-2ee0-4802-afc8-25b90a8fc249">Is CalDAV syncing support in the future?</p>
+  </li>
+  <li>
+    <p id="_031ccc59-fb34-41b9-8649-6ad2d283733f">Android is missing new features or bugs, e.g.:</p>
+    <ul id="_ac793c08-ab6d-44d7-8402-a0f0f2976232">
+  <li>
+    <p id="_b1100789-b177-4478-b181-eac39ac2aa52">bad recurrence expansions</p>
+  </li>
+  <li>
+    <p id="_97cab195-2adc-4b03-9e1a-943f6a23a42d">empty recurring events (when all instances are cancelled)</p>
   </li>
 </ul>
-        <p id="_f2ef6df6-1ded-4cb4-969c-ed8f268d1b1b">Client iMip bug: invitations to single instances of a recurring event are not handled properly</p>
-        <p id="_af95d3f1-f342-49f3-987f-550d19acf901">Server iMip bug:
+  </li>
+</ul>
+        <p id="_5809aa9a-244b-47ac-a22d-6651262f5fdc">Client iMip bug: invitations to single instances of a recurring event are not handled properly</p>
+        <p id="_21a6fae1-f2e9-4979-bc30-0dd5c2af9d50">Server iMip bug:
 Have a recurring event with one exception moved, then invite an attendee - the invitation only contains the series but not the exception</p>
-        <p id="_65827ca0-4db2-4d22-b221-02dad9f8c35a">An interesting fact was noted: for recurring events where the recurrence doesn&#x2019;t match the start date - between Apple, FastMail, Google and Open-Xchange these are all expanded differently (3 different behaviors).</p>
+        <p id="_171b43bc-3c3f-4c10-bb01-6f3d0e5d1ec1">An interesting fact was noted: for recurring events where the recurrence doesn&#x2019;t match the start date - between Apple, FastMail, Google and Open-Xchange these are all expanded differently (3 different behaviors).</p>
       </div>
     </main>
   <script type="text/x-mathjax-config">
@@ -1185,11 +1195,11 @@ Have a recurring event with one exception moved, then invite an attendee - the i
     }
  });
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=AM_HTMLorMML"></script>
-<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script><script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=AM_HTMLorMML" async="async"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>  <script>
     //TOC generation
       $('#toc').toc({
-          'selectors': 'h1,h2:not(.TermNum)', //elements to use as headings
+          'selectors': toclevel(), //elements to use as headings
           'container': 'main', //element to find all selectors in
           'smoothScrolling': true, //enable or disable smooth scrolling on click
           'prefix': 'toc', //prefix for anchor tags and class names
@@ -1251,9 +1261,12 @@ $('#toggle').on('click', function(){
  * https://github.com/bryanbraun/anchorjs
  * Copyright (c) 2017 Bryan Braun; Licensed MIT
  */
-!function(A,e){"use strict";"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&module.exports?module.exports=e():(A.AnchorJS=e(),A.anchors=new A.AnchorJS)}(this,function(){"use strict";return function(A){function e(A){A.icon=A.hasOwnProperty("icon")?A.icon:"",A.visible=A.hasOwnProperty("visible")?A.visible:"hover",A.placement=A.hasOwnProperty("placement")?A.placement:"right",A.ariaLabel=A.hasOwnProperty("ariaLabel")?A.ariaLabel:"Anchor",A.class=A.hasOwnProperty("class")?A.class:"",A.truncate=A.hasOwnProperty("truncate")?Math.floor(A.truncate):64}function t(A){var e;if("string"==typeof A||A instanceof String)e=[].slice.call(document.querySelectorAll(A));else{if(!(Array.isArray(A)||A instanceof NodeList))throw new Error("The selector provided to AnchorJS was invalid.");e=[].slice.call(A)}return e}function i(){if(null===document.head.querySelector("style.anchorjs")){var A,e=document.createElement("style");e.className="anchorjs",e.appendChild(document.createTextNode("")),void 0===(A=document.head.querySelector('[rel="stylesheet"], style'))?document.head.appendChild(e):document.head.insertBefore(e,A),e.sheet.insertRule(" .anchorjs-link {   opacity: 0;   text-decoration: none;   -webkit-font-smoothing: antialiased;   -moz-osx-font-smoothing: grayscale; }",e.sheet.cssRules.length),e.sheet.insertRule(" *:hover > .anchorjs-link, .anchorjs-link:focus  {   opacity: 1; }",e.sheet.cssRules.length),e.sheet.insertRule(" [data-anchorjs-icon]::after {   content: attr(data-anchorjs-icon); }",e.sheet.cssRules.length),e.sheet.insertRule(' @font-face {   font-family: "anchorjs-icons";   src: url(data:n/a;base64,AAEAAAALAIAAAwAwT1MvMg8yG2cAAAE4AAAAYGNtYXDp3gC3AAABpAAAAExnYXNwAAAAEAAAA9wAAAAIZ2x5ZlQCcfwAAAH4AAABCGhlYWQHFvHyAAAAvAAAADZoaGVhBnACFwAAAPQAAAAkaG10eASAADEAAAGYAAAADGxvY2EACACEAAAB8AAAAAhtYXhwAAYAVwAAARgAAAAgbmFtZQGOH9cAAAMAAAAAunBvc3QAAwAAAAADvAAAACAAAQAAAAEAAHzE2p9fDzz1AAkEAAAAAADRecUWAAAAANQA6R8AAAAAAoACwAAAAAgAAgAAAAAAAAABAAADwP/AAAACgAAA/9MCrQABAAAAAAAAAAAAAAAAAAAAAwABAAAAAwBVAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAMCQAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAg//0DwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAIAAAACgAAxAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADAAAAAIAAgAAgAAACDpy//9//8AAAAg6cv//f///+EWNwADAAEAAAAAAAAAAAAAAAAACACEAAEAAAAAAAAAAAAAAAAxAAACAAQARAKAAsAAKwBUAAABIiYnJjQ3NzY2MzIWFxYUBwcGIicmNDc3NjQnJiYjIgYHBwYUFxYUBwYGIwciJicmNDc3NjIXFhQHBwYUFxYWMzI2Nzc2NCcmNDc2MhcWFAcHBgYjARQGDAUtLXoWOR8fORYtLTgKGwoKCjgaGg0gEhIgDXoaGgkJBQwHdR85Fi0tOAobCgoKOBoaDSASEiANehoaCQkKGwotLXoWOR8BMwUFLYEuehYXFxYugC44CQkKGwo4GkoaDQ0NDXoaShoKGwoFBe8XFi6ALjgJCQobCjgaShoNDQ0NehpKGgobCgoKLYEuehYXAAAADACWAAEAAAAAAAEACAAAAAEAAAAAAAIAAwAIAAEAAAAAAAMACAAAAAEAAAAAAAQACAAAAAEAAAAAAAUAAQALAAEAAAAAAAYACAAAAAMAAQQJAAEAEAAMAAMAAQQJAAIABgAcAAMAAQQJAAMAEAAMAAMAAQQJAAQAEAAMAAMAAQQJAAUAAgAiAAMAAQQJAAYAEAAMYW5jaG9yanM0MDBAAGEAbgBjAGgAbwByAGoAcwA0ADAAMABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAP) format("truetype"); }',e.sheet.cssRules.length)}}this.options=A||{},this.elements=[],e(this.options),this.isTouchDevice=function(){return!!("ontouchstart"in window||window.DocumentTouch&&document instanceof DocumentTouch)},this.add=function(A){var n,o,s,a,r,c,h,l,u,d,f,p=[];if(e(this.options),"touch"===(f=this.options.visible)&&(f=this.isTouchDevice()?"always":"hover"),A||(A="h2, h3, h4, h5, h6"),0===(n=t(A)).length)return this;for(i(),o=document.querySelectorAll("[id]"),s=[].map.call(o,function(A){return A.id}),r=0;r<n.length;r++)if(this.hasAnchorJSLink(n[r]))p.push(r);else{if(n[r].hasAttribute("id"))a=n[r].getAttribute("id");else if(n[r].hasAttribute("data-anchor-id"))a=n[r].getAttribute("data-anchor-id");else{u=l=this.urlify(n[r].textContent),h=0;do{void 0!==c&&(u=l+"-"+h),c=s.indexOf(u),h+=1}while(-1!==c);c=void 0,s.push(u),n[r].setAttribute("id",u),a=u}a.replace(/-/g," "),(d=document.createElement("a")).className="anchorjs-link "+this.options.class,d.href="#"+a,d.setAttribute("aria-label",this.options.ariaLabel),d.setAttribute("data-anchorjs-icon",this.options.icon),"always"===f&&(d.style.opacity="1"),""===this.options.icon&&(d.style.font="1em/1 anchorjs-icons","left"===this.options.placement&&(d.style.lineHeight="inherit")),"left"===this.options.placement?(d.style.position="absolute",d.style.marginLeft="-1em",d.style.paddingRight="0.5em",n[r].insertBefore(d,n[r].firstChild)):(d.style.paddingLeft="0.375em",n[r].appendChild(d))}for(r=0;r<p.length;r++)n.splice(p[r]-r,1);return this.elements=this.elements.concat(n),this},this.remove=function(A){for(var e,i,n=t(A),o=0;o<n.length;o++)(i=n[o].querySelector(".anchorjs-link"))&&(-1!==(e=this.elements.indexOf(n[o]))&&this.elements.splice(e,1),n[o].removeChild(i));return this},this.removeAll=function(){this.remove(this.elements)},this.urlify=function(A){var t=/[& +$,:;=?@"#{}|^~[`%!'<>\]\.\/\(\)\*\\]/g;return this.options.truncate||e(this.options),A.trim().replace(/\'/gi,"").replace(t,"-").replace(/-{2,}/g,"-").substring(0,this.options.truncate).replace(/^-+|-+$/gm,"").toLowerCase()},this.hasAnchorJSLink=function(A){var e=A.firstChild&&(" "+A.firstChild.className+" ").indexOf(" anchorjs-link ")>-1,t=A.lastChild&&(" "+A.lastChild.className+" ").indexOf(" anchorjs-link ")>-1;return e||t||!1}}});  </script>
+!function(A,e){"use strict";"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&module.exports?module.exports=e():(A.AnchorJS=e(),A.anchors=new A.AnchorJS)}(this,function(){"use strict";return function(A){function e(A){A.icon=A.hasOwnProperty("icon")?A.icon:"",A.visible=A.hasOwnProperty("visible")?A.visible:"hover",A.placement=A.hasOwnProperty("placement")?A.placement:"right",A.ariaLabel=A.hasOwnProperty("ariaLabel")?A.ariaLabel:"Anchor",A.class=A.hasOwnProperty("class")?A.class:"",A.truncate=A.hasOwnProperty("truncate")?Math.floor(A.truncate):64}function t(A){var e;if("string"==typeof A||A instanceof String)e=[].slice.call(document.querySelectorAll(A));else{if(!(Array.isArray(A)||A instanceof NodeList))throw new Error("The selector provided to AnchorJS was invalid.");e=[].slice.call(A)}return e}function i(){if(null===document.head.querySelector("style.anchorjs")){var A,e=document.createElement("style");e.className="anchorjs",e.appendChild(document.createTextNode("")),void 0===(A=document.head.querySelector('[rel="stylesheet"], style'))?document.head.appendChild(e):document.head.insertBefore(e,A),e.sheet.insertRule(" .anchorjs-link {   opacity: 0;   text-decoration: none;   -webkit-font-smoothing: antialiased;   -moz-osx-font-smoothing: grayscale; }",e.sheet.cssRules.length),e.sheet.insertRule(" *:hover > .anchorjs-link, .anchorjs-link:focus  {   opacity: 1; }",e.sheet.cssRules.length),e.sheet.insertRule(" [data-anchorjs-icon]::after {   content: attr(data-anchorjs-icon); }",e.sheet.cssRules.length),e.sheet.insertRule(' @font-face {   font-family: "anchorjs-icons";   src: url(data:n/a;base64,AAEAAAALAIAAAwAwT1MvMg8yG2cAAAE4AAAAYGNtYXDp3gC3AAABpAAAAExnYXNwAAAAEAAAA9wAAAAIZ2x5ZlQCcfwAAAH4AAABCGhlYWQHFvHyAAAAvAAAADZoaGVhBnACFwAAAPQAAAAkaG10eASAADEAAAGYAAAADGxvY2EACACEAAAB8AAAAAhtYXhwAAYAVwAAARgAAAAgbmFtZQGOH9cAAAMAAAAAunBvc3QAAwAAAAADvAAAACAAAQAAAAEAAHzE2p9fDzz1AAkEAAAAAADRecUWAAAAANQA6R8AAAAAAoACwAAAAAgAAgAAAAAAAAABAAADwP/AAAACgAAA/9MCrQABAAAAAAAAAAAAAAAAAAAAAwABAAAAAwBVAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAMCQAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAg//0DwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAIAAAACgAAxAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADAAAAAIAAgAAgAAACDpy//9//8AAAAg6cv//f///+EWNwADAAEAAAAAAAAAAAAAAAAACACEAAEAAAAAAAAAAAAAAAAxAAACAAQARAKAAsAAKwBUAAABIiYnJjQ3NzY2MzIWFxYUBwcGIicmNDc3NjQnJiYjIgYHBwYUFxYUBwYGIwciJicmNDc3NjIXFhQHBwYUFxYWMzI2Nzc2NCcmNDc2MhcWFAcHBgYjARQGDAUtLXoWOR8fORYtLTgKGwoKCjgaGg0gEhIgDXoaGgkJBQwHdR85Fi0tOAobCgoKOBoaDSASEiANehoaCQkKGwotLXoWOR8BMwUFLYEuehYXFxYugC44CQkKGwo4GkoaDQ0NDXoaShoKGwoFBe8XFi6ALjgJCQobCjgaShoNDQ0NehpKGgobCgoKLYEuehYXAAAADACWAAEAAAAAAAEACAAAAAEAAAAAAAIAAwAIAAEAAAAAAAMACAAAAAEAAAAAAAQACAAAAAEAAAAAAAUAAQALAAEAAAAAAAYACAAAAAMAAQQJAAEAEAAMAAMAAQQJAAIABgAcAAMAAQQJAAMAEAAMAAMAAQQJAAQAEAAMAAMAAQQJAAUAAgAiAAMAAQQJAAYAEAAMYW5jaG9yanM0MDBAAGEAbgBjAGgAbwByAGoAcwA0ADAAMABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAP) format("truetype"); }',e.sheet.cssRules.length)}}this.options=A||{},this.elements=[],e(this.options),this.isTouchDevice=function(){return!!("ontouchstart"in window||window.DocumentTouch&&document instanceof DocumentTouch)},this.add=function(A){var n,o,s,a,r,c,h,l,u,d,f,p=[];if(e(this.options),"touch"===(f=this.options.visible)&&(f=this.isTouchDevice()?"always":"hover"),A||(A="h2, h3, h4, h5, h6"),0===(n=t(A)).length)return this;for(i(),o=document.querySelectorAll("[id]"),s=[].map.call(o,function(A){return A.id}),r=0;r<n.length;r++)if(this.hasAnchorJSLink(n[r]))p.push(r);else{if(n[r].hasAttribute("id"))a=n[r].getAttribute("id");else if(n[r].hasAttribute("data-anchor-id"))a=n[r].getAttribute("data-anchor-id");else{u=l=this.urlify(n[r].textContent),h=0;do{void 0!==c&&(u=l+"-"+h),c=s.indexOf(u),h+=1}while(-1!==c);c=void 0,s.push(u),n[r].setAttribute("id",u),a=u}a.replace(/-/g," "),(d=document.createElement("a")).className="anchorjs-link "+this.options.class,d.href="#"+a,d.setAttribute("aria-label",this.options.ariaLabel),d.setAttribute("data-anchorjs-icon",this.options.icon),"always"===f&&(d.style.opacity="1"),""===this.options.icon&&(d.style.font="1em/1 anchorjs-icons","left"===this.options.placement&&(d.style.lineHeight="inherit")),"left"===this.options.placement?(d.style.position="absolute",d.style.marginLeft="-1em",d.style.paddingRight="0.5em",n[r].insertBefore(d,n[r].firstChild)):(d.style.paddingLeft="0.375em",n[r].appendChild(d))}for(r=0;r<p.length;r++)n.splice(p[r]-r,1);return this.elements=this.elements.concat(n),this},this.remove=function(A){for(var e,i,n=t(A),o=0;o<n.length;o++)(i=n[o].querySelector(".anchorjs-link"))&&(-1!==(e=this.elements.indexOf(n[o]))&&this.elements.splice(e,1),n[o].removeChild(i));return this},this.removeAll=function(){this.remove(this.elements)},this.urlify=function(A){var t=/[& +$,:;=?@"#{}|^~[`%!'<>\]\.\/\(\)\*\]/g;return this.options.truncate||e(this.options),A.trim().replace(/
+</html>
+/gi,"").replace(t,"-").replace(/-{2,}/g,"-").substring(0,this.options.truncate).replace(/^-+|-+$/gm,"").toLowerCase()},this.hasAnchorJSLink=function(A){var e=A.firstChild&&(" "+A.firstChild.className+" ").indexOf(" anchorjs-link ")>-1,t=A.lastChild&&(" "+A.lastChild.className+" ").indexOf(" anchorjs-link ")>-1;return e||t||!1}}});  </script>
 
   <script>
+/*
   $(document).ready(function() {
           $('[id^=toc]').each(function ()
           {
@@ -1262,8 +1275,13 @@ $('#toggle').on('click', function(){
              currentToc.wrap("<a href='" + url + "#" + currentToc.attr("id") + "' </a>");
           });
 });
+*/
   anchors.options = {
   placement: 'left'
 };
 anchors.add('h1, h2, h3, h4');
-</script></html>
+</script>
+
+
+</body>
+</html>

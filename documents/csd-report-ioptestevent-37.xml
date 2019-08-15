@@ -1,96 +1,101 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <csd-standard xmlns="https://www.calconnect.org/standards/csd">
-<bibdata type="administrative"> 
-  <title language="en" format="text/plain">Report on CalConnect Test Event and Developers Forum XXXVII, September 12-14, 2016</title> 
-  <docidentifier type="csd">CC/A 1606:2016</docidentifier> 
-  <docnumber>1606</docnumber> 
-  <date type="published"> 
-    <on>2016-10-07T00:00:00Z</on> 
-  </date> 
-  <contributor> 
-    <role type="author"/> 
-    <organization> 
-      <name>CalConnect</name> 
-    </organization> 
-  </contributor> 
-  <contributor> 
-    <role type="publisher"/> 
-    <organization> 
-      <name>CalConnect</name> 
-    </organization> 
-  </contributor> 
-  <edition>1</edition> 
-  <version> 
-    <revision-date>2016-10-07T00:00:00Z</revision-date> 
-  </version> 
-  <language>en</language> 
-  <script>Latn</script> 
-  <status format="plain">published</status> 
-  <copyright> 
-    <from>2016</from> 
-    <owner> 
-      <organization> 
-        <name>CalConnect</name> 
-      </organization> 
-    </owner> 
-  </copyright> 
-  <editorialgroup> 
-    <technical-committee>IOPTEST</technical-committee> 
-  </editorialgroup> 
+<bibdata type="standard">
+  <title language="en" format="text/plain">Report on CalConnect Test Event and Developers Forum XXXVII, September 12-14, 2016</title>
+  <docidentifier type="csd">CC/A 1606:2016</docidentifier>
+  <docnumber>1606</docnumber>
+  <date type="published">
+    <on>2016-10-07T00:00:00Z</on>
+  </date>
+  <contributor>
+    <role type="author"/>
+    <organization>
+      <name>CalConnect</name>
+    </organization>
+  </contributor>
+  <contributor>
+    <role type="publisher"/>
+    <organization>
+      <name>CalConnect</name>
+    </organization>
+  </contributor>
+  <edition>1</edition>
+  <version>
+    <revision-date>2016-10-07T00:00:00Z</revision-date>
+  </version>
+  <language>en</language>
+  <script>Latn</script>
+  <status>
+    <stage>published</stage>
+  </status>
+  <copyright>
+    <from>2016</from>
+    <owner>
+      <organization>
+        <name>CalConnect</name>
+      </organization>
+    </owner>
+  </copyright>
+  <ext>
+    <doctype>administrative</doctype>
+    <editorialgroup>
+      <technical-committee>IOPTEST</technical-committee>
+    </editorialgroup>
+  </ext>
 </bibdata>
-<preface><foreword obligation="informative"><title>Foreword</title><p id="_b09bd6ba-ae5d-4735-a53a-6fda67af84e7">The Calendaring and Scheduling Consortium (“CalConnect”) is a global non-profit   
-organization with the aim to facilitate interoperability of technologies across   
-user-centric systems and applications.</p>  
-<p id="_d682ba47-a23a-46d4-9e66-4800871d79f2">CalConnect works closely with liaison partners including international   
-organizations such as ISO, OASIS and M3AAWG.</p>  
-<p id="_9c163a9d-688a-4d24-9895-11b8f693bbf5">The procedures used to develop this document and those intended for its further   
-maintenance are described in the CalConnect Directives.</p>  
-<p id="_86c0a097-e1b0-49e7-a3b5-74efd3dc00dd">In particular the different approval criteria needed for the different types of   
-ISO documents should be noted. This document was drafted in accordance with the   
-editorial rules of the CalConnect Directives.</p>  
-<p id="_cfce993f-6561-4f71-8e18-83dea5456a85">Attention is drawn to the possibility that some of the elements of this   
-document may be the subject of patent rights. CalConnect shall not be held responsible   
-for identifying any or all such patent rights. Details of any patent rights   
-identified during the development of the document will be in the Introduction   
-and/or on the CalConnect list of patent declarations received (see   
-www.calconnect.com/patents).</p>  
-<p id="_a2f0cb53-97de-47d4-8c7d-4c0c0281778b">Any trade name used in this document is information given for the convenience   
-of users and does not constitute an endorsement.</p>  
-<p id="_01b04198-d929-4c7c-b80e-4a3b7523c7d6">This document was prepared by Technical Committee <em>IOPTEST</em>.</p></foreword></preface><sections> 
-<clause id="_report" obligation="normative"><title>Report</title><p id="_ef54a2a8-b1de-44c4-81b1-a398ba15c92f">The event was hosted by dmfs in Dresden, Germany, on September 12-14, 2016.</p>  
-<p id="_4e839d8e-4a5f-4196-8d03-593bf1c2445f">The participants in this event were:</p>  
-<ul id="_f99ca48b-372c-42a1-8720-3f82198765d1">   
-  <li>   
-    <p id="_70b452f8-b883-407b-90b6-72be74171f98">1and1 with 5 attendees</p>   
-  </li>   
-  <li>   
-    <p id="_4e352738-3c3b-4c04-82d9-78f5f0a921c0">dmfs - Marten Gajda - the hosts</p>   
-  </li>   
-  <li>   
-    <p id="_01dd5d7d-f3e0-4484-a535-f14376de8a4f">FastMail with 3 attendees</p>   
-  </li>   
-  <li>   
-    <p id="_72e7ff89-0208-49f0-ae45-9ca6ce5563d5">Google</p>   
-  </li>   
-  <li>   
-    <p id="_e24413fc-c71b-45e8-a0d4-e9bcc4bae47a">Ralf Becker</p>   
-  </li>   
-  <li>   
-    <p id="_3a61c4c1-2c26-45c5-b5aa-123442bdef1b">SCG</p>   
-  </li>   
-  <li>   
-    <p id="_21ef1cf2-d6b9-4700-b36d-3f7f23d78c6a">Zimbra</p>   
-  </li>   
-</ul>  
-<p id="_82cb5efb-8edc-4b45-ba0f-a3d0de467ff8">While interoperability testing is still an important part of the proceedings, this event provides an opportunity for developers to discuss issues at depth. Some of the major discussions are detailed below but the event provides an opportunity for developers to ask questions of each other and often resolve their problems.</p>  
-<p id="_8124b8b8-5960-4e6d-a497-f590ca5ca892">CalDAV has usually been a major part of our testing. New CalDAV clients and servers continue to appear and we hope the work we are doing on a version of the CalDAV tester will promote interoperability. Of late there has been an increased interest in other issues such as iMIP and there was some work on interchanging iMIP messages.</p>  
-<p id="_7c21efc3-0dae-4f34-9f0d-e99c375bb55c">There was a significant amount of work on versions of ical4j to incorporate changes to support VPOLL. There was some discussion on how to merge the many different forks of that library and this may lead to some future calls.</p>  
-<p id="_9a919206-71fa-4964-afec-9aea4cc6c1d9">The new JSON format being developed by TC-API was discussed. There were a number of outstanding issues that needed resolving. These were all dealt with so that we are ready to move forward with an implementable specification. Additionally a tool for converting between iCalendar and the new JSON format developed by FastMail was made available. This allowed us to see how events would look in the new representation.</p>  
-<p id="_89164abc-c8ab-4c42-92e7-af13434f3081">We talked about the latest draft of the icalendar patch document. This allows changes to icalendar objects to be expressed as a patch which may be much smaller than sending the entire entity. We spent some time discussing issues around selecting components, especially for icalendar streams and ultimately felt that we were ready to move forward with implementations.</p>  
-<p id="_98d81ee4-1960-4cfd-b45f-252ab4ab06cf">We also took a look at the new VINSTANCE component which allows for a much more compact representation of overrides - essentially only showing the difference between the generated instance and the overridden form. This again should be much more compact than the current approach. This proposal led to a further proposal - that we bump the iCalendar version number which has been at 2.0 since RFC2445. VINSTANCE introduces a change which may cause clients and servers to lose overrides if they don’t support it. Incrementing the version number - along with a possible use of feature negotiation - would allow us to ensure that new features are supported.</p>  
-<p id="_e55c69d1-85d3-4263-8d17-12320c95cd0e">Marten Gajda presented some thoughts on Autodiscovery and we intend moving along with that specification in some future calls.</p>  
-<p id="_0c538b0d-d36f-4e90-ba14-58f40f84e872">There was more discussion on iMIP and this should lead to some documentation in the developers guide on how to format iMip messages to avoid problems.</p>  
-<p id="_4f841947-16b4-418b-b458-7e3584881244">There was also some work on the developers guide. We have been merging in older sources of information. caldav.calconnect.org and carddav.calconnect.org were 2 such targets and all the information from those sites is now represented as pages in the devguide.</p>  
-<p id="_27aa40c0-b065-4c06-8f6f-c21790290815">We spent some time talking about how to make the Apple CalDAV Tester testing suite more accessible to developers. There are very many tests available but it is currently a daunting prospect to get this running and many tests fail because of Apple specific issues. We decided to fork a version into the calconnect repository and try to come up with a subset of test newer developers can use. Additionally we talked about the ability to disable specific tests. To help with this Ralf Becker has implemented a wrapper which keeps track of the tests run and the results. This now has a gui interface. This wrapper is also in the calconnect repository.</p>  
-<p id="_d3687212-d50d-40c3-935f-fc3f50064997">Looking forward we hope that a combination of the developers guide and the test suite will lower the bar for application developers.</p></clause></sections>
+<preface><foreword obligation="informative"><title>Foreword</title><p id="_f2352115-253e-4876-82ae-ae0820275c9b">The Calendaring and Scheduling Consortium (“CalConnect”) is a global non-profit
+organization with the aim to facilitate interoperability of technologies across
+user-centric systems and applications.</p>
+<p id="_d7eb0288-22f0-47f0-b1a3-ecc0f0a7cf8e">CalConnect works closely with liaison partners including international
+organizations such as ISO, OASIS and M3AAWG.</p>
+<p id="_397de7e1-c534-4d10-b23d-240b5038e845">The procedures used to develop this document and those intended for its further
+maintenance are described in the CalConnect Directives.</p>
+<p id="_2d7a0b73-d815-4d0d-915d-d0f75f039a49">In particular the different approval criteria needed for the different types of
+ISO documents should be noted. This document was drafted in accordance with the
+editorial rules of the CalConnect Directives.</p>
+<p id="_a342d568-21e1-476a-8237-d16ed64c00cd">Attention is drawn to the possibility that some of the elements of this
+document may be the subject of patent rights. CalConnect shall not be held responsible
+for identifying any or all such patent rights. Details of any patent rights
+identified during the development of the document will be in the Introduction
+and/or on the CalConnect list of patent declarations received (see
+www.calconnect.com/patents).</p>
+<p id="_8e7bc459-f991-41fd-ae4e-807aaa83240d">Any trade name used in this document is information given for the convenience
+of users and does not constitute an endorsement.</p>
+<p id="_778e3264-d035-4234-aa41-a156aa97a63b">This document was prepared by Technical Committee <em>IOPTEST</em>.</p></foreword></preface><sections>
+<clause id="_report" obligation="normative"><title>Report</title><p id="_f544b8b2-ace0-41fe-81f2-81e1d81ea78e">The event was hosted by dmfs in Dresden, Germany, on September 12-14, 2016.</p>
+<p id="_b02974ac-344e-4f47-96fe-139b7ec6539c">The participants in this event were:</p>
+<ul id="_a882db25-3b94-495e-afe8-9e323e370404">
+  <li>
+    <p id="_cb1832c7-2351-4e38-a08f-738fdbaa875c">1and1 with 5 attendees</p>
+  </li>
+  <li>
+    <p id="_3ab0ad80-7b2f-4be9-a6e5-79beff97f814">dmfs - Marten Gajda - the hosts</p>
+  </li>
+  <li>
+    <p id="_de55a751-f52d-4f0c-9c4d-974816352783">FastMail with 3 attendees</p>
+  </li>
+  <li>
+    <p id="_85d785a3-17aa-4250-9e2d-7cca6ef25371">Google</p>
+  </li>
+  <li>
+    <p id="_807953fa-b30a-436a-b9a7-4a304a0d5f9e">Ralf Becker</p>
+  </li>
+  <li>
+    <p id="_68ca5caf-2936-4257-9473-71b937881a46">SCG</p>
+  </li>
+  <li>
+    <p id="_2dec8f57-d32c-42f8-a000-ff7ce2839de5">Zimbra</p>
+  </li>
+</ul>
+<p id="_d70a4764-89a4-400f-807c-adf3d7c2137c">While interoperability testing is still an important part of the proceedings, this event provides an opportunity for developers to discuss issues at depth. Some of the major discussions are detailed below but the event provides an opportunity for developers to ask questions of each other and often resolve their problems.</p>
+<p id="_89da4704-2407-424a-a218-0e40185cf9b1">CalDAV has usually been a major part of our testing. New CalDAV clients and servers continue to appear and we hope the work we are doing on a version of the CalDAV tester will promote interoperability. Of late there has been an increased interest in other issues such as iMIP and there was some work on interchanging iMIP messages.</p>
+<p id="_a8c123db-9d3c-4d1f-9000-0a5fd9d419b9">There was a significant amount of work on versions of ical4j to incorporate changes to support VPOLL. There was some discussion on how to merge the many different forks of that library and this may lead to some future calls.</p>
+<p id="_4ee46a03-68f2-420d-90fd-b17956eb643e">The new JSON format being developed by TC-API was discussed. There were a number of outstanding issues that needed resolving. These were all dealt with so that we are ready to move forward with an implementable specification. Additionally a tool for converting between iCalendar and the new JSON format developed by FastMail was made available. This allowed us to see how events would look in the new representation.</p>
+<p id="_da821812-4bae-4f88-9a70-9590bcd111d9">We talked about the latest draft of the icalendar patch document. This allows changes to icalendar objects to be expressed as a patch which may be much smaller than sending the entire entity. We spent some time discussing issues around selecting components, especially for icalendar streams and ultimately felt that we were ready to move forward with implementations.</p>
+<p id="_b55d8685-1c44-43c1-bdd1-3e899be71731">We also took a look at the new VINSTANCE component which allows for a much more compact representation of overrides - essentially only showing the difference between the generated instance and the overridden form. This again should be much more compact than the current approach. This proposal led to a further proposal - that we bump the iCalendar version number which has been at 2.0 since RFC2445. VINSTANCE introduces a change which may cause clients and servers to lose overrides if they don’t support it. Incrementing the version number - along with a possible use of feature negotiation - would allow us to ensure that new features are supported.</p>
+<p id="_8900c683-2e1e-4db8-bf07-3b4099bd22f6">Marten Gajda presented some thoughts on Autodiscovery and we intend moving along with that specification in some future calls.</p>
+<p id="_60a6a945-1236-47f7-b314-e665b10255d1">There was more discussion on iMIP and this should lead to some documentation in the developers guide on how to format iMip messages to avoid problems.</p>
+<p id="_15626ffd-0287-421b-a738-5fc8eeec7d99">There was also some work on the developers guide. We have been merging in older sources of information. caldav.calconnect.org and carddav.calconnect.org were 2 such targets and all the information from those sites is now represented as pages in the devguide.</p>
+<p id="_981d265a-28d3-4252-83c6-361acaf33849">We spent some time talking about how to make the Apple CalDAV Tester testing suite more accessible to developers. There are very many tests available but it is currently a daunting prospect to get this running and many tests fail because of Apple specific issues. We decided to fork a version into the calconnect repository and try to come up with a subset of test newer developers can use. Additionally we talked about the ability to disable specific tests. To help with this Ralf Becker has implemented a wrapper which keeps track of the tests run and the results. This now has a gui interface. This wrapper is also in the calconnect repository.</p>
+<p id="_d0eb5de5-8bc8-4f63-ac46-f79f71238cf1">Looking forward we hope that a combination of the developers guide and the test suite will lower the bar for application developers.</p></clause></sections>
 </csd-standard>

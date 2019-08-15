@@ -181,17 +181,19 @@ main {
     padding: 0 1.5em 0 1.5em;
     overflow: visible; } }
 
-@media screen {
-  div.figure > img {
-    width: 100%;
-    height: auto; } }
+div.figure > img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  max-width: 100%;
+  height: auto; }
 
 #toc ul {
   margin: 0;
   padding: 0;
   list-style: none; }
 
-#toc li {
+#toc li a {
   padding: 5px 10px; }
 
 #toc a {
@@ -200,6 +202,7 @@ main {
   display: block; }
 
 #toc a:hover {
+  box-shadow: none;
   color: white; }
 
 #toc .h2 {
@@ -876,18 +879,24 @@ a.anchorjs-link:hover {
     margin-top: 2em; } }
 
 -->
-</style><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />        <title>Report on Test Event and Developers Forum XL, September 25-27 2017</title>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</style><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Report on Test Event and Developers Forum XL, September 25-27 2017</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    <!--TOC script import-->
-    <script type="text/javascript" src="https://cdn.rawgit.com/jgallen23/toc/0.3.2/dist/toc.min.js"></script>
+<!--TOC script import-->
+<script type="text/javascript" src="https://cdn.rawgit.com/jgallen23/toc/0.3.2/dist/toc.min.js"></script>
+<script type="text/javascript">function toclevel() { var i; var text = "";
+  for(i = 1; i <= 2; i++) {
+    if (i > 1) { text += ","; } text += "h" + i + ":not(:empty):not(.TermNum)"; } 
+  return text;}
+</script>
 
-    <!--Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Space+Mono:400,700" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Overpass:300,300i,600,900" rel="stylesheet" />
-    <!--Font awesome import for the link icon-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" />
+<!--Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i|Space+Mono:400,700" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Overpass:300,300i,600,900" rel="stylesheet" />
+
+<!--Font awesome import for the link icon-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css" integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous" />
 <style class="anchorjs"></style>
 </head>
   <body lang="EN-US" link="blue" vlink="#954F72" xml:lang="EN-US" class="container">
@@ -903,85 +912,86 @@ a.anchorjs-link:hover {
 
 <header>
 
-<!--<div class="WordSection1">-->
+  <!--<div class="WordSection1">-->
   <div class="coverpage">
     <div class="wrapper-top">
 
-  <div class="coverpage-doc-identity">
-    <div class="doc-number">
-      <span class="docnumber">CC/A 1706:2017</span>
-      <!-- <span class="docnumber-separator">:</span>
-      <span class="docyear">2017</span> -->
+      <div class="coverpage-doc-identity">
+        <div class="doc-number">
+          <span class="docnumber">CC/A 1706:2017</span>
+          <!-- <span class="docnumber-separator">:</span>
+            <span class="docyear">2017</span> -->
+        </div>
+
+        <div class="coverpage-title">
+          <span class="title-first">Report on Test Event and Developers Forum XL, September 25-27 2017</span>
+          <!--<span class="title-second"></span>-->
+        </div>
+      </div>
+
+      <div class="coverpage-logo">
+        <span>The Calendaring and Scheduling Consortium</span>
+      </div>
+
+      <div class="coverpage-tc-name">
+        <span>TC IOPTEST</span>
+      </div>
+
+      
+
+      
+
+      <div class="coverpage-contributors">
+        
+
+      </div>
     </div>
 
-    <div class="coverpage-title">
-      <span class="title-first">Report on Test Event and Developers Forum XL, September 25-27 2017</span>
-      <!--<span class="title-second"></span>-->
+    <div class="title-section1">
+      <div class="coverpage-stage-block">
+        <span class="coverpage-stage" id="administrative">CalConnect Administrative</span>
+      </div>
+
+      <div class="coverpage-stage-block">
+        <span class="coverpage-maturity" id="published"></span>
+      </div>
+
+      
+
+      <div class="copyright">
+        <p class="year">
+        &#xA9; 2017 The Calendaring and Scheduling Consortium, Inc.
+        </p>
+
+        <p class="message">
+        All rights reserved. Unless otherwise specified, no part of this
+        publication may be reproduced or utilized otherwise in any form or by any
+        means, electronic or mechanical, including photocopying, or posting on the
+        internet or an intranet, without prior written permission. Permission can
+        be requested from the address below.
+        </p>
+
+        <div class="contact-info">
+          <p class="name">The Calendaring and Scheduling Consortium, Inc.</p>
+          <p class="address">
+          4390 Chaffin Lane<br />
+          McKinleyville<br />
+          California 95519<br />
+          United States of America<br />
+          <br />
+          <a href="mailto:copyright@calconnect.org">copyright@calconnect.org</a><br />
+          <a href="www.calconnect.org">www.calconnect.org</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="rule"></div>
     </div>
   </div>
+</header>
 
-  <div class="coverpage-logo">
-    <span>The Calendaring and Scheduling Consortium</span>
-  </div>
-
-  <div class="coverpage-tc-name">
-    <span>TC IOPTEST</span>
-  </div>
-
-
-
-
-
-  
-
-  </div>
-
-  <div class="title-section1">
-  <div class="coverpage-stage-block">
-    <span class="coverpage-stage" id="administrative">CalConnect Administrative</span>
-  </div>
-
-  <div class="coverpage-stage-block">
-    <span class="coverpage-maturity" id="published"></span>
-</div>
-
-
-
-<div class="copyright">
-  <p class="year">
-    &#xA9; 2017 The Calendaring and Scheduling Consortium, Inc.
-  </p>
-
-  <p class="message">
-    All rights reserved. Unless otherwise specified, no part of this
-    publication may be reproduced or utilized otherwise in any form or by any
-    means, electronic or mechanical, including photocopying, or posting on the
-    internet or an intranet, without prior written permission. Permission can
-    be requested from the address below.
-  </p>
-
-<div class="contact-info">
-  <p class="name">The Calendaring and Scheduling Consortium, Inc.</p>
-  <p class="address">
-    4390 Chaffin Lane<br />
-    McKinleyville<br />
-    California 95519<br />
-    United States of America<br />
-    <br />
-    <a href="mailto:copyright@calconnect.org">copyright@calconnect.org</a><br />
-    <a href="www.calconnect.org">www.calconnect.org</a>
-  </p>
-</div>
-</div>
-
-<div class="rule"></div>
-</div>
-
-
-
-</div></header></div>
       <p>&#xA0;</p>
-    </body>
+    </div>
     <br />
     <div class="prefatory-section"><nav>
   <h1 id="content">Contents</h1>
@@ -999,117 +1009,117 @@ a.anchorjs-link:hover {
       <br />
       <div>
         <h1 class="ForewordTitle">Foreword</h1>
-        <p id="_207740f9-7540-4078-bfe4-7ab4e8f56dec">The Calendaring and Scheduling Consortium (&#x201C;CalConnect&#x201D;) is a global non-profit
+        <p id="_174a78ea-b3a6-4a88-a323-ed2a0ec40c35">The Calendaring and Scheduling Consortium (&#x201C;CalConnect&#x201D;) is a global non-profit
 organization with the aim to facilitate interoperability of technologies across
 user-centric systems and applications.</p>
-        <p id="_159093fc-2810-4ac0-bb21-117450cffcc0">CalConnect works closely with liaison partners including international
+        <p id="_7bed285f-1064-44ec-af97-67ab447d413e">CalConnect works closely with liaison partners including international
 organizations such as ISO, OASIS and M3AAWG.</p>
-        <p id="_d96a088f-c6b2-4efe-9551-a0c4c7644d79">The procedures used to develop this document and those intended for its further
+        <p id="_30dd60cd-31e7-4c5c-8145-b64d43b9961a">The procedures used to develop this document and those intended for its further
 maintenance are described in the CalConnect Directives.</p>
-        <p id="_60e096fb-88aa-4d43-905d-c482393ec203">In particular the different approval criteria needed for the different types of
+        <p id="_f60e3c88-f17f-4230-af7c-0fbd74ee3a3d">In particular the different approval criteria needed for the different types of
 ISO documents should be noted. This document was drafted in accordance with the
 editorial rules of the CalConnect Directives.</p>
-        <p id="_5ad65333-3e9e-4e9d-a7ea-2b384d07d1dd">Attention is drawn to the possibility that some of the elements of this
+        <p id="_46cb1513-9bb7-4ae2-b7f7-6bb14887320d">Attention is drawn to the possibility that some of the elements of this
 document may be the subject of patent rights. CalConnect shall not be held responsible
 for identifying any or all such patent rights. Details of any patent rights
 identified during the development of the document will be in the Introduction
 and/or on the CalConnect list of patent declarations received (see
 www.calconnect.com/patents).</p>
-        <p id="_6c3c68ce-df78-4f39-a1d3-a680644bbecc">Any trade name used in this document is information given for the convenience
+        <p id="_a2a82b6f-88ec-43d2-a0d0-07117575a3d7">Any trade name used in this document is information given for the convenience
 of users and does not constitute an endorsement.</p>
-        <p id="_e5a10e81-5e17-4dde-8dbc-75d990158bee">This document was prepared by Technical Committee <i>IOPTEST</i>.</p>
+        <p id="_5d29189d-d122-43a4-b9ec-3f337f587c8f">This document was prepared by Technical Committee <i>IOPTEST</i>.</p>
       </div>
       <p class="zzSTDTitle1">Report on Test Event and Developers Forum XL, September 25-27 2017</p>
       <div id="_report">
         <h1>1.&#xA0; Report</h1>
-        <p id="_08322763-21e0-44d2-949f-0d53f3b90f73">The event was hosted by Open-Xchange in Cologne, Germany on September 25-27,
+        <p id="_a0b3df95-8d4f-4bfb-a63c-95c16123ea10">The event was hosted by Open-Xchange in Cologne, Germany on September 25-27,
 2017.</p>
-        <p id="_4ac5180f-7678-4e60-a0be-874295ed99f1">In attendance for this interoperability event and developers forum were:</p>
-        <ul id="_8f78e740-0813-48f9-886e-78a6ec73b0aa">
+        <p id="_8469ced9-a0c7-4d73-9b14-5b4bf8586b98">In attendance for this interoperability event and developers forum were:</p>
+        <ul id="_0a7a22d1-3f54-4b19-85ae-4cfedb3c2f06">
   <li>
-    <p id="_078ec117-cc01-4bb6-b0af-1c5baeff25e2">Mike Douglass Spherical Cow Group - managing the event</p>
+    <p id="_d6a4c776-868b-4e3e-9a3a-a1c69f57a768">Mike Douglass Spherical Cow Group - managing the event</p>
   </li>
   <li>
-    <p id="_170d2004-e949-4506-9e24-cdb7046df08e">Ken Murchison, Robert Stepanek for Fastmail</p>
+    <p id="_2970867c-f835-44e2-a55e-7e5757a1b990">Ken Murchison, Robert Stepanek for Fastmail</p>
   </li>
   <li>
-    <p id="_73171d71-a226-4318-ad37-711e2dc541e5">Thomas Sch&#xE4;fer for 1&amp;1</p>
+    <p id="_86e78d4d-0b2a-4374-a5f9-e4578bb56407">Thomas Sch&#xE4;fer for 1&amp;1</p>
   </li>
   <li>
-    <p id="_36ffe2fe-9031-4ce7-9fd0-f0a3f43f1c70">Marten Gajda for dmfs</p>
+    <p id="_d4859f1e-6c6c-4d9e-8edc-b7680ab671ac">Marten Gajda for dmfs</p>
   </li>
   <li>
-    <p id="_43895263-8e5b-40ca-b5a0-bc5654866a77">Gren Eliot for Zimbra</p>
+    <p id="_a30567ca-ac6b-4a1e-840a-a0c07d121ae0">Gren Eliot for Zimbra</p>
   </li>
   <li>
-    <p id="_e9222880-9adf-4893-8b19-e7815bce2108">Ralf Becker for eGroupware</p>
+    <p id="_a366a709-bc93-4e02-b427-385de4ebb09f">Ralf Becker for eGroupware</p>
   </li>
   <li>
-    <p id="_322b93f0-6b2c-425d-a5e1-bf65af010af3">Martin Herfurth and Tobias Friedrich for Open-Xchange</p>
+    <p id="_3c6ef78c-17af-4160-9ca1-730460867928">Martin Herfurth and Tobias Friedrich for Open-Xchange</p>
   </li>
   <li>
-    <p id="_8e9e1ded-3593-46a6-abfd-b5f829476d99">Peter Tam for Ribose</p>
+    <p id="_eebbe2e7-e700-417c-b7a8-209032df0289">Peter Tam for Ribose</p>
   </li>
 </ul>
-        <p id="_0be0b2a7-8443-4c5c-b16e-07b988ce89db">There was a significant amount of discussion around the new JSCalendar draft which also
+        <p id="_75d7a907-a700-4ffa-b515-c1c21aff5c8e">There was a significant amount of discussion around the new JSCalendar draft which also
 spilled over into discussions on vCard. The JSCalendar specification is now felt to be relatively
 stable and as yet there are few comments on the draft from outside CalConnect.The IETF will
 be contacted to see if we can move this into a working group.</p>
-        <p id="_5353d33b-9abf-4813-b30b-1c7b88aae2b3">There were some discussions about the relative merit of multiple RFCs for different aspects of
+        <p id="_0d2bf6db-cc81-4ec5-822a-9ec7984cf459">There were some discussions about the relative merit of multiple RFCs for different aspects of
 the standard (events v tasks) as against a single all encompassing draft.</p>
-        <p id="_a747459c-8ca9-4dd2-83a0-f8fd496cd981">This led on to a discussion of the contacts api and the desire to come up with a format for
+        <p id="_ed3e3b21-393d-4cd3-85c1-9750264baf57">This led on to a discussion of the contacts api and the desire to come up with a format for
 contacts that is based on the JSCalendar work. One idea is to define a common data model for
 contacts, independent from data format and exchange protocols. Robert and Peter will share
 the current work documents to see what&#x2019;s the overlap.</p>
-        <p id="_dbbe0f22-f9c1-4bb8-8604-d20413056b22">Additionally Peter has been working on a GraphQL-based contacts API. The intent is to propose
+        <p id="_b3b918fd-91ca-4e84-82f7-d70e65580076">Additionally Peter has been working on a GraphQL-based contacts API. The intent is to propose
 this as a standard at some point.</p>
-        <p id="_d4a54a6c-9c7b-4aaa-9e01-4cfaf842f6aa">FastMail with the Cyrus server worked on subscription upgrade with dmfs and successfully
+        <p id="_b23e942e-f37e-4bc1-ac17-c41b222cd6ef">FastMail with the Cyrus server worked on subscription upgrade with dmfs and successfully
 tested with WebCal-Sync. It should be noted how recurrence overrides are handled. Some
 additional points on subscription upgrade:</p>
-        <ul id="_6c913150-f33b-4176-9058-4a9c9b8cb7ef">
+        <ul id="_d93c2704-233a-4002-bf70-8436ab4965d3">
   <li>
-    <p id="_6820a6f9-1e80-41c1-9466-fbf563b32af8">Prefer=minimal will cause VTIMEZONEs to NOT be returned in subscription
+    <p id="_7bb7e22d-82cc-4674-8cc6-09616ea38c3d">Prefer=minimal will cause VTIMEZONEs to NOT be returned in subscription
 upgrade. It can be overridden by using CalDAV-Timezones:T</p>
   </li>
   <li>
-    <p id="_2209dd4b-abc9-4b1a-8a0c-5a44018b73bf">Realized that CalDAV-Timezones SHOULD/MUST be included in Vary header
+    <p id="_05b45636-7266-4a9d-8f72-26f1e8533165">Realized that CalDAV-Timezones SHOULD/MUST be included in Vary header
 when server supports TZ-by-ref and subscription upgrade
 There was some work done switching DEVGUIDE from old to new infrastructure. This required
 a DNS change and bugfixing redirects.</p>
   </li>
 </ul>
-        <p id="_4e767bcc-2684-4c8f-a3bc-13adbbf8ee8f">There was a lot of work around the CalDAV tester. Apple is no longer maintaining this tool so we
+        <p id="_62bb664c-9af6-4fa6-84a1-6054af5c7deb">There was a lot of work around the CalDAV tester. Apple is no longer maintaining this tool so we
 are free to apply our own updates to a CalConnect maintained copy. There was some
 discussion around how we should avoid conflicts - the suggestion is to create a ticket for a test
 or test you want to work on. Committing back to the core should be fine at least at this stage.</p>
-        <p id="_ed12ced2-82a8-4ae3-befd-9d588e011e09">Some work was started on trying to build bootstrap code into the tester. For many servers this
+        <p id="_6c195834-6c91-4689-87a9-39a7e392cf5e">Some work was started on trying to build bootstrap code into the tester. For many servers this
 will remove the need fo a lot of configuration as the tester should be able to discover most of
 what it needs.</p>
-        <p id="_02fda11f-8883-4c8b-8005-457b02b84ab8">Open-Xchange had been discouraged by the enormous number of failures in the original tester.</p>
-        <p id="_aec0a0ad-1575-4667-a8b5-a9429cef007a">During this session they managed to get much further - concentrating on a smaller number fo
+        <p id="_e8fb1162-90a5-40eb-9b9c-62b895f6078e">Open-Xchange had been discouraged by the enormous number of failures in the original tester.</p>
+        <p id="_f8768368-0ad0-4404-9659-833ef40b908a">During this session they managed to get much further - concentrating on a smaller number fo
 tests.</p>
-        <p id="_83717baf-b7e1-43f7-9d4d-46d7415dcf91">Ralf for eGroupware has implemented caldavtester - a wrapper around the Apple originated
+        <p id="_ca58a9a0-dd72-4582-a921-48b36669a8cc">Ralf for eGroupware has implemented caldavtester - a wrapper around the Apple originated
 tester. This provides a GUI, options for selecting tests and features to determine what changes
 happened as a result of server updates. Some work was done to add new feature to that tool.</p>
-        <p id="_1c4be3a0-5169-4bcf-aeae-72b2e8182a8e">A number of changes were also made to some tests to make them less Apple specific - fro
+        <p id="_3c0b2c80-84f4-46bd-a292-e2211c3b03ad">A number of changes were also made to some tests to make them less Apple specific - fro
 example, redirects now accept all valid http redirect codes.
 As the large number of errors were reduced we all find that errors in our own server code
 surface.</p>
-        <p id="_f80481a2-584c-4c27-8019-77eb8aa22e27">Zimbra also did some work on fixing an issue with shared addressbooks not visible from iOS /
+        <p id="_cb604198-dda9-46d4-a393-3eccef32eda2">Zimbra also did some work on fixing an issue with shared addressbooks not visible from iOS /
 CardDAV-Sync on Android.</p>
-        <p id="_cef2aa70-f621-4e16-b7be-95ec26311e5c">Further discussions covered:</p>
-        <ul id="_9ae340c2-a4de-4f00-a309-d4668d5eab8d">
+        <p id="_fde2a34e-817c-4e88-8a0b-9d471b14de14">Further discussions covered:</p>
+        <ul id="_3810f6ae-ff42-4e5b-98e8-c7569989e4fc">
   <li>
-    <p id="_08e7964e-8ab4-4402-8ace-866126fa2b54">iTip improvements: new response for scheduling requests</p>
+    <p id="_8f3dd4ee-ee05-4a9a-913a-e287e393b55e">iTip improvements: new response for scheduling requests</p>
   </li>
   <li>
-    <p id="_671bfc87-40ab-4fdc-8c2d-02ad75150295">Optimistic updates</p>
+    <p id="_26b3c530-fb38-48e5-8f12-70903218e0f7">Optimistic updates</p>
   </li>
   <li>
-    <p id="_8a64e679-8c81-486e-bce8-ad1b2d8e2bbf">The need to check the CalDAV specification wrt caching proxies</p>
+    <p id="_618201d6-d820-4ac3-91af-6a2564bf61f8">The need to check the CalDAV specification wrt caching proxies</p>
   </li>
 </ul>
-        <p id="_832241d8-aee5-4e64-8947-d83a26f7c75b">In all this was a very productive session.</p>
+        <p id="_2da0973c-514a-4daf-b571-3bc32ab0ad36">In all this was a very productive session.</p>
       </div>
     </main>
   <script type="text/x-mathjax-config">
@@ -1119,11 +1129,11 @@ CardDAV-Sync on Android.</p>
     }
  });
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=AM_HTMLorMML"></script>
-<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script><script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=AM_HTMLorMML" async="async"></script>
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>  <script>
     //TOC generation
       $('#toc').toc({
-          'selectors': 'h1,h2:not(.TermNum)', //elements to use as headings
+          'selectors': toclevel(), //elements to use as headings
           'container': 'main', //element to find all selectors in
           'smoothScrolling': true, //enable or disable smooth scrolling on click
           'prefix': 'toc', //prefix for anchor tags and class names
@@ -1185,9 +1195,12 @@ $('#toggle').on('click', function(){
  * https://github.com/bryanbraun/anchorjs
  * Copyright (c) 2017 Bryan Braun; Licensed MIT
  */
-!function(A,e){"use strict";"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&module.exports?module.exports=e():(A.AnchorJS=e(),A.anchors=new A.AnchorJS)}(this,function(){"use strict";return function(A){function e(A){A.icon=A.hasOwnProperty("icon")?A.icon:"",A.visible=A.hasOwnProperty("visible")?A.visible:"hover",A.placement=A.hasOwnProperty("placement")?A.placement:"right",A.ariaLabel=A.hasOwnProperty("ariaLabel")?A.ariaLabel:"Anchor",A.class=A.hasOwnProperty("class")?A.class:"",A.truncate=A.hasOwnProperty("truncate")?Math.floor(A.truncate):64}function t(A){var e;if("string"==typeof A||A instanceof String)e=[].slice.call(document.querySelectorAll(A));else{if(!(Array.isArray(A)||A instanceof NodeList))throw new Error("The selector provided to AnchorJS was invalid.");e=[].slice.call(A)}return e}function i(){if(null===document.head.querySelector("style.anchorjs")){var A,e=document.createElement("style");e.className="anchorjs",e.appendChild(document.createTextNode("")),void 0===(A=document.head.querySelector('[rel="stylesheet"], style'))?document.head.appendChild(e):document.head.insertBefore(e,A),e.sheet.insertRule(" .anchorjs-link {   opacity: 0;   text-decoration: none;   -webkit-font-smoothing: antialiased;   -moz-osx-font-smoothing: grayscale; }",e.sheet.cssRules.length),e.sheet.insertRule(" *:hover > .anchorjs-link, .anchorjs-link:focus  {   opacity: 1; }",e.sheet.cssRules.length),e.sheet.insertRule(" [data-anchorjs-icon]::after {   content: attr(data-anchorjs-icon); }",e.sheet.cssRules.length),e.sheet.insertRule(' @font-face {   font-family: "anchorjs-icons";   src: url(data:n/a;base64,AAEAAAALAIAAAwAwT1MvMg8yG2cAAAE4AAAAYGNtYXDp3gC3AAABpAAAAExnYXNwAAAAEAAAA9wAAAAIZ2x5ZlQCcfwAAAH4AAABCGhlYWQHFvHyAAAAvAAAADZoaGVhBnACFwAAAPQAAAAkaG10eASAADEAAAGYAAAADGxvY2EACACEAAAB8AAAAAhtYXhwAAYAVwAAARgAAAAgbmFtZQGOH9cAAAMAAAAAunBvc3QAAwAAAAADvAAAACAAAQAAAAEAAHzE2p9fDzz1AAkEAAAAAADRecUWAAAAANQA6R8AAAAAAoACwAAAAAgAAgAAAAAAAAABAAADwP/AAAACgAAA/9MCrQABAAAAAAAAAAAAAAAAAAAAAwABAAAAAwBVAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAMCQAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAg//0DwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAIAAAACgAAxAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADAAAAAIAAgAAgAAACDpy//9//8AAAAg6cv//f///+EWNwADAAEAAAAAAAAAAAAAAAAACACEAAEAAAAAAAAAAAAAAAAxAAACAAQARAKAAsAAKwBUAAABIiYnJjQ3NzY2MzIWFxYUBwcGIicmNDc3NjQnJiYjIgYHBwYUFxYUBwYGIwciJicmNDc3NjIXFhQHBwYUFxYWMzI2Nzc2NCcmNDc2MhcWFAcHBgYjARQGDAUtLXoWOR8fORYtLTgKGwoKCjgaGg0gEhIgDXoaGgkJBQwHdR85Fi0tOAobCgoKOBoaDSASEiANehoaCQkKGwotLXoWOR8BMwUFLYEuehYXFxYugC44CQkKGwo4GkoaDQ0NDXoaShoKGwoFBe8XFi6ALjgJCQobCjgaShoNDQ0NehpKGgobCgoKLYEuehYXAAAADACWAAEAAAAAAAEACAAAAAEAAAAAAAIAAwAIAAEAAAAAAAMACAAAAAEAAAAAAAQACAAAAAEAAAAAAAUAAQALAAEAAAAAAAYACAAAAAMAAQQJAAEAEAAMAAMAAQQJAAIABgAcAAMAAQQJAAMAEAAMAAMAAQQJAAQAEAAMAAMAAQQJAAUAAgAiAAMAAQQJAAYAEAAMYW5jaG9yanM0MDBAAGEAbgBjAGgAbwByAGoAcwA0ADAAMABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAP) format("truetype"); }',e.sheet.cssRules.length)}}this.options=A||{},this.elements=[],e(this.options),this.isTouchDevice=function(){return!!("ontouchstart"in window||window.DocumentTouch&&document instanceof DocumentTouch)},this.add=function(A){var n,o,s,a,r,c,h,l,u,d,f,p=[];if(e(this.options),"touch"===(f=this.options.visible)&&(f=this.isTouchDevice()?"always":"hover"),A||(A="h2, h3, h4, h5, h6"),0===(n=t(A)).length)return this;for(i(),o=document.querySelectorAll("[id]"),s=[].map.call(o,function(A){return A.id}),r=0;r<n.length;r++)if(this.hasAnchorJSLink(n[r]))p.push(r);else{if(n[r].hasAttribute("id"))a=n[r].getAttribute("id");else if(n[r].hasAttribute("data-anchor-id"))a=n[r].getAttribute("data-anchor-id");else{u=l=this.urlify(n[r].textContent),h=0;do{void 0!==c&&(u=l+"-"+h),c=s.indexOf(u),h+=1}while(-1!==c);c=void 0,s.push(u),n[r].setAttribute("id",u),a=u}a.replace(/-/g," "),(d=document.createElement("a")).className="anchorjs-link "+this.options.class,d.href="#"+a,d.setAttribute("aria-label",this.options.ariaLabel),d.setAttribute("data-anchorjs-icon",this.options.icon),"always"===f&&(d.style.opacity="1"),""===this.options.icon&&(d.style.font="1em/1 anchorjs-icons","left"===this.options.placement&&(d.style.lineHeight="inherit")),"left"===this.options.placement?(d.style.position="absolute",d.style.marginLeft="-1em",d.style.paddingRight="0.5em",n[r].insertBefore(d,n[r].firstChild)):(d.style.paddingLeft="0.375em",n[r].appendChild(d))}for(r=0;r<p.length;r++)n.splice(p[r]-r,1);return this.elements=this.elements.concat(n),this},this.remove=function(A){for(var e,i,n=t(A),o=0;o<n.length;o++)(i=n[o].querySelector(".anchorjs-link"))&&(-1!==(e=this.elements.indexOf(n[o]))&&this.elements.splice(e,1),n[o].removeChild(i));return this},this.removeAll=function(){this.remove(this.elements)},this.urlify=function(A){var t=/[& +$,:;=?@"#{}|^~[`%!'<>\]\.\/\(\)\*\\]/g;return this.options.truncate||e(this.options),A.trim().replace(/\'/gi,"").replace(t,"-").replace(/-{2,}/g,"-").substring(0,this.options.truncate).replace(/^-+|-+$/gm,"").toLowerCase()},this.hasAnchorJSLink=function(A){var e=A.firstChild&&(" "+A.firstChild.className+" ").indexOf(" anchorjs-link ")>-1,t=A.lastChild&&(" "+A.lastChild.className+" ").indexOf(" anchorjs-link ")>-1;return e||t||!1}}});  </script>
+!function(A,e){"use strict";"function"==typeof define&&define.amd?define([],e):"object"==typeof module&&module.exports?module.exports=e():(A.AnchorJS=e(),A.anchors=new A.AnchorJS)}(this,function(){"use strict";return function(A){function e(A){A.icon=A.hasOwnProperty("icon")?A.icon:"",A.visible=A.hasOwnProperty("visible")?A.visible:"hover",A.placement=A.hasOwnProperty("placement")?A.placement:"right",A.ariaLabel=A.hasOwnProperty("ariaLabel")?A.ariaLabel:"Anchor",A.class=A.hasOwnProperty("class")?A.class:"",A.truncate=A.hasOwnProperty("truncate")?Math.floor(A.truncate):64}function t(A){var e;if("string"==typeof A||A instanceof String)e=[].slice.call(document.querySelectorAll(A));else{if(!(Array.isArray(A)||A instanceof NodeList))throw new Error("The selector provided to AnchorJS was invalid.");e=[].slice.call(A)}return e}function i(){if(null===document.head.querySelector("style.anchorjs")){var A,e=document.createElement("style");e.className="anchorjs",e.appendChild(document.createTextNode("")),void 0===(A=document.head.querySelector('[rel="stylesheet"], style'))?document.head.appendChild(e):document.head.insertBefore(e,A),e.sheet.insertRule(" .anchorjs-link {   opacity: 0;   text-decoration: none;   -webkit-font-smoothing: antialiased;   -moz-osx-font-smoothing: grayscale; }",e.sheet.cssRules.length),e.sheet.insertRule(" *:hover > .anchorjs-link, .anchorjs-link:focus  {   opacity: 1; }",e.sheet.cssRules.length),e.sheet.insertRule(" [data-anchorjs-icon]::after {   content: attr(data-anchorjs-icon); }",e.sheet.cssRules.length),e.sheet.insertRule(' @font-face {   font-family: "anchorjs-icons";   src: url(data:n/a;base64,AAEAAAALAIAAAwAwT1MvMg8yG2cAAAE4AAAAYGNtYXDp3gC3AAABpAAAAExnYXNwAAAAEAAAA9wAAAAIZ2x5ZlQCcfwAAAH4AAABCGhlYWQHFvHyAAAAvAAAADZoaGVhBnACFwAAAPQAAAAkaG10eASAADEAAAGYAAAADGxvY2EACACEAAAB8AAAAAhtYXhwAAYAVwAAARgAAAAgbmFtZQGOH9cAAAMAAAAAunBvc3QAAwAAAAADvAAAACAAAQAAAAEAAHzE2p9fDzz1AAkEAAAAAADRecUWAAAAANQA6R8AAAAAAoACwAAAAAgAAgAAAAAAAAABAAADwP/AAAACgAAA/9MCrQABAAAAAAAAAAAAAAAAAAAAAwABAAAAAwBVAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAMCQAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAAAAAAAAAAQAAg//0DwP/AAEADwABAAAAAAQAAAAAAAAAAAAAAIAAAAAAAAAIAAAACgAAxAAAAAwAAAAMAAAAcAAEAAwAAABwAAwABAAAAHAAEADAAAAAIAAgAAgAAACDpy//9//8AAAAg6cv//f///+EWNwADAAEAAAAAAAAAAAAAAAAACACEAAEAAAAAAAAAAAAAAAAxAAACAAQARAKAAsAAKwBUAAABIiYnJjQ3NzY2MzIWFxYUBwcGIicmNDc3NjQnJiYjIgYHBwYUFxYUBwYGIwciJicmNDc3NjIXFhQHBwYUFxYWMzI2Nzc2NCcmNDc2MhcWFAcHBgYjARQGDAUtLXoWOR8fORYtLTgKGwoKCjgaGg0gEhIgDXoaGgkJBQwHdR85Fi0tOAobCgoKOBoaDSASEiANehoaCQkKGwotLXoWOR8BMwUFLYEuehYXFxYugC44CQkKGwo4GkoaDQ0NDXoaShoKGwoFBe8XFi6ALjgJCQobCjgaShoNDQ0NehpKGgobCgoKLYEuehYXAAAADACWAAEAAAAAAAEACAAAAAEAAAAAAAIAAwAIAAEAAAAAAAMACAAAAAEAAAAAAAQACAAAAAEAAAAAAAUAAQALAAEAAAAAAAYACAAAAAMAAQQJAAEAEAAMAAMAAQQJAAIABgAcAAMAAQQJAAMAEAAMAAMAAQQJAAQAEAAMAAMAAQQJAAUAAgAiAAMAAQQJAAYAEAAMYW5jaG9yanM0MDBAAGEAbgBjAGgAbwByAGoAcwA0ADAAMABAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAH//wAP) format("truetype"); }',e.sheet.cssRules.length)}}this.options=A||{},this.elements=[],e(this.options),this.isTouchDevice=function(){return!!("ontouchstart"in window||window.DocumentTouch&&document instanceof DocumentTouch)},this.add=function(A){var n,o,s,a,r,c,h,l,u,d,f,p=[];if(e(this.options),"touch"===(f=this.options.visible)&&(f=this.isTouchDevice()?"always":"hover"),A||(A="h2, h3, h4, h5, h6"),0===(n=t(A)).length)return this;for(i(),o=document.querySelectorAll("[id]"),s=[].map.call(o,function(A){return A.id}),r=0;r<n.length;r++)if(this.hasAnchorJSLink(n[r]))p.push(r);else{if(n[r].hasAttribute("id"))a=n[r].getAttribute("id");else if(n[r].hasAttribute("data-anchor-id"))a=n[r].getAttribute("data-anchor-id");else{u=l=this.urlify(n[r].textContent),h=0;do{void 0!==c&&(u=l+"-"+h),c=s.indexOf(u),h+=1}while(-1!==c);c=void 0,s.push(u),n[r].setAttribute("id",u),a=u}a.replace(/-/g," "),(d=document.createElement("a")).className="anchorjs-link "+this.options.class,d.href="#"+a,d.setAttribute("aria-label",this.options.ariaLabel),d.setAttribute("data-anchorjs-icon",this.options.icon),"always"===f&&(d.style.opacity="1"),""===this.options.icon&&(d.style.font="1em/1 anchorjs-icons","left"===this.options.placement&&(d.style.lineHeight="inherit")),"left"===this.options.placement?(d.style.position="absolute",d.style.marginLeft="-1em",d.style.paddingRight="0.5em",n[r].insertBefore(d,n[r].firstChild)):(d.style.paddingLeft="0.375em",n[r].appendChild(d))}for(r=0;r<p.length;r++)n.splice(p[r]-r,1);return this.elements=this.elements.concat(n),this},this.remove=function(A){for(var e,i,n=t(A),o=0;o<n.length;o++)(i=n[o].querySelector(".anchorjs-link"))&&(-1!==(e=this.elements.indexOf(n[o]))&&this.elements.splice(e,1),n[o].removeChild(i));return this},this.removeAll=function(){this.remove(this.elements)},this.urlify=function(A){var t=/[& +$,:;=?@"#{}|^~[`%!'<>\]\.\/\(\)\*\]/g;return this.options.truncate||e(this.options),A.trim().replace(/
+</html>
+/gi,"").replace(t,"-").replace(/-{2,}/g,"-").substring(0,this.options.truncate).replace(/^-+|-+$/gm,"").toLowerCase()},this.hasAnchorJSLink=function(A){var e=A.firstChild&&(" "+A.firstChild.className+" ").indexOf(" anchorjs-link ")>-1,t=A.lastChild&&(" "+A.lastChild.className+" ").indexOf(" anchorjs-link ")>-1;return e||t||!1}}});  </script>
 
   <script>
+/*
   $(document).ready(function() {
           $('[id^=toc]').each(function ()
           {
@@ -1196,8 +1209,13 @@ $('#toggle').on('click', function(){
              currentToc.wrap("<a href='" + url + "#" + currentToc.attr("id") + "' </a>");
           });
 });
+*/
   anchors.options = {
   placement: 'left'
 };
 anchors.add('h1, h2, h3, h4');
-</script></html>
+</script>
+
+
+</body>
+</html>
