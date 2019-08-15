@@ -3,7 +3,7 @@
   <docidentifier type="csd">CC/A 1902:2019</docidentifier> 
   <docnumber>1902</docnumber> 
   <date type="published"> 
-    <on>2019-06-10T00:00:00Z //needs update, when publishing</on> 
+    <on>2019-07-10T00:00:00Z</on> 
   </date> 
   <contributor> 
     <role type="author"/> 
@@ -19,11 +19,11 @@
   </contributor> 
   <edition>1</edition> 
   <version> 
-    <revision-date>2019-06-06T00:00:00Z</revision-date> 
+    <revision-date>2019-07-10T00:00:00Z</revision-date> 
   </version> 
   <language>en</language> 
   <script>Latn</script> 
-  <status format="plain">draft</status> 
+  <status format="plain">published</status> 
   <copyright> 
     <from>2019</from> 
     <owner> 
